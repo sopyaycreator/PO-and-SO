@@ -1,0 +1,507 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_CustomerSalesArea",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerSalesArea/NavToA_CustomerSalesArea_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerSalesArea/A_CustomerSalesArea_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_CustomerSalesAreaType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{Customer}",
+						"Subhead": "{SalesOrganization}",
+						"BodyText": "",
+						"Footnote": "{Division}",
+						"Description": "{DistributionChannel}",
+						"StatusText": "{AccountByCustomer}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{AuthorizationGroup}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Customer",
+							"Value": "{Customer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SalesOrganization",
+							"Value": "{SalesOrganization}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DistributionChannel",
+							"Value": "{DistributionChannel}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Division",
+							"Value": "{Division}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AccountByCustomer",
+							"Value": "{AccountByCustomer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BillingIsBlockedForCustomer",
+							"Value": "{BillingIsBlockedForCustomer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CompleteDeliveryIsDefined",
+							"Value": "{CompleteDeliveryIsDefined}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CreditControlArea",
+							"Value": "{CreditControlArea}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Currency",
+							"Value": "{Currency}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustIsRlvtForSettlmtMgmt",
+							"Value": "{CustIsRlvtForSettlmtMgmt}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerABCClassification",
+							"Value": "{CustomerABCClassification}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerAccountAssignmentGroup",
+							"Value": "{CustomerAccountAssignmentGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerGroup",
+							"Value": "{CustomerGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerIsRebateRelevant",
+							"Value": "{CustomerIsRebateRelevant}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerPaymentTerms",
+							"Value": "{CustomerPaymentTerms}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerPriceGroup",
+							"Value": "{CustomerPriceGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerPricingProcedure",
+							"Value": "{CustomerPricingProcedure}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerStatisticsGroup",
+							"Value": "{CustomerStatisticsGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustProdProposalProcedure",
+							"Value": "{CustProdProposalProcedure}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DeliveryIsBlockedForCustomer",
+							"Value": "{DeliveryIsBlockedForCustomer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DeliveryPriority",
+							"Value": "{DeliveryPriority}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IncotermsClassification",
+							"Value": "{IncotermsClassification}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IncotermsLocation2",
+							"Value": "{IncotermsLocation2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IncotermsVersion",
+							"Value": "{IncotermsVersion}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IncotermsLocation1",
+							"Value": "{IncotermsLocation1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DeletionIndicator",
+							"Value": "{DeletionIndicator}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IncotermsTransferLocation",
+							"Value": "{IncotermsTransferLocation}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InspSbstHasNoTimeOrQuantity",
+							"Value": "{InspSbstHasNoTimeOrQuantity}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InvoiceDate",
+							"Value": "{InvoiceDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ItemOrderProbabilityInPercent",
+							"Value": "{ItemOrderProbabilityInPercent}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ManualInvoiceMaintIsRelevant",
+							"Value": "{ManualInvoiceMaintIsRelevant}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "MaxNmbrOfPartialDelivery",
+							"Value": "{MaxNmbrOfPartialDelivery}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "OrderCombinationIsAllowed",
+							"Value": "{OrderCombinationIsAllowed}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "OrderIsBlockedForCustomer",
+							"Value": "{OrderIsBlockedForCustomer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "OverdelivTolrtdLmtRatioInPct",
+							"Value": "{OverdelivTolrtdLmtRatioInPct}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PartialDeliveryIsAllowed",
+							"Value": "{PartialDeliveryIsAllowed}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PriceListType",
+							"Value": "{PriceListType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ProductUnitGroup",
+							"Value": "{ProductUnitGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ProofOfDeliveryTimeValue",
+							"Value": "{ProofOfDeliveryTimeValue}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SalesGroup",
+							"Value": "{SalesGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SalesItemProposal",
+							"Value": "{SalesItemProposal}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SalesOffice",
+							"Value": "{SalesOffice}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ShippingCondition",
+							"Value": "{ShippingCondition}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SlsDocIsRlvtForProofOfDeliv",
+							"Value": "{SlsDocIsRlvtForProofOfDeliv}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SlsUnlmtdOvrdelivIsAllwd",
+							"Value": "{SlsUnlmtdOvrdelivIsAllwd}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplyingPlant",
+							"Value": "{SupplyingPlant}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SalesDistrict",
+							"Value": "{SalesDistrict}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "UnderdelivTolrtdLmtRatioInPct",
+							"Value": "{UnderdelivTolrtdLmtRatioInPct}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InvoiceListSchedule",
+							"Value": "{InvoiceListSchedule}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ExchangeRateType",
+							"Value": "{ExchangeRateType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AdditionalCustomerGroup1",
+							"Value": "{AdditionalCustomerGroup1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AdditionalCustomerGroup2",
+							"Value": "{AdditionalCustomerGroup2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AdditionalCustomerGroup3",
+							"Value": "{AdditionalCustomerGroup3}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AdditionalCustomerGroup4",
+							"Value": "{AdditionalCustomerGroup4}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AdditionalCustomerGroup5",
+							"Value": "{AdditionalCustomerGroup5}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentGuaranteeProcedure",
+							"Value": "{PaymentGuaranteeProcedure}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerAccountGroup",
+							"Value": "{CustomerAccountGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "YY1_PaymentMethod_csa",
+							"Value": "{YY1_PaymentMethod_csa}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "YY1_PaymentMethod_csaF",
+							"Value": "{YY1_PaymentMethod_csaF}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "to_PartnerFunction",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{SalesOrganization}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{DistributionChannel}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{Division}",
+						"Subhead": "{Customer}",
+						"SubstatusText": "{PartnerCounter}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_PartnerFunction",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_SalesAreaTax",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{DistributionChannel}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Customer}",
+						"Footnote": "{Division}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{DepartureCountry}",
+						"Subhead": "{SalesOrganization}",
+						"SubstatusText": "{CustomerTaxCategory}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_SalesAreaTax",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_SalesAreaText",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{SalesOrganization}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{LongTextID}",
+						"Footnote": "{DistributionChannel}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{Division}",
+						"Subhead": "{Customer}",
+						"SubstatusText": "{Language}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_SalesAreaText",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_SlsAreaAddrDepdntInfo",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{SalesOrganization}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{DistributionChannel}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{Division}",
+						"Subhead": "{Customer}",
+						"SubstatusText": "{IncotermsClassification}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_SlsAreaAddrDepdntInfo",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"A_CustSalesPartnerFunc",
+				"A_CustomerSalesAreaTax",
+				"A_CustomerSalesAreaText",
+				"A_CustSlsAreaAddrDepdntInfo"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_CustomerSalesArea_Detail"
+}

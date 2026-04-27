@@ -1,0 +1,36 @@
+{
+    "ParentLink": {
+        "Property": "to_WithHoldingTax",
+        "Target": {
+            "EntitySet": "A_CustomerCompany",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Customer": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:Customer/#Value",
+        "CompanyCode": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:CompanyCode/#Value",
+        "WithholdingTaxType": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:WithholdingTaxType/#Value",
+        "WithholdingTaxCode": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:WithholdingTaxCode/#Value",
+        "WithholdingTaxAgent": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:WithholdingTaxAgent/#Value",
+        "ObligationDateBegin": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:ObligationDateBegin/#Value",
+        "ObligationDateEnd": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:ObligationDateEnd/#Value",
+        "WithholdingTaxNumber": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:WithholdingTaxNumber/#Value",
+        "WithholdingTaxCertificate": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:WithholdingTaxCertificate/#Value",
+        "WithholdingTaxExmptPercent": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:WithholdingTaxExmptPercent/#Value",
+        "ExemptionDateBegin": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:ExemptionDateBegin/#Value",
+        "ExemptionDateEnd": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:ExemptionDateEnd/#Value",
+        "ExemptionReason": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:ExemptionReason/#Value",
+        "RecipientType": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:RecipientType/#Value",
+        "AuthorizationGroup": "#Page:A_CustomerCompany_CreateA_CustomerWithHoldingTaxType/#Control:AuthorizationGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_CustomerWithHoldingTax",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

@@ -1,0 +1,34 @@
+{
+    "ParentLink": {
+        "Property": "to_BusinessPartnerRating",
+        "Target": {
+            "EntitySet": "A_BusinessPartner",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BusinessPartner/#Value",
+        "BusinessPartnerRatingProcedure": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BusinessPartnerRatingProcedure/#Value",
+        "BPRatingValidityEndDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BPRatingValidityEndDate/#Value",
+        "BusinessPartnerRatingGrade": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BusinessPartnerRatingGrade/#Value",
+        "BusinessPartnerRatingTrend": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BusinessPartnerRatingTrend/#Value",
+        "BPRatingValidityStartDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BPRatingValidityStartDate/#Value",
+        "BPRatingCreationDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BPRatingCreationDate/#Value",
+        "BusinessPartnerRatingComment": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BusinessPartnerRatingComment/#Value",
+        "BusinessPartnerRatingIsAllowed": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BusinessPartnerRatingIsAllowed/#Value",
+        "BPRatingIsValidOnKeyDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BPRatingIsValidOnKeyDate/#Value",
+        "BusinessPartnerRatingKeyDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BusinessPartnerRatingKeyDate/#Value",
+        "BusinessPartnerRatingIsExpired": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BusinessPartnerRatingIsExpired/#Value",
+        "BPRatingLongComment": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRatingType/#Control:BPRatingLongComment/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BusinessPartnerRating",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

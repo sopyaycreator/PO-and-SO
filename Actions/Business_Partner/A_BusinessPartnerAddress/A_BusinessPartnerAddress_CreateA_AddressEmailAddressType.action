@@ -1,0 +1,28 @@
+{
+    "ParentLink": {
+        "Property": "to_EmailAddress",
+        "Target": {
+            "EntitySet": "A_BusinessPartnerAddress",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "AddressID": "#Page:A_BusinessPartnerAddress_CreateA_AddressEmailAddressType/#Control:AddressID/#Value",
+        "Person": "#Page:A_BusinessPartnerAddress_CreateA_AddressEmailAddressType/#Control:Person/#Value",
+        "OrdinalNumber": "#Page:A_BusinessPartnerAddress_CreateA_AddressEmailAddressType/#Control:OrdinalNumber/#Value",
+        "IsDefaultEmailAddress": "#Page:A_BusinessPartnerAddress_CreateA_AddressEmailAddressType/#Control:IsDefaultEmailAddress/#Value",
+        "EmailAddress": "#Page:A_BusinessPartnerAddress_CreateA_AddressEmailAddressType/#Control:EmailAddress/#Value",
+        "SearchEmailAddress": "#Page:A_BusinessPartnerAddress_CreateA_AddressEmailAddressType/#Control:SearchEmailAddress/#Value",
+        "AddressCommunicationRemarkText": "#Page:A_BusinessPartnerAddress_CreateA_AddressEmailAddressType/#Control:AddressCommunicationRemarkText/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_AddressEmailAddress",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

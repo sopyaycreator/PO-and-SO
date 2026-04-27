@@ -1,0 +1,112 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/A_BusinessPartner_CreateA_BPRelationshipType.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_A_BPRelationshipType)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "RelationshipNumber",
+							"_Name": "RelationshipNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartner1",
+							"_Name": "BusinessPartner1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartner2",
+							"_Name": "BusinessPartner2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "ValidityEndDate",
+							"Caption": "ValidityEndDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "ValidityStartDate",
+							"Caption": "ValidityStartDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"_Name": "IsStandardRelationship",
+							"Caption": "IsStandardRelationship",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "RelationshipCategory",
+							"_Name": "RelationshipCategory",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPRelationshipType",
+							"_Name": "BPRelationshipType",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CreatedByUser",
+							"_Name": "CreatedByUser",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "CreationDate",
+							"Caption": "CreationDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "CreationTime",
+							"_Name": "CreationTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LastChangedByUser",
+							"_Name": "LastChangedByUser",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "LastChangeDate",
+							"Caption": "LastChangeDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "LastChangeTime",
+							"_Name": "LastChangeTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartner_CreateA_BPRelationshipType"
+}

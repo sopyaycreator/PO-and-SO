@@ -1,0 +1,102 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BPDataController",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPDataController/NavToA_BPDataController_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Rules/Business_Partner/A_BPDataController/A_BPDataController_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_BPDataControllerType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{BusinessPartner}",
+						"Subhead": "{DataController}",
+						"BodyText": "",
+						"Footnote": "{DataControlAssignmentStatus}",
+						"Description": "{PurposeForPersonalData}",
+						"StatusText": "{BPDataControllerIsDerived}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{PurposeDerived}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DataController",
+							"Value": "{DataController}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PurposeForPersonalData",
+							"Value": "{PurposeForPersonalData}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DataControlAssignmentStatus",
+							"Value": "{DataControlAssignmentStatus}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPDataControllerIsDerived",
+							"Value": "{BPDataControllerIsDerived}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PurposeDerived",
+							"Value": "{PurposeDerived}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PurposeType",
+							"Value": "{PurposeType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPurposeFlag",
+							"Value": "{BusinessPurposeFlag}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BPDataController_Detail"
+}

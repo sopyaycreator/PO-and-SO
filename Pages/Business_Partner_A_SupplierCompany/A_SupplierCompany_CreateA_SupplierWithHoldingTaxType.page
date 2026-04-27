@@ -1,0 +1,106 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierCompany/A_SupplierCompany_CreateA_SupplierWithHoldingTaxType.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_A_SupplierWithHoldingTaxType)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Supplier",
+							"_Name": "Supplier",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CompanyCode",
+							"_Name": "CompanyCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "WithholdingTaxType",
+							"_Name": "WithholdingTaxType",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "ExemptionDateBegin",
+							"Caption": "ExemptionDateBegin",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "ExemptionDateEnd",
+							"Caption": "ExemptionDateEnd",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "ExemptionReason",
+							"_Name": "ExemptionReason",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "IsWithholdingTaxSubject",
+							"Caption": "IsWithholdingTaxSubject",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "RecipientType",
+							"_Name": "RecipientType",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "WithholdingTaxCertificate",
+							"_Name": "WithholdingTaxCertificate",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "WithholdingTaxCode",
+							"_Name": "WithholdingTaxCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "WithholdingTaxExmptPercent",
+							"KeyboardType": "Number",
+							"_Name": "WithholdingTaxExmptPercent",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "WithholdingTaxNumber",
+							"_Name": "WithholdingTaxNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AuthorizationGroup",
+							"_Name": "AuthorizationGroup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_SupplierCompany_CreateA_SupplierWithHoldingTaxType"
+}

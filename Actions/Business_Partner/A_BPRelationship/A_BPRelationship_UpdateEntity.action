@@ -1,0 +1,30 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BPRelationship",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "RelationshipNumber": "#Page:A_BPRelationship_Edit/#Control:RelationshipNumber/#Value",
+        "BusinessPartner1": "#Page:A_BPRelationship_Edit/#Control:BusinessPartner1/#Value",
+        "BusinessPartner2": "#Page:A_BPRelationship_Edit/#Control:BusinessPartner2/#Value",
+        "ValidityEndDate": "#Page:A_BPRelationship_Edit/#Control:ValidityEndDate/#Value",
+        "ValidityStartDate": "#Page:A_BPRelationship_Edit/#Control:ValidityStartDate/#Value",
+        "IsStandardRelationship": "#Page:A_BPRelationship_Edit/#Control:IsStandardRelationship/#Value",
+        "RelationshipCategory": "#Page:A_BPRelationship_Edit/#Control:RelationshipCategory/#Value",
+        "BPRelationshipType": "#Page:A_BPRelationship_Edit/#Control:BPRelationshipType/#Value",
+        "CreatedByUser": "#Page:A_BPRelationship_Edit/#Control:CreatedByUser/#Value",
+        "CreationDate": "#Page:A_BPRelationship_Edit/#Control:CreationDate/#Value",
+        "CreationTime": "#Page:A_BPRelationship_Edit/#Control:CreationTime/#Value",
+        "LastChangedByUser": "#Page:A_BPRelationship_Edit/#Control:LastChangedByUser/#Value",
+        "LastChangeDate": "#Page:A_BPRelationship_Edit/#Control:LastChangeDate/#Value",
+        "LastChangeTime": "#Page:A_BPRelationship_Edit/#Control:LastChangeTime/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

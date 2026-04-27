@@ -1,0 +1,74 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BusinessPartnerTaxNumber",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerTaxNumber/A_BusinessPartnerTaxNumber_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_A_BusinessPartnerTaxNumberType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "BusinessPartner",
+							"_Name": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "BPTaxType",
+							"_Name": "BPTaxType",
+							"Value": "{BPTaxType}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "BPTaxNumber",
+							"_Name": "BPTaxNumber",
+							"Value": "{BPTaxNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPTaxLongNumber",
+							"_Name": "BPTaxLongNumber",
+							"Value": "{BPTaxLongNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AuthorizationGroup",
+							"_Name": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartnerTaxNumber_Edit"
+}

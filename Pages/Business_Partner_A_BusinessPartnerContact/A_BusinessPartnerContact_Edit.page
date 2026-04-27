@@ -1,0 +1,90 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BusinessPartnerContact",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerContact/A_BusinessPartnerContact_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_A_BusinessPartnerContactType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "RelationshipNumber",
+							"_Name": "RelationshipNumber",
+							"Value": "{RelationshipNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "BusinessPartnerCompany",
+							"_Name": "BusinessPartnerCompany",
+							"Value": "{BusinessPartnerCompany}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "BusinessPartnerPerson",
+							"_Name": "BusinessPartnerPerson",
+							"Value": "{BusinessPartnerPerson}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "ValidityEndDate",
+							"Value": "{ValidityEndDate}",
+							"Caption": "ValidityEndDate",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"IsEditable": false
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "ValidityStartDate",
+							"Value": "{ValidityStartDate}",
+							"Caption": "ValidityStartDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"_Name": "IsStandardRelationship",
+							"Caption": "IsStandardRelationship",
+							"Value": "{IsStandardRelationship}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "RelationshipCategory",
+							"_Name": "RelationshipCategory",
+							"Value": "{RelationshipCategory}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartnerContact_Edit"
+}

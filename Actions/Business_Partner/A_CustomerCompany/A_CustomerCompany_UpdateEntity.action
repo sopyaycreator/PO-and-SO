@@ -1,0 +1,51 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_CustomerCompany",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Customer": "#Page:A_CustomerCompany_Edit/#Control:Customer/#Value",
+        "CompanyCode": "#Page:A_CustomerCompany_Edit/#Control:CompanyCode/#Value",
+        "APARToleranceGroup": "#Page:A_CustomerCompany_Edit/#Control:APARToleranceGroup/#Value",
+        "AccountByCustomer": "#Page:A_CustomerCompany_Edit/#Control:AccountByCustomer/#Value",
+        "AccountingClerk": "#Page:A_CustomerCompany_Edit/#Control:AccountingClerk/#Value",
+        "AccountingClerkFaxNumber": "#Page:A_CustomerCompany_Edit/#Control:AccountingClerkFaxNumber/#Value",
+        "AccountingClerkInternetAddress": "#Page:A_CustomerCompany_Edit/#Control:AccountingClerkInternetAddress/#Value",
+        "AccountingClerkPhoneNumber": "#Page:A_CustomerCompany_Edit/#Control:AccountingClerkPhoneNumber/#Value",
+        "AlternativePayerAccount": "#Page:A_CustomerCompany_Edit/#Control:AlternativePayerAccount/#Value",
+        "AuthorizationGroup": "#Page:A_CustomerCompany_Edit/#Control:AuthorizationGroup/#Value",
+        "CollectiveInvoiceVariant": "#Page:A_CustomerCompany_Edit/#Control:CollectiveInvoiceVariant/#Value",
+        "CustomerAccountNote": "#Page:A_CustomerCompany_Edit/#Control:CustomerAccountNote/#Value",
+        "CustomerHeadOffice": "#Page:A_CustomerCompany_Edit/#Control:CustomerHeadOffice/#Value",
+        "CustomerSupplierClearingIsUsed": "#Page:A_CustomerCompany_Edit/#Control:CustomerSupplierClearingIsUsed/#Value",
+        "HouseBank": "#Page:A_CustomerCompany_Edit/#Control:HouseBank/#Value",
+        "InterestCalculationCode": "#Page:A_CustomerCompany_Edit/#Control:InterestCalculationCode/#Value",
+        "InterestCalculationDate": "#Page:A_CustomerCompany_Edit/#Control:InterestCalculationDate/#Value",
+        "IntrstCalcFrequencyInMonths": "#Page:A_CustomerCompany_Edit/#Control:IntrstCalcFrequencyInMonths/#Value",
+        "IsToBeLocallyProcessed": "#Page:A_CustomerCompany_Edit/#Control:IsToBeLocallyProcessed/#Value",
+        "ItemIsToBePaidSeparately": "#Page:A_CustomerCompany_Edit/#Control:ItemIsToBePaidSeparately/#Value",
+        "LayoutSortingRule": "#Page:A_CustomerCompany_Edit/#Control:LayoutSortingRule/#Value",
+        "PaymentBlockingReason": "#Page:A_CustomerCompany_Edit/#Control:PaymentBlockingReason/#Value",
+        "PaymentMethodsList": "#Page:A_CustomerCompany_Edit/#Control:PaymentMethodsList/#Value",
+        "PaymentReason": "#Page:A_CustomerCompany_Edit/#Control:PaymentReason/#Value",
+        "PaymentTerms": "#Page:A_CustomerCompany_Edit/#Control:PaymentTerms/#Value",
+        "PaytAdviceIsSentbyEDI": "#Page:A_CustomerCompany_Edit/#Control:PaytAdviceIsSentbyEDI/#Value",
+        "PhysicalInventoryBlockInd": "#Page:A_CustomerCompany_Edit/#Control:PhysicalInventoryBlockInd/#Value",
+        "ReconciliationAccount": "#Page:A_CustomerCompany_Edit/#Control:ReconciliationAccount/#Value",
+        "RecordPaymentHistoryIndicator": "#Page:A_CustomerCompany_Edit/#Control:RecordPaymentHistoryIndicator/#Value",
+        "UserAtCustomer": "#Page:A_CustomerCompany_Edit/#Control:UserAtCustomer/#Value",
+        "DeletionIndicator": "#Page:A_CustomerCompany_Edit/#Control:DeletionIndicator/#Value",
+        "CashPlanningGroup": "#Page:A_CustomerCompany_Edit/#Control:CashPlanningGroup/#Value",
+        "KnownOrNegotiatedLeave": "#Page:A_CustomerCompany_Edit/#Control:KnownOrNegotiatedLeave/#Value",
+        "ValueAdjustmentKey": "#Page:A_CustomerCompany_Edit/#Control:ValueAdjustmentKey/#Value",
+        "CustomerAccountGroup": "#Page:A_CustomerCompany_Edit/#Control:CustomerAccountGroup/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

@@ -1,0 +1,20 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_CustomerText",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Customer": "#Page:A_CustomerText_Edit/#Control:Customer/#Value",
+        "Language": "#Page:A_CustomerText_Edit/#Control:Language/#Value",
+        "LongTextID": "#Page:A_CustomerText_Edit/#Control:LongTextID/#Value",
+        "LongText": "#Page:A_CustomerText_Edit/#Control:LongText/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

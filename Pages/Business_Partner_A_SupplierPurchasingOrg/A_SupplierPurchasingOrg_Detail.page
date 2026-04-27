@@ -1,0 +1,335 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_SupplierPurchasingOrg",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierPurchasingOrg/NavToA_SupplierPurchasingOrg_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierPurchasingOrg/A_SupplierPurchasingOrg_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_SupplierPurchasingOrgType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{SupplierRespSalesPersonName}",
+						"Subhead": "{Supplier}",
+						"BodyText": "",
+						"Footnote": "{AutomaticEvaluatedRcptSettlmt}",
+						"Description": "{PurchasingOrganization}",
+						"StatusText": "{CalculationSchemaGroupCode}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{DeletionIndicator}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Supplier",
+							"Value": "{Supplier}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PurchasingOrganization",
+							"Value": "{PurchasingOrganization}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AutomaticEvaluatedRcptSettlmt",
+							"Value": "{AutomaticEvaluatedRcptSettlmt}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CalculationSchemaGroupCode",
+							"Value": "{CalculationSchemaGroupCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DeletionIndicator",
+							"Value": "{DeletionIndicator}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "EvaldReceiptSettlementIsActive",
+							"Value": "{EvaldReceiptSettlementIsActive}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IncotermsClassification",
+							"Value": "{IncotermsClassification}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IncotermsTransferLocation",
+							"Value": "{IncotermsTransferLocation}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IncotermsVersion",
+							"Value": "{IncotermsVersion}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IncotermsLocation1",
+							"Value": "{IncotermsLocation1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IncotermsLocation2",
+							"Value": "{IncotermsLocation2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IntrastatCrsBorderTrMode",
+							"Value": "{IntrastatCrsBorderTrMode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InvoiceIsGoodsReceiptBased",
+							"Value": "{InvoiceIsGoodsReceiptBased}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InvoiceIsMMServiceEntryBased",
+							"Value": "{InvoiceIsMMServiceEntryBased}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "MaterialPlannedDeliveryDurn",
+							"Value": "{MaterialPlannedDeliveryDurn}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "MinimumOrderAmount",
+							"Value": "{MinimumOrderAmount}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentTerms",
+							"Value": "{PaymentTerms}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PlanningCycle",
+							"Value": "{PlanningCycle}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PricingDateControl",
+							"Value": "{PricingDateControl}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ProdStockAndSlsDataTransfPrfl",
+							"Value": "{ProdStockAndSlsDataTransfPrfl}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ProductUnitGroup",
+							"Value": "{ProductUnitGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PurOrdAutoGenerationIsAllowed",
+							"Value": "{PurOrdAutoGenerationIsAllowed}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PurchaseOrderCurrency",
+							"Value": "{PurchaseOrderCurrency}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PurchasingGroup",
+							"Value": "{PurchasingGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PurchasingIsBlockedForSupplier",
+							"Value": "{PurchasingIsBlockedForSupplier}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "RoundingProfile",
+							"Value": "{RoundingProfile}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ShippingCondition",
+							"Value": "{ShippingCondition}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SuplrDiscountInKindIsGranted",
+							"Value": "{SuplrDiscountInKindIsGranted}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SuplrInvcRevalIsAllowed",
+							"Value": "{SuplrInvcRevalIsAllowed}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SuplrIsRlvtForSettlmtMgmt",
+							"Value": "{SuplrIsRlvtForSettlmtMgmt}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SuplrPurgOrgIsRlvtForPriceDetn",
+							"Value": "{SuplrPurgOrgIsRlvtForPriceDetn}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierABCClassificationCode",
+							"Value": "{SupplierABCClassificationCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierAccountNumber",
+							"Value": "{SupplierAccountNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierIsReturnsSupplier",
+							"Value": "{SupplierIsReturnsSupplier}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierPhoneNumber",
+							"Value": "{SupplierPhoneNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierRespSalesPersonName",
+							"Value": "{SupplierRespSalesPersonName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierConfirmationControlKey",
+							"Value": "{SupplierConfirmationControlKey}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsOrderAcknRqd",
+							"Value": "{IsOrderAcknRqd}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierAccountGroup",
+							"Value": "{SupplierAccountGroup}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "to_PartnerFunction",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{SupplierSubrange}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Supplier}",
+						"Footnote": "{Plant}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{PartnerFunction}",
+						"Subhead": "{PurchasingOrganization}",
+						"SubstatusText": "{PartnerCounter}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_PartnerFunction",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_PurchasingOrgText",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{PurchasingOrganization}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{LongTextID}",
+						"Footnote": "{Language}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{LongText}",
+						"Subhead": "{Supplier}",
+						"SubstatusText": "",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_PurchasingOrgText",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"A_SupplierPartnerFunc",
+				"A_SupplierPurchasingOrgText"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_SupplierPurchasingOrg_Detail"
+}

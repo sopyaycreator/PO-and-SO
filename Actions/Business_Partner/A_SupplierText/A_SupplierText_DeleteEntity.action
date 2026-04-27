@@ -1,0 +1,13 @@
+{
+    "Target": {
+        "EntitySet": "A_SupplierText",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/DeleteEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/DeleteEntityFailureMessage.action",
+    "ActionResult": {
+        "_Name": "delete"
+    },
+    "_Type": "Action.Type.ODataService.DeleteEntity"
+}

@@ -1,0 +1,227 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_CustomerUnloadingPoint",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerUnloadingPoint/NavToA_CustomerUnloadingPoint_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Rules/Business_Partner/A_CustomerUnloadingPoint/A_CustomerUnloadingPoint_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_CustomerUnloadingPointType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{UnloadingPointName}",
+						"Subhead": "{Customer}",
+						"BodyText": "",
+						"Footnote": "{BPGoodsReceivingHoursCode}",
+						"Description": "{CustomerFactoryCalenderCode}",
+						"StatusText": "{IsDfltBPUnloadingPoint}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{MondayMorningOpeningTime}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Customer",
+							"Value": "{Customer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "UnloadingPointName",
+							"Value": "{UnloadingPointName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerFactoryCalenderCode",
+							"Value": "{CustomerFactoryCalenderCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPGoodsReceivingHoursCode",
+							"Value": "{BPGoodsReceivingHoursCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsDfltBPUnloadingPoint",
+							"Value": "{IsDfltBPUnloadingPoint}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "MondayMorningOpeningTime",
+							"Value": "{MondayMorningOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "MondayMorningClosingTime",
+							"Value": "{MondayMorningClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "MondayAfternoonOpeningTime",
+							"Value": "{MondayAfternoonOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "MondayAfternoonClosingTime",
+							"Value": "{MondayAfternoonClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TuesdayMorningOpeningTime",
+							"Value": "{TuesdayMorningOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TuesdayMorningClosingTime",
+							"Value": "{TuesdayMorningClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TuesdayAfternoonOpeningTime",
+							"Value": "{TuesdayAfternoonOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TuesdayAfternoonClosingTime",
+							"Value": "{TuesdayAfternoonClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "WednesdayMorningOpeningTime",
+							"Value": "{WednesdayMorningOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "WednesdayMorningClosingTime",
+							"Value": "{WednesdayMorningClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "WednesdayAfternoonOpeningTime",
+							"Value": "{WednesdayAfternoonOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "WednesdayAfternoonClosingTime",
+							"Value": "{WednesdayAfternoonClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ThursdayMorningOpeningTime",
+							"Value": "{ThursdayMorningOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ThursdayMorningClosingTime",
+							"Value": "{ThursdayMorningClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ThursdayAfternoonOpeningTime",
+							"Value": "{ThursdayAfternoonOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ThursdayAfternoonClosingTime",
+							"Value": "{ThursdayAfternoonClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FridayMorningOpeningTime",
+							"Value": "{FridayMorningOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FridayMorningClosingTime",
+							"Value": "{FridayMorningClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FridayAfternoonOpeningTime",
+							"Value": "{FridayAfternoonOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FridayAfternoonClosingTime",
+							"Value": "{FridayAfternoonClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SaturdayMorningOpeningTime",
+							"Value": "{SaturdayMorningOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SaturdayMorningClosingTime",
+							"Value": "{SaturdayMorningClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SaturdayAfternoonOpeningTime",
+							"Value": "{SaturdayAfternoonOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SaturdayAfternoonClosingTime",
+							"Value": "{SaturdayAfternoonClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SundayMorningOpeningTime",
+							"Value": "{SundayMorningOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SundayMorningClosingTime",
+							"Value": "{SundayMorningClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SundayAfternoonOpeningTime",
+							"Value": "{SundayAfternoonOpeningTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SundayAfternoonClosingTime",
+							"Value": "{SundayAfternoonClosingTime}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_CustomerUnloadingPoint_Detail"
+}

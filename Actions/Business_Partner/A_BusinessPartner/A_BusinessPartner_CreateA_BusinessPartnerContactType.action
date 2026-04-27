@@ -1,0 +1,28 @@
+{
+    "ParentLink": {
+        "Property": "to_BusinessPartnerContact",
+        "Target": {
+            "EntitySet": "A_BusinessPartner",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "RelationshipNumber": "#Page:A_BusinessPartner_CreateA_BusinessPartnerContactType/#Control:RelationshipNumber/#Value",
+        "BusinessPartnerCompany": "#Page:A_BusinessPartner_CreateA_BusinessPartnerContactType/#Control:BusinessPartnerCompany/#Value",
+        "BusinessPartnerPerson": "#Page:A_BusinessPartner_CreateA_BusinessPartnerContactType/#Control:BusinessPartnerPerson/#Value",
+        "ValidityEndDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerContactType/#Control:ValidityEndDate/#Value",
+        "ValidityStartDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerContactType/#Control:ValidityStartDate/#Value",
+        "IsStandardRelationship": "#Page:A_BusinessPartner_CreateA_BusinessPartnerContactType/#Control:IsStandardRelationship/#Value",
+        "RelationshipCategory": "#Page:A_BusinessPartner_CreateA_BusinessPartnerContactType/#Control:RelationshipCategory/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BusinessPartnerContact",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

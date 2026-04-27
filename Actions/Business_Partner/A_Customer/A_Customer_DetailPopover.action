@@ -1,0 +1,40 @@
+{
+    "PopoverItems": [{
+            "Title": "Add A_CustAddrDepdntExtIdentifierType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_CreateA_CustAddrDepdntExtIdentifierType.action"
+        },
+        {
+            "Title": "Add A_CustAddrDepdntInformationType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_CreateA_CustAddrDepdntInformationType.action"
+        },
+        {
+            "Title": "Add A_CustomerCompanyType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_CreateA_CustomerCompanyType.action"
+        },
+        {
+            "Title": "Add A_CustomerSalesAreaType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_CreateA_CustomerSalesAreaType.action"
+        },
+        {
+            "Title": "Add A_CustomerTaxGroupingType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_CreateA_CustomerTaxGroupingType.action"
+        },
+        {
+            "Title": "Add A_CustomerTextType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_CreateA_CustomerTextType.action"
+        },
+        {
+            "Title": "Add A_CustomerUnloadingPointType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_CreateA_CustomerUnloadingPointType.action"
+        },
+        {
+            "Title": "Add A_CustUnldgPtAddrDepdntInfoType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_CreateA_CustUnldgPtAddrDepdntInfoType.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/BusinessPartner/Rules/Business_Partner/A_Customer/A_Customer_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

@@ -1,0 +1,346 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_CustomerCompany",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerCompany/NavToA_CustomerCompany_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerCompany/A_CustomerCompany_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_CustomerCompanyType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{Customer}",
+						"Subhead": "{CompanyCode}",
+						"BodyText": "",
+						"Footnote": "{AccountByCustomer}",
+						"Description": "{APARToleranceGroup}",
+						"StatusText": "{AccountingClerk}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{AccountingClerkFaxNumber}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Customer",
+							"Value": "{Customer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CompanyCode",
+							"Value": "{CompanyCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "APARToleranceGroup",
+							"Value": "{APARToleranceGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AccountByCustomer",
+							"Value": "{AccountByCustomer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AccountingClerk",
+							"Value": "{AccountingClerk}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AccountingClerkFaxNumber",
+							"Value": "{AccountingClerkFaxNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AccountingClerkInternetAddress",
+							"Value": "{AccountingClerkInternetAddress}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AccountingClerkPhoneNumber",
+							"Value": "{AccountingClerkPhoneNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AlternativePayerAccount",
+							"Value": "{AlternativePayerAccount}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CollectiveInvoiceVariant",
+							"Value": "{CollectiveInvoiceVariant}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerAccountNote",
+							"Value": "{CustomerAccountNote}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerHeadOffice",
+							"Value": "{CustomerHeadOffice}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerSupplierClearingIsUsed",
+							"Value": "{CustomerSupplierClearingIsUsed}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "HouseBank",
+							"Value": "{HouseBank}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InterestCalculationCode",
+							"Value": "{InterestCalculationCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InterestCalculationDate",
+							"Value": "{InterestCalculationDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IntrstCalcFrequencyInMonths",
+							"Value": "{IntrstCalcFrequencyInMonths}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsToBeLocallyProcessed",
+							"Value": "{IsToBeLocallyProcessed}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ItemIsToBePaidSeparately",
+							"Value": "{ItemIsToBePaidSeparately}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LayoutSortingRule",
+							"Value": "{LayoutSortingRule}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentBlockingReason",
+							"Value": "{PaymentBlockingReason}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentMethodsList",
+							"Value": "{PaymentMethodsList}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentReason",
+							"Value": "{PaymentReason}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentTerms",
+							"Value": "{PaymentTerms}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaytAdviceIsSentbyEDI",
+							"Value": "{PaytAdviceIsSentbyEDI}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PhysicalInventoryBlockInd",
+							"Value": "{PhysicalInventoryBlockInd}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ReconciliationAccount",
+							"Value": "{ReconciliationAccount}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "RecordPaymentHistoryIndicator",
+							"Value": "{RecordPaymentHistoryIndicator}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "UserAtCustomer",
+							"Value": "{UserAtCustomer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DeletionIndicator",
+							"Value": "{DeletionIndicator}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CashPlanningGroup",
+							"Value": "{CashPlanningGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "KnownOrNegotiatedLeave",
+							"Value": "{KnownOrNegotiatedLeave}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ValueAdjustmentKey",
+							"Value": "{ValueAdjustmentKey}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerAccountGroup",
+							"Value": "{CustomerAccountGroup}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "to_CompanyText",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{CompanyCode}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{LongTextID}",
+						"Footnote": "{Language}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{LongText}",
+						"Subhead": "{Customer}",
+						"SubstatusText": "",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_CompanyText",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_CustomerDunning",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{DunningArea}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Customer}",
+						"Footnote": "{DunningBlock}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{DunningLevel}",
+						"Subhead": "{CompanyCode}",
+						"SubstatusText": "{DunningProcedure}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_CustomerDunning",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_WithHoldingTax",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{WithholdingTaxType}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Customer}",
+						"Footnote": "{WithholdingTaxCode}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{WithholdingTaxAgent}",
+						"Subhead": "{CompanyCode}",
+						"SubstatusText": "{ObligationDateBegin}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_WithHoldingTax",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"A_CustomerCompanyText",
+				"A_CustomerDunning",
+				"A_CustomerWithHoldingTax"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_CustomerCompany_Detail"
+}

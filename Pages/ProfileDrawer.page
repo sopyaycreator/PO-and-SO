@@ -1,0 +1,39 @@
+{
+  "_Type": "Page",
+  "_Name": "ProfileDrawer",
+  "Caption": "Profile",
+  "Controls": [
+    {
+      "_Type": "Control.Type.SectionedTable",
+      "Sections": [
+        {
+          "_Type": "Section.Type.ObjectHeader",
+          "ObjectCell": {
+            "Title": "AK",
+            "Subheadline": "Admin User",
+            "Footnote": "SAP Developer",
+            "DetailImage": "sap-icon://customer",
+            "DetailImageIsCircular": true
+          }
+        },
+        {
+          "_Type": "Section.Type.KeyValue",
+          "KeyAndValues": [
+            {
+              "KeyName": "Email",
+              "Value": "ak@sap.com"
+            },
+            {
+              "KeyName": "Department",
+              "Value": "IT"
+            },
+            {
+              "KeyName": "Role",
+              "Value": "Administrator"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

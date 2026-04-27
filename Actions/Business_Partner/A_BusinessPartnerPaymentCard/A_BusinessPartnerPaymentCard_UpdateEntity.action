@@ -1,0 +1,29 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BusinessPartnerPaymentCard",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:BusinessPartner/#Value",
+        "PaymentCardID": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:PaymentCardID/#Value",
+        "PaymentCardType": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:PaymentCardType/#Value",
+        "CardNumber": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:CardNumber/#Value",
+        "IsStandardCard": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:IsStandardCard/#Value",
+        "CardDescription": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:CardDescription/#Value",
+        "ValidityDate": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:ValidityDate/#Value",
+        "ValidityEndDate": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:ValidityEndDate/#Value",
+        "CardHolder": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:CardHolder/#Value",
+        "CardIssuingBank": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:CardIssuingBank/#Value",
+        "CardIssueDate": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:CardIssueDate/#Value",
+        "PaymentCardLock": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:PaymentCardLock/#Value",
+        "MaskedCardNumber": "#Page:A_BusinessPartnerPaymentCard_Edit/#Control:MaskedCardNumber/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

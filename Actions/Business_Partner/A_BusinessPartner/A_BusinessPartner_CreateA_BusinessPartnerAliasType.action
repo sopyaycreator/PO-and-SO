@@ -1,0 +1,24 @@
+{
+    "ParentLink": {
+        "Property": "to_BusinessPartnerAlias",
+        "Target": {
+            "EntitySet": "A_BusinessPartner",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAliasType/#Control:BusinessPartner/#Value",
+        "BPAliasPositionNumber": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAliasType/#Control:BPAliasPositionNumber/#Value",
+        "BusinessPartnerAliasName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAliasType/#Control:BusinessPartnerAliasName/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BusinessPartnerAlias",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

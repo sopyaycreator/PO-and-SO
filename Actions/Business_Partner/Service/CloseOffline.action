@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/BusinessPartner/Services/Business_Partner.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/Business_Partner/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/Business_Partner/Service/CloseOfflineFailureMessage.action"
+}

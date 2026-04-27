@@ -1,0 +1,36 @@
+{
+    "PopoverItems": [{
+            "Title": "Add A_BuPaAddressUsageType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAddress/NavToA_BusinessPartnerAddress_CreateA_BuPaAddressUsageType.action"
+        },
+        {
+            "Title": "Add A_BPIntlAddressVersionType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAddress/NavToA_BusinessPartnerAddress_CreateA_BPIntlAddressVersionType.action"
+        },
+        {
+            "Title": "Add A_AddressEmailAddressType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAddress/NavToA_BusinessPartnerAddress_CreateA_AddressEmailAddressType.action"
+        },
+        {
+            "Title": "Add A_AddressFaxNumberType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAddress/NavToA_BusinessPartnerAddress_CreateA_AddressFaxNumberType.action"
+        },
+        {
+            "Title": "Add A_AddressPhoneNumberType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAddress/NavToA_BusinessPartnerAddress_CreateA_AddressPhoneNumberType.action"
+        },
+        {
+            "Title": "Add A_AddressPhoneNumberType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAddress/NavToA_BusinessPartnerAddress_CreateA_AddressPhoneNumberType.action"
+        },
+        {
+            "Title": "Add A_AddressHomePageURLType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAddress/NavToA_BusinessPartnerAddress_CreateA_AddressHomePageURLType.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/BusinessPartner/Rules/Business_Partner/A_BusinessPartnerAddress/A_BusinessPartnerAddress_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

@@ -1,0 +1,208 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_A_CustUnldgPtAddrDepdntInfoType)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Customer",
+							"_Name": "Customer",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AddressID",
+							"_Name": "AddressID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "UnloadingPointName",
+							"_Name": "UnloadingPointName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerFactoryCalenderCode",
+							"_Name": "CustomerFactoryCalenderCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPGoodsReceivingHoursCode",
+							"_Name": "BPGoodsReceivingHoursCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "IsDfltBPUnloadingPoint",
+							"Caption": "IsDfltBPUnloadingPoint",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "MondayMorningOpeningTime",
+							"_Name": "MondayMorningOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "MondayMorningClosingTime",
+							"_Name": "MondayMorningClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "MondayAfternoonOpeningTime",
+							"_Name": "MondayAfternoonOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "MondayAfternoonClosingTime",
+							"_Name": "MondayAfternoonClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TuesdayMorningOpeningTime",
+							"_Name": "TuesdayMorningOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TuesdayMorningClosingTime",
+							"_Name": "TuesdayMorningClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TuesdayAfternoonOpeningTime",
+							"_Name": "TuesdayAfternoonOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TuesdayAfternoonClosingTime",
+							"_Name": "TuesdayAfternoonClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "WednesdayMorningOpeningTime",
+							"_Name": "WednesdayMorningOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "WednesdayMorningClosingTime",
+							"_Name": "WednesdayMorningClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "WednesdayAfternoonOpeningTime",
+							"_Name": "WednesdayAfternoonOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "WednesdayAfternoonClosingTime",
+							"_Name": "WednesdayAfternoonClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ThursdayMorningOpeningTime",
+							"_Name": "ThursdayMorningOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ThursdayMorningClosingTime",
+							"_Name": "ThursdayMorningClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ThursdayAfternoonOpeningTime",
+							"_Name": "ThursdayAfternoonOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ThursdayAfternoonClosingTime",
+							"_Name": "ThursdayAfternoonClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FridayMorningOpeningTime",
+							"_Name": "FridayMorningOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FridayMorningClosingTime",
+							"_Name": "FridayMorningClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FridayAfternoonOpeningTime",
+							"_Name": "FridayAfternoonOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FridayAfternoonClosingTime",
+							"_Name": "FridayAfternoonClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SaturdayMorningOpeningTime",
+							"_Name": "SaturdayMorningOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SaturdayMorningClosingTime",
+							"_Name": "SaturdayMorningClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SaturdayAfternoonOpeningTime",
+							"_Name": "SaturdayAfternoonOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SaturdayAfternoonClosingTime",
+							"_Name": "SaturdayAfternoonClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SundayMorningOpeningTime",
+							"_Name": "SundayMorningOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SundayMorningClosingTime",
+							"_Name": "SundayMorningClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SundayAfternoonOpeningTime",
+							"_Name": "SundayAfternoonOpeningTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SundayAfternoonClosingTime",
+							"_Name": "SundayAfternoonClosingTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType"
+}

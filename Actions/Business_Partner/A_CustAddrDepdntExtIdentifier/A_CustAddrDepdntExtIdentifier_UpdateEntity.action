@@ -1,0 +1,19 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_CustAddrDepdntExtIdentifier",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Customer": "#Page:A_CustAddrDepdntExtIdentifier_Edit/#Control:Customer/#Value",
+        "AddressID": "#Page:A_CustAddrDepdntExtIdentifier_Edit/#Control:AddressID/#Value",
+        "CustomerExternalRefID": "#Page:A_CustAddrDepdntExtIdentifier_Edit/#Control:CustomerExternalRefID/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

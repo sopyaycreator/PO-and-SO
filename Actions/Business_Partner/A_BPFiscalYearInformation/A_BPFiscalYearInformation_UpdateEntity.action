@@ -1,0 +1,49 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BPFiscalYearInformation",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BPFiscalYearInformation_Edit/#Control:BusinessPartner/#Value",
+        "BusinessPartnerFiscalYear": "#Page:A_BPFiscalYearInformation_Edit/#Control:BusinessPartnerFiscalYear/#Value",
+        "BPBalanceSheetCurrency": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPBalanceSheetCurrency/#Value",
+        "BPAnnualStockholderMeetingDate": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPAnnualStockholderMeetingDate/#Value",
+        "BPFiscalYearStartDate": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPFiscalYearStartDate/#Value",
+        "BPFiscalYearEndDate": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPFiscalYearEndDate/#Value",
+        "BPFiscalYearIsClosed": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPFiscalYearIsClosed/#Value",
+        "BPFiscalYearClosingDate": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPFiscalYearClosingDate/#Value",
+        "BPFsclYrCnsldtdFinStatementDte": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPFsclYrCnsldtdFinStatementDte/#Value",
+        "BPCapitalStockAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPCapitalStockAmtInBalShtCrcy/#Value",
+        "BPIssdStockCptlAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPIssdStockCptlAmtInBalShtCrcy/#Value",
+        "BPPartcipnCertAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPPartcipnCertAmtInBalShtCrcy/#Value",
+        "BPEquityCapitalAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPEquityCapitalAmtInBalShtCrcy/#Value",
+        "BPGrossPremiumAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPGrossPremiumAmtInBalShtCrcy/#Value",
+        "BPNetPremiumAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPNetPremiumAmtInBalShtCrcy/#Value",
+        "BPAnnualSalesAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPAnnualSalesAmtInBalShtCrcy/#Value",
+        "BPAnnualNetIncAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPAnnualNetIncAmtInBalShtCrcy/#Value",
+        "BPDividendDistrAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPDividendDistrAmtInBalShtCrcy/#Value",
+        "BPDebtRatioInYears": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPDebtRatioInYears/#Value",
+        "BPAnnualPnLAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPAnnualPnLAmtInBalShtCrcy/#Value",
+        "BPBalSheetTotalAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPBalSheetTotalAmtInBalShtCrcy/#Value",
+        "BPNumberOfEmployees": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPNumberOfEmployees/#Value",
+        "BPCptlReserveAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPCptlReserveAmtInBalShtCrcy/#Value",
+        "BPLglRevnRsrvAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPLglRevnRsrvAmtInBalShtCrcy/#Value",
+        "RevnRsrvOwnStkAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:RevnRsrvOwnStkAmtInBalShtCrcy/#Value",
+        "BPStatryReserveAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPStatryReserveAmtInBalShtCrcy/#Value",
+        "BPOthRevnRsrvAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPOthRevnRsrvAmtInBalShtCrcy/#Value",
+        "BPPnLCarryfwdAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPPnLCarryfwdAmtInBalShtCrcy/#Value",
+        "BPSuborddLbltyAmtInBalShtCrcy": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPSuborddLbltyAmtInBalShtCrcy/#Value",
+        "BPRetOnTotalCptlEmpldInPercent": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPRetOnTotalCptlEmpldInPercent/#Value",
+        "BPDebtClearancePeriodInYears": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPDebtClearancePeriodInYears/#Value",
+        "BPFinancingCoeffInPercent": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPFinancingCoeffInPercent/#Value",
+        "BPEquityRatioInPercent": "#Page:A_BPFiscalYearInformation_Edit/#Control:BPEquityRatioInPercent/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

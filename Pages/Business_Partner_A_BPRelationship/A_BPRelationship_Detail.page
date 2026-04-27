@@ -1,0 +1,132 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BPRelationship",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPRelationship/NavToA_BPRelationship_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Rules/Business_Partner/A_BPRelationship/A_BPRelationship_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_BPRelationshipType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{RelationshipNumber}",
+						"Subhead": "{BusinessPartner1}",
+						"BodyText": "",
+						"Footnote": "{ValidityEndDate}",
+						"Description": "{BusinessPartner2}",
+						"StatusText": "{ValidityStartDate}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{IsStandardRelationship}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "RelationshipNumber",
+							"Value": "{RelationshipNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartner1",
+							"Value": "{BusinessPartner1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartner2",
+							"Value": "{BusinessPartner2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ValidityEndDate",
+							"Value": "{ValidityEndDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ValidityStartDate",
+							"Value": "{ValidityStartDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsStandardRelationship",
+							"Value": "{IsStandardRelationship}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "RelationshipCategory",
+							"Value": "{RelationshipCategory}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPRelationshipType",
+							"Value": "{BPRelationshipType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CreatedByUser",
+							"Value": "{CreatedByUser}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CreationDate",
+							"Value": "{CreationDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CreationTime",
+							"Value": "{CreationTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LastChangedByUser",
+							"Value": "{LastChangedByUser}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LastChangeDate",
+							"Value": "{LastChangeDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LastChangeTime",
+							"Value": "{LastChangeTime}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BPRelationship_Detail"
+}

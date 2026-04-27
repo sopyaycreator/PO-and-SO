@@ -1,0 +1,34 @@
+{
+    "ParentLink": {
+        "Property": "to_SupplierWithHoldingTax",
+        "Target": {
+            "EntitySet": "A_SupplierCompany",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Supplier": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:Supplier/#Value",
+        "CompanyCode": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:CompanyCode/#Value",
+        "WithholdingTaxType": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:WithholdingTaxType/#Value",
+        "ExemptionDateBegin": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:ExemptionDateBegin/#Value",
+        "ExemptionDateEnd": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:ExemptionDateEnd/#Value",
+        "ExemptionReason": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:ExemptionReason/#Value",
+        "IsWithholdingTaxSubject": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:IsWithholdingTaxSubject/#Value",
+        "RecipientType": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:RecipientType/#Value",
+        "WithholdingTaxCertificate": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:WithholdingTaxCertificate/#Value",
+        "WithholdingTaxCode": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:WithholdingTaxCode/#Value",
+        "WithholdingTaxExmptPercent": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:WithholdingTaxExmptPercent/#Value",
+        "WithholdingTaxNumber": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:WithholdingTaxNumber/#Value",
+        "AuthorizationGroup": "#Page:A_SupplierCompany_CreateA_SupplierWithHoldingTaxType/#Control:AuthorizationGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_SupplierWithHoldingTax",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

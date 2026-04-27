@@ -1,0 +1,97 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BPEmployment",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPEmployment/NavToA_BPEmployment_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Rules/Business_Partner/A_BPEmployment/A_BPEmployment_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_BPEmploymentType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{BusinessPartnerEmployerName}",
+						"Subhead": "{BusinessPartner}",
+						"BodyText": "",
+						"Footnote": "{BPEmploymentEndDate}",
+						"Description": "{BPEmploymentStartDate}",
+						"StatusText": "{BPEmploymentStatus}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{BusPartEmplrIndstryCode}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPEmploymentStartDate",
+							"Value": "{BPEmploymentStartDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPEmploymentEndDate",
+							"Value": "{BPEmploymentEndDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPEmploymentStatus",
+							"Value": "{BPEmploymentStatus}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusPartEmplrIndstryCode",
+							"Value": "{BusPartEmplrIndstryCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerEmployerName",
+							"Value": "{BusinessPartnerEmployerName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerOccupationGroup",
+							"Value": "{BusinessPartnerOccupationGroup}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BPEmployment_Detail"
+}

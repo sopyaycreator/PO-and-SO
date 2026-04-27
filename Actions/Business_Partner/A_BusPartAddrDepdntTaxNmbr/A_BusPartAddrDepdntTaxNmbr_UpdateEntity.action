@@ -1,0 +1,22 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BusPartAddrDepdntTaxNmbr",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusPartAddrDepdntTaxNmbr_Edit/#Control:BusinessPartner/#Value",
+        "AddressID": "#Page:A_BusPartAddrDepdntTaxNmbr_Edit/#Control:AddressID/#Value",
+        "BPTaxType": "#Page:A_BusPartAddrDepdntTaxNmbr_Edit/#Control:BPTaxType/#Value",
+        "BPTaxNumber": "#Page:A_BusPartAddrDepdntTaxNmbr_Edit/#Control:BPTaxNumber/#Value",
+        "BPTaxLongNumber": "#Page:A_BusPartAddrDepdntTaxNmbr_Edit/#Control:BPTaxLongNumber/#Value",
+        "AuthorizationGroup": "#Page:A_BusPartAddrDepdntTaxNmbr_Edit/#Control:AuthorizationGroup/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

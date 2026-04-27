@@ -1,0 +1,28 @@
+{
+    "ParentLink": {
+        "Property": "to_AddressUsage",
+        "Target": {
+            "EntitySet": "A_BusinessPartnerAddress",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartnerAddress_CreateA_BuPaAddressUsageType/#Control:BusinessPartner/#Value",
+        "ValidityEndDate": "#Page:A_BusinessPartnerAddress_CreateA_BuPaAddressUsageType/#Control:ValidityEndDate/#Value",
+        "AddressUsage": "#Page:A_BusinessPartnerAddress_CreateA_BuPaAddressUsageType/#Control:AddressUsage/#Value",
+        "AddressID": "#Page:A_BusinessPartnerAddress_CreateA_BuPaAddressUsageType/#Control:AddressID/#Value",
+        "ValidityStartDate": "#Page:A_BusinessPartnerAddress_CreateA_BuPaAddressUsageType/#Control:ValidityStartDate/#Value",
+        "StandardUsage": "#Page:A_BusinessPartnerAddress_CreateA_BuPaAddressUsageType/#Control:StandardUsage/#Value",
+        "AuthorizationGroup": "#Page:A_BusinessPartnerAddress_CreateA_BuPaAddressUsageType/#Control:AuthorizationGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BuPaAddressUsage",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

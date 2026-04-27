@@ -1,0 +1,39 @@
+{
+    "ParentLink": {
+        "Property": "to_BusinessPartnerBank",
+        "Target": {
+            "EntitySet": "A_BusinessPartner",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:BusinessPartner/#Value",
+        "BankIdentification": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:BankIdentification/#Value",
+        "BankCountryKey": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:BankCountryKey/#Value",
+        "BankName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:BankName/#Value",
+        "BankNumber": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:BankNumber/#Value",
+        "SWIFTCode": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:SWIFTCode/#Value",
+        "BankControlKey": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:BankControlKey/#Value",
+        "BankAccountHolderName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:BankAccountHolderName/#Value",
+        "BankAccountName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:BankAccountName/#Value",
+        "ValidityStartDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:ValidityStartDate/#Value",
+        "ValidityEndDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:ValidityEndDate/#Value",
+        "IBAN": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:IBAN/#Value",
+        "IBANValidityStartDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:IBANValidityStartDate/#Value",
+        "BankAccount": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:BankAccount/#Value",
+        "BankAccountReferenceText": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:BankAccountReferenceText/#Value",
+        "CollectionAuthInd": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:CollectionAuthInd/#Value",
+        "CityName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:CityName/#Value",
+        "AuthorizationGroup": "#Page:A_BusinessPartner_CreateA_BusinessPartnerBankType/#Control:AuthorizationGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BusinessPartnerBank",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

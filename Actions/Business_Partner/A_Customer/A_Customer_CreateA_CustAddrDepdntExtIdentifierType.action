@@ -1,0 +1,24 @@
+{
+    "ParentLink": {
+        "Property": "to_CustAddrDepdntExtIdentifier",
+        "Target": {
+            "EntitySet": "A_Customer",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Customer": "#Page:A_Customer_CreateA_CustAddrDepdntExtIdentifierType/#Control:Customer/#Value",
+        "AddressID": "#Page:A_Customer_CreateA_CustAddrDepdntExtIdentifierType/#Control:AddressID/#Value",
+        "CustomerExternalRefID": "#Page:A_Customer_CreateA_CustAddrDepdntExtIdentifierType/#Control:CustomerExternalRefID/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_CustAddrDepdntExtIdentifier",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

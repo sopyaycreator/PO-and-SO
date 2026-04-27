@@ -1,0 +1,55 @@
+{
+    "ParentLink": {
+        "Property": "to_CustUnldgPtAddrDepdntInfo",
+        "Target": {
+            "EntitySet": "A_Customer",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Customer": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:Customer/#Value",
+        "AddressID": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:AddressID/#Value",
+        "UnloadingPointName": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:UnloadingPointName/#Value",
+        "CustomerFactoryCalenderCode": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:CustomerFactoryCalenderCode/#Value",
+        "BPGoodsReceivingHoursCode": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:BPGoodsReceivingHoursCode/#Value",
+        "IsDfltBPUnloadingPoint": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:IsDfltBPUnloadingPoint/#Value",
+        "MondayMorningOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:MondayMorningOpeningTime/#Value",
+        "MondayMorningClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:MondayMorningClosingTime/#Value",
+        "MondayAfternoonOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:MondayAfternoonOpeningTime/#Value",
+        "MondayAfternoonClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:MondayAfternoonClosingTime/#Value",
+        "TuesdayMorningOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:TuesdayMorningOpeningTime/#Value",
+        "TuesdayMorningClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:TuesdayMorningClosingTime/#Value",
+        "TuesdayAfternoonOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:TuesdayAfternoonOpeningTime/#Value",
+        "TuesdayAfternoonClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:TuesdayAfternoonClosingTime/#Value",
+        "WednesdayMorningOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:WednesdayMorningOpeningTime/#Value",
+        "WednesdayMorningClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:WednesdayMorningClosingTime/#Value",
+        "WednesdayAfternoonOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:WednesdayAfternoonOpeningTime/#Value",
+        "WednesdayAfternoonClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:WednesdayAfternoonClosingTime/#Value",
+        "ThursdayMorningOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:ThursdayMorningOpeningTime/#Value",
+        "ThursdayMorningClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:ThursdayMorningClosingTime/#Value",
+        "ThursdayAfternoonOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:ThursdayAfternoonOpeningTime/#Value",
+        "ThursdayAfternoonClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:ThursdayAfternoonClosingTime/#Value",
+        "FridayMorningOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:FridayMorningOpeningTime/#Value",
+        "FridayMorningClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:FridayMorningClosingTime/#Value",
+        "FridayAfternoonOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:FridayAfternoonOpeningTime/#Value",
+        "FridayAfternoonClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:FridayAfternoonClosingTime/#Value",
+        "SaturdayMorningOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:SaturdayMorningOpeningTime/#Value",
+        "SaturdayMorningClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:SaturdayMorningClosingTime/#Value",
+        "SaturdayAfternoonOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:SaturdayAfternoonOpeningTime/#Value",
+        "SaturdayAfternoonClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:SaturdayAfternoonClosingTime/#Value",
+        "SundayMorningOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:SundayMorningOpeningTime/#Value",
+        "SundayMorningClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:SundayMorningClosingTime/#Value",
+        "SundayAfternoonOpeningTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:SundayAfternoonOpeningTime/#Value",
+        "SundayAfternoonClosingTime": "#Page:A_Customer_CreateA_CustUnldgPtAddrDepdntInfoType/#Control:SundayAfternoonClosingTime/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_CustUnldgPtAddrDepdntInfo",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

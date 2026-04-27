@@ -1,0 +1,19 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BusinessPartnerAlias",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartnerAlias_Edit/#Control:BusinessPartner/#Value",
+        "BPAliasPositionNumber": "#Page:A_BusinessPartnerAlias_Edit/#Control:BPAliasPositionNumber/#Value",
+        "BusinessPartnerAliasName": "#Page:A_BusinessPartnerAlias_Edit/#Control:BusinessPartnerAliasName/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

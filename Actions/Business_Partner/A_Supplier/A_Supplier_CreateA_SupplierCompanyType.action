@@ -1,0 +1,61 @@
+{
+    "ParentLink": {
+        "Property": "to_SupplierCompany",
+        "Target": {
+            "EntitySet": "A_Supplier",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Supplier": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:Supplier/#Value",
+        "CompanyCode": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:CompanyCode/#Value",
+        "AuthorizationGroup": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:AuthorizationGroup/#Value",
+        "CompanyCodeName": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:CompanyCodeName/#Value",
+        "PaymentBlockingReason": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:PaymentBlockingReason/#Value",
+        "SupplierIsBlockedForPosting": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:SupplierIsBlockedForPosting/#Value",
+        "AccountingClerk": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:AccountingClerk/#Value",
+        "AccountingClerkFaxNumber": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:AccountingClerkFaxNumber/#Value",
+        "AccountingClerkPhoneNumber": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:AccountingClerkPhoneNumber/#Value",
+        "SupplierClerk": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:SupplierClerk/#Value",
+        "SupplierClerkURL": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:SupplierClerkURL/#Value",
+        "PaymentMethodsList": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:PaymentMethodsList/#Value",
+        "PaymentReason": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:PaymentReason/#Value",
+        "PaymentTerms": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:PaymentTerms/#Value",
+        "ClearCustomerSupplier": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:ClearCustomerSupplier/#Value",
+        "IsToBeLocallyProcessed": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:IsToBeLocallyProcessed/#Value",
+        "ItemIsToBePaidSeparately": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:ItemIsToBePaidSeparately/#Value",
+        "PaymentIsToBeSentByEDI": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:PaymentIsToBeSentByEDI/#Value",
+        "HouseBank": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:HouseBank/#Value",
+        "CheckPaidDurationInDays": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:CheckPaidDurationInDays/#Value",
+        "Currency": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:Currency/#Value",
+        "BillOfExchLmtAmtInCoCodeCrcy": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:BillOfExchLmtAmtInCoCodeCrcy/#Value",
+        "SupplierClerkIDBySupplier": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:SupplierClerkIDBySupplier/#Value",
+        "ReconciliationAccount": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:ReconciliationAccount/#Value",
+        "InterestCalculationCode": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:InterestCalculationCode/#Value",
+        "InterestCalculationDate": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:InterestCalculationDate/#Value",
+        "IntrstCalcFrequencyInMonths": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:IntrstCalcFrequencyInMonths/#Value",
+        "SupplierHeadOffice": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:SupplierHeadOffice/#Value",
+        "AlternativePayee": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:AlternativePayee/#Value",
+        "LayoutSortingRule": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:LayoutSortingRule/#Value",
+        "APARToleranceGroup": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:APARToleranceGroup/#Value",
+        "SupplierCertificationDate": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:SupplierCertificationDate/#Value",
+        "SupplierAccountNote": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:SupplierAccountNote/#Value",
+        "WithholdingTaxCountry": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:WithholdingTaxCountry/#Value",
+        "DeletionIndicator": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:DeletionIndicator/#Value",
+        "CashPlanningGroup": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:CashPlanningGroup/#Value",
+        "IsToBeCheckedForDuplicates": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:IsToBeCheckedForDuplicates/#Value",
+        "MinorityGroup": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:MinorityGroup/#Value",
+        "CreditMemoPaymentTerms": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:CreditMemoPaymentTerms/#Value",
+        "SupplierAccountGroup": "#Page:A_Supplier_CreateA_SupplierCompanyType/#Control:SupplierAccountGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_SupplierCompany",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

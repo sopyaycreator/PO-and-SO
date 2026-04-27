@@ -1,0 +1,24 @@
+{
+  "Service": "/BusinessPartner/Services/Material_Stock.service",
+  "DefiningRequests": [
+    {
+      "Name": "A_MaterialSerialNumber",
+      "Query": "A_MaterialSerialNumber"
+    },
+    {
+      "Name": "A_MaterialStock",
+      "Query": "A_MaterialStock"
+    },
+    {
+      "Name": "A_MatlStkInAcctMod",
+      "Query": "A_MatlStkInAcctMod"
+    }
+  ],
+  "_Type": "Action.Type.ODataService.Initialize",
+  "ShowActivityIndicator": true,
+  "ActivityIndicatorText": "Downloading...",
+  "ActionResult": {
+    "_Name": "init"
+  },
+  "OnFailure": "/BusinessPartner/Actions/Business_Partner/Service/InitializeOfflineFailureMessage.action"
+}

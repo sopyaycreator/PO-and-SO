@@ -1,0 +1,379 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_Supplier",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Supplier/A_Supplier_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_SupplierType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{SupplierFullName}",
+						"Subhead": "{Supplier}",
+						"BodyText": "",
+						"Footnote": "{AuthorizationGroup}",
+						"Description": "{AlternativePayeeAccountNumber}",
+						"StatusText": "{BusinessPartnerPanNumber}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{CreatedByUser}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Supplier",
+							"Value": "{Supplier}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AlternativePayeeAccountNumber",
+							"Value": "{AlternativePayeeAccountNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerPanNumber",
+							"Value": "{BusinessPartnerPanNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CreatedByUser",
+							"Value": "{CreatedByUser}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CreationDate",
+							"Value": "{CreationDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Customer",
+							"Value": "{Customer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentIsBlockedForSupplier",
+							"Value": "{PaymentIsBlockedForSupplier}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PostingIsBlocked",
+							"Value": "{PostingIsBlocked}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PurchasingIsBlocked",
+							"Value": "{PurchasingIsBlocked}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierAccountGroup",
+							"Value": "{SupplierAccountGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierFullName",
+							"Value": "{SupplierFullName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierName",
+							"Value": "{SupplierName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "VATRegistration",
+							"Value": "{VATRegistration}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BirthDate",
+							"Value": "{BirthDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ConcatenatedInternationalLocNo",
+							"Value": "{ConcatenatedInternationalLocNo}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DeletionIndicator",
+							"Value": "{DeletionIndicator}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FiscalAddress",
+							"Value": "{FiscalAddress}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Industry",
+							"Value": "{Industry}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InternationalLocationNumber1",
+							"Value": "{InternationalLocationNumber1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InternationalLocationNumber2",
+							"Value": "{InternationalLocationNumber2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InternationalLocationNumber3",
+							"Value": "{InternationalLocationNumber3}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsNaturalPerson",
+							"Value": "{IsNaturalPerson}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentReason",
+							"Value": "{PaymentReason}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ResponsibleType",
+							"Value": "{ResponsibleType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SuplrQltyInProcmtCertfnValidTo",
+							"Value": "{SuplrQltyInProcmtCertfnValidTo}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SuplrQualityManagementSystem",
+							"Value": "{SuplrQualityManagementSystem}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierCorporateGroup",
+							"Value": "{SupplierCorporateGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SupplierProcurementBlock",
+							"Value": "{SupplierProcurementBlock}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumber1",
+							"Value": "{TaxNumber1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumber2",
+							"Value": "{TaxNumber2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumber3",
+							"Value": "{TaxNumber3}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumber4",
+							"Value": "{TaxNumber4}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumber5",
+							"Value": "{TaxNumber5}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumberResponsible",
+							"Value": "{TaxNumberResponsible}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumberType",
+							"Value": "{TaxNumberType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SuplrProofOfDelivRlvtCode",
+							"Value": "{SuplrProofOfDelivRlvtCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BR_TaxIsSplit",
+							"Value": "{BR_TaxIsSplit}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DataExchangeInstructionKey",
+							"Value": "{DataExchangeInstructionKey}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "JP_SuplrAmtInCapitalAmount",
+							"Value": "{JP_SuplrAmtInCapitalAmount}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "JP_SupplierCapitalAmountCrcy",
+							"Value": "{JP_SupplierCapitalAmountCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "to_SupplierCompany",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{CompanyCode}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{CompanyCodeName}",
+						"Footnote": "{AuthorizationGroup}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{PaymentBlockingReason}",
+						"Subhead": "{Supplier}",
+						"SubstatusText": "{SupplierIsBlockedForPosting}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierCompany/NavToA_SupplierCompany_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_SupplierCompany",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_SupplierPurchasingOrg",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{PurchasingOrganization}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{SupplierRespSalesPersonName}",
+						"Footnote": "{AutomaticEvaluatedRcptSettlmt}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{CalculationSchemaGroupCode}",
+						"Subhead": "{Supplier}",
+						"SubstatusText": "{DeletionIndicator}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierPurchasingOrg/NavToA_SupplierPurchasingOrg_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_SupplierPurchasingOrg",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_SupplierText",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{Language}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{LongTextID}",
+						"Footnote": "{LongText}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "",
+						"Subhead": "{Supplier}",
+						"SubstatusText": "",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierText/NavToA_SupplierText_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_SupplierText",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"A_SupplierCompany",
+				"A_SupplierPurchasingOrg",
+				"A_SupplierText"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_Supplier_Detail"
+}

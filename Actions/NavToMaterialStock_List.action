@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/BusinessPartner/Pages/Material_Stock/Material_Stock_List.page",
+    "_Type": "Action.Type.Navigation"
+}

@@ -1,0 +1,67 @@
+{
+    "ParentLink": {
+        "Property": "to_BusinessPartnerAddress",
+        "Target": {
+            "EntitySet": "A_BusinessPartner",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:BusinessPartner/#Value",
+        "AddressID": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:AddressID/#Value",
+        "ValidityStartDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:ValidityStartDate/#Value",
+        "ValidityEndDate": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:ValidityEndDate/#Value",
+        "AuthorizationGroup": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:AuthorizationGroup/#Value",
+        "AdditionalStreetPrefixName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:AdditionalStreetPrefixName/#Value",
+        "AdditionalStreetSuffixName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:AdditionalStreetSuffixName/#Value",
+        "AddressTimeZone": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:AddressTimeZone/#Value",
+        "CareOfName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:CareOfName/#Value",
+        "CityCode": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:CityCode/#Value",
+        "CityName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:CityName/#Value",
+        "CompanyPostalCode": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:CompanyPostalCode/#Value",
+        "Country": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:Country/#Value",
+        "County": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:County/#Value",
+        "DeliveryServiceNumber": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:DeliveryServiceNumber/#Value",
+        "DeliveryServiceTypeCode": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:DeliveryServiceTypeCode/#Value",
+        "District": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:District/#Value",
+        "FormOfAddress": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:FormOfAddress/#Value",
+        "FullName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:FullName/#Value",
+        "HomeCityName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:HomeCityName/#Value",
+        "HouseNumber": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:HouseNumber/#Value",
+        "HouseNumberSupplementText": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:HouseNumberSupplementText/#Value",
+        "Language": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:Language/#Value",
+        "POBox": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:POBox/#Value",
+        "POBoxDeviatingCityName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:POBoxDeviatingCityName/#Value",
+        "POBoxDeviatingCountry": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:POBoxDeviatingCountry/#Value",
+        "POBoxDeviatingRegion": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:POBoxDeviatingRegion/#Value",
+        "POBoxIsWithoutNumber": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:POBoxIsWithoutNumber/#Value",
+        "POBoxLobbyName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:POBoxLobbyName/#Value",
+        "POBoxPostalCode": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:POBoxPostalCode/#Value",
+        "Person": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:Person/#Value",
+        "PostalCode": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:PostalCode/#Value",
+        "PrfrdCommMediumType": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:PrfrdCommMediumType/#Value",
+        "Region": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:Region/#Value",
+        "StreetName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:StreetName/#Value",
+        "StreetPrefixName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:StreetPrefixName/#Value",
+        "StreetSuffixName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:StreetSuffixName/#Value",
+        "TaxJurisdiction": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:TaxJurisdiction/#Value",
+        "TransportZone": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:TransportZone/#Value",
+        "AddressIDByExternalSystem": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:AddressIDByExternalSystem/#Value",
+        "CountyCode": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:CountyCode/#Value",
+        "TownshipCode": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:TownshipCode/#Value",
+        "TownshipName": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:TownshipName/#Value",
+        "Building": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:Building/#Value",
+        "Floor": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:Floor/#Value",
+        "RoomNumber": "#Page:A_BusinessPartner_CreateA_BusinessPartnerAddressType/#Control:RoomNumber/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BusinessPartnerAddress",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

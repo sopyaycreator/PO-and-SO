@@ -1,0 +1,34 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BusinessPartnerBank",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartnerBank_Edit/#Control:BusinessPartner/#Value",
+        "BankIdentification": "#Page:A_BusinessPartnerBank_Edit/#Control:BankIdentification/#Value",
+        "BankCountryKey": "#Page:A_BusinessPartnerBank_Edit/#Control:BankCountryKey/#Value",
+        "BankName": "#Page:A_BusinessPartnerBank_Edit/#Control:BankName/#Value",
+        "BankNumber": "#Page:A_BusinessPartnerBank_Edit/#Control:BankNumber/#Value",
+        "SWIFTCode": "#Page:A_BusinessPartnerBank_Edit/#Control:SWIFTCode/#Value",
+        "BankControlKey": "#Page:A_BusinessPartnerBank_Edit/#Control:BankControlKey/#Value",
+        "BankAccountHolderName": "#Page:A_BusinessPartnerBank_Edit/#Control:BankAccountHolderName/#Value",
+        "BankAccountName": "#Page:A_BusinessPartnerBank_Edit/#Control:BankAccountName/#Value",
+        "ValidityStartDate": "#Page:A_BusinessPartnerBank_Edit/#Control:ValidityStartDate/#Value",
+        "ValidityEndDate": "#Page:A_BusinessPartnerBank_Edit/#Control:ValidityEndDate/#Value",
+        "IBAN": "#Page:A_BusinessPartnerBank_Edit/#Control:IBAN/#Value",
+        "IBANValidityStartDate": "#Page:A_BusinessPartnerBank_Edit/#Control:IBANValidityStartDate/#Value",
+        "BankAccount": "#Page:A_BusinessPartnerBank_Edit/#Control:BankAccount/#Value",
+        "BankAccountReferenceText": "#Page:A_BusinessPartnerBank_Edit/#Control:BankAccountReferenceText/#Value",
+        "CollectionAuthInd": "#Page:A_BusinessPartnerBank_Edit/#Control:CollectionAuthInd/#Value",
+        "CityName": "#Page:A_BusinessPartnerBank_Edit/#Control:CityName/#Value",
+        "AuthorizationGroup": "#Page:A_BusinessPartnerBank_Edit/#Control:AuthorizationGroup/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

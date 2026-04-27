@@ -1,0 +1,36 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.BottomNavigation",
+			"_Name": "BottomNavigation0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Start",
+					"Image": "sap-icon://home",
+					"PageToOpen": "/BusinessPartner/Pages/Main.page",
+					"_Name": "HomeTab"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Apps",
+					"Image": "sap-icon://grid",
+					"_Name": "AppsTab"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "To-Dos",
+					"Image": "sap-icon://task",
+					"_Name": "To-Dos"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "MainTab",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar"
+	}
+}

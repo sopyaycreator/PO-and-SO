@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add A_BPContactToAddressType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerContact/NavToA_BusinessPartnerContact_CreateA_BPContactToAddressType.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/BusinessPartner/Rules/Business_Partner/A_BusinessPartnerContact/A_BusinessPartnerContact_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

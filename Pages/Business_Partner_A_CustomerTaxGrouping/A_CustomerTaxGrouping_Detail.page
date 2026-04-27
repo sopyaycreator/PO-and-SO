@@ -1,0 +1,102 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_CustomerTaxGrouping",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerTaxGrouping/NavToA_CustomerTaxGrouping_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Rules/Business_Partner/A_CustomerTaxGrouping/A_CustomerTaxGrouping_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_CustomerTaxGroupingType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{Customer}",
+						"Subhead": "{CustomerTaxGroupingCode}",
+						"BodyText": "",
+						"Footnote": "{CustTaxGroupExemptionRate}",
+						"Description": "{CustTaxGrpExemptionCertificate}",
+						"StatusText": "{CustTaxGroupExemptionStartDate}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{CustTaxGroupExemptionEndDate}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Customer",
+							"Value": "{Customer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerTaxGroupingCode",
+							"Value": "{CustomerTaxGroupingCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustTaxGrpExemptionCertificate",
+							"Value": "{CustTaxGrpExemptionCertificate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustTaxGroupExemptionRate",
+							"Value": "{CustTaxGroupExemptionRate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustTaxGroupExemptionStartDate",
+							"Value": "{CustTaxGroupExemptionStartDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustTaxGroupExemptionEndDate",
+							"Value": "{CustTaxGroupExemptionEndDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustTaxGroupSubjectedStartDate",
+							"Value": "{CustTaxGroupSubjectedStartDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustTaxGroupSubjectedEndDate",
+							"Value": "{CustTaxGroupSubjectedEndDate}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_CustomerTaxGrouping_Detail"
+}

@@ -1,0 +1,127 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BusinessPartnerRating",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerRating/A_BusinessPartnerRating_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_A_BusinessPartnerRatingType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "BusinessPartner",
+							"_Name": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "BusinessPartnerRatingProcedure",
+							"_Name": "BusinessPartnerRatingProcedure",
+							"Value": "{BusinessPartnerRatingProcedure}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BPRatingValidityEndDate",
+							"Value": "{BPRatingValidityEndDate}",
+							"Caption": "BPRatingValidityEndDate",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"IsEditable": false
+						},
+						{
+							"Caption": "BusinessPartnerRatingGrade",
+							"_Name": "BusinessPartnerRatingGrade",
+							"Value": "{BusinessPartnerRatingGrade}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerRatingTrend",
+							"_Name": "BusinessPartnerRatingTrend",
+							"Value": "{BusinessPartnerRatingTrend}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BPRatingValidityStartDate",
+							"Value": "{BPRatingValidityStartDate}",
+							"Caption": "BPRatingValidityStartDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BPRatingCreationDate",
+							"Value": "{BPRatingCreationDate}",
+							"Caption": "BPRatingCreationDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "BusinessPartnerRatingComment",
+							"_Name": "BusinessPartnerRatingComment",
+							"Value": "{BusinessPartnerRatingComment}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "BusinessPartnerRatingIsAllowed",
+							"Caption": "BusinessPartnerRatingIsAllowed",
+							"Value": "{BusinessPartnerRatingIsAllowed}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "BPRatingIsValidOnKeyDate",
+							"Caption": "BPRatingIsValidOnKeyDate",
+							"Value": "{BPRatingIsValidOnKeyDate}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BusinessPartnerRatingKeyDate",
+							"Value": "{BusinessPartnerRatingKeyDate}",
+							"Caption": "BusinessPartnerRatingKeyDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"_Name": "BusinessPartnerRatingIsExpired",
+							"Caption": "BusinessPartnerRatingIsExpired",
+							"Value": "{BusinessPartnerRatingIsExpired}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "BPRatingLongComment",
+							"_Name": "BPRatingLongComment",
+							"Value": "{BPRatingLongComment}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartnerRating_Edit"
+}

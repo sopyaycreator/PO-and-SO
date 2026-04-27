@@ -1,0 +1,286 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_SupplierPurchasingOrg",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierPurchasingOrg/A_SupplierPurchasingOrg_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_A_SupplierPurchasingOrgType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Supplier",
+							"_Name": "Supplier",
+							"Value": "{Supplier}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "PurchasingOrganization",
+							"_Name": "PurchasingOrganization",
+							"Value": "{PurchasingOrganization}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"_Name": "AutomaticEvaluatedRcptSettlmt",
+							"Caption": "AutomaticEvaluatedRcptSettlmt",
+							"Value": "{AutomaticEvaluatedRcptSettlmt}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "CalculationSchemaGroupCode",
+							"_Name": "CalculationSchemaGroupCode",
+							"Value": "{CalculationSchemaGroupCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "DeletionIndicator",
+							"Caption": "DeletionIndicator",
+							"Value": "{DeletionIndicator}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "EvaldReceiptSettlementIsActive",
+							"Caption": "EvaldReceiptSettlementIsActive",
+							"Value": "{EvaldReceiptSettlementIsActive}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "IncotermsClassification",
+							"_Name": "IncotermsClassification",
+							"Value": "{IncotermsClassification}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IncotermsTransferLocation",
+							"_Name": "IncotermsTransferLocation",
+							"Value": "{IncotermsTransferLocation}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IncotermsVersion",
+							"_Name": "IncotermsVersion",
+							"Value": "{IncotermsVersion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IncotermsLocation1",
+							"_Name": "IncotermsLocation1",
+							"Value": "{IncotermsLocation1}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IncotermsLocation2",
+							"_Name": "IncotermsLocation2",
+							"Value": "{IncotermsLocation2}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IntrastatCrsBorderTrMode",
+							"_Name": "IntrastatCrsBorderTrMode",
+							"Value": "{IntrastatCrsBorderTrMode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "InvoiceIsGoodsReceiptBased",
+							"Caption": "InvoiceIsGoodsReceiptBased",
+							"Value": "{InvoiceIsGoodsReceiptBased}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "InvoiceIsMMServiceEntryBased",
+							"Caption": "InvoiceIsMMServiceEntryBased",
+							"Value": "{InvoiceIsMMServiceEntryBased}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "MaterialPlannedDeliveryDurn",
+							"_Name": "MaterialPlannedDeliveryDurn",
+							"Value": "{MaterialPlannedDeliveryDurn}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "MinimumOrderAmount",
+							"_Name": "MinimumOrderAmount",
+							"Value": "{MinimumOrderAmount}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PaymentTerms",
+							"_Name": "PaymentTerms",
+							"Value": "{PaymentTerms}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PlanningCycle",
+							"_Name": "PlanningCycle",
+							"Value": "{PlanningCycle}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PricingDateControl",
+							"_Name": "PricingDateControl",
+							"Value": "{PricingDateControl}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ProdStockAndSlsDataTransfPrfl",
+							"_Name": "ProdStockAndSlsDataTransfPrfl",
+							"Value": "{ProdStockAndSlsDataTransfPrfl}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ProductUnitGroup",
+							"_Name": "ProductUnitGroup",
+							"Value": "{ProductUnitGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "PurOrdAutoGenerationIsAllowed",
+							"Caption": "PurOrdAutoGenerationIsAllowed",
+							"Value": "{PurOrdAutoGenerationIsAllowed}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "PurchaseOrderCurrency",
+							"_Name": "PurchaseOrderCurrency",
+							"Value": "{PurchaseOrderCurrency}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PurchasingGroup",
+							"_Name": "PurchasingGroup",
+							"Value": "{PurchasingGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "PurchasingIsBlockedForSupplier",
+							"Caption": "PurchasingIsBlockedForSupplier",
+							"Value": "{PurchasingIsBlockedForSupplier}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "RoundingProfile",
+							"_Name": "RoundingProfile",
+							"Value": "{RoundingProfile}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ShippingCondition",
+							"_Name": "ShippingCondition",
+							"Value": "{ShippingCondition}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "SuplrDiscountInKindIsGranted",
+							"Caption": "SuplrDiscountInKindIsGranted",
+							"Value": "{SuplrDiscountInKindIsGranted}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "SuplrInvcRevalIsAllowed",
+							"Caption": "SuplrInvcRevalIsAllowed",
+							"Value": "{SuplrInvcRevalIsAllowed}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "SuplrIsRlvtForSettlmtMgmt",
+							"Caption": "SuplrIsRlvtForSettlmtMgmt",
+							"Value": "{SuplrIsRlvtForSettlmtMgmt}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "SuplrPurgOrgIsRlvtForPriceDetn",
+							"Caption": "SuplrPurgOrgIsRlvtForPriceDetn",
+							"Value": "{SuplrPurgOrgIsRlvtForPriceDetn}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "SupplierABCClassificationCode",
+							"_Name": "SupplierABCClassificationCode",
+							"Value": "{SupplierABCClassificationCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SupplierAccountNumber",
+							"_Name": "SupplierAccountNumber",
+							"Value": "{SupplierAccountNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "SupplierIsReturnsSupplier",
+							"Caption": "SupplierIsReturnsSupplier",
+							"Value": "{SupplierIsReturnsSupplier}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "SupplierPhoneNumber",
+							"_Name": "SupplierPhoneNumber",
+							"Value": "{SupplierPhoneNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SupplierRespSalesPersonName",
+							"_Name": "SupplierRespSalesPersonName",
+							"Value": "{SupplierRespSalesPersonName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SupplierConfirmationControlKey",
+							"_Name": "SupplierConfirmationControlKey",
+							"Value": "{SupplierConfirmationControlKey}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "IsOrderAcknRqd",
+							"Caption": "IsOrderAcknRqd",
+							"Value": "{IsOrderAcknRqd}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "AuthorizationGroup",
+							"_Name": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SupplierAccountGroup",
+							"_Name": "SupplierAccountGroup",
+							"Value": "{SupplierAccountGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_SupplierPurchasingOrg_Edit"
+}

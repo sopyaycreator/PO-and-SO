@@ -1,0 +1,21 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BuPaIndustry",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "IndustrySector": "#Page:A_BuPaIndustry_Edit/#Control:IndustrySector/#Value",
+        "IndustrySystemType": "#Page:A_BuPaIndustry_Edit/#Control:IndustrySystemType/#Value",
+        "BusinessPartner": "#Page:A_BuPaIndustry_Edit/#Control:BusinessPartner/#Value",
+        "IsStandardIndustry": "#Page:A_BuPaIndustry_Edit/#Control:IsStandardIndustry/#Value",
+        "IndustryKeyDescription": "#Page:A_BuPaIndustry_Edit/#Control:IndustryKeyDescription/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

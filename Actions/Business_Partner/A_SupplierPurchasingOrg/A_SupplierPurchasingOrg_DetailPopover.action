@@ -1,0 +1,16 @@
+{
+    "PopoverItems": [{
+            "Title": "Add A_SupplierPartnerFuncType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierPurchasingOrg/NavToA_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType.action"
+        },
+        {
+            "Title": "Add A_SupplierPurchasingOrgTextType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierPurchasingOrg/NavToA_SupplierPurchasingOrg_CreateA_SupplierPurchasingOrgTextType.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/BusinessPartner/Rules/Business_Partner/A_SupplierPurchasingOrg/A_SupplierPurchasingOrg_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

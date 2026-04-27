@@ -1,0 +1,88 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BPEmployment",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPEmployment/A_BPEmployment_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_A_BPEmploymentType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "BusinessPartner",
+							"_Name": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BPEmploymentStartDate",
+							"Value": "{BPEmploymentStartDate}",
+							"Caption": "BPEmploymentStartDate",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"IsEditable": false
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BPEmploymentEndDate",
+							"Value": "{BPEmploymentEndDate}",
+							"Caption": "BPEmploymentEndDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "BPEmploymentStatus",
+							"_Name": "BPEmploymentStatus",
+							"Value": "{BPEmploymentStatus}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusPartEmplrIndstryCode",
+							"_Name": "BusPartEmplrIndstryCode",
+							"Value": "{BusPartEmplrIndstryCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerEmployerName",
+							"_Name": "BusinessPartnerEmployerName",
+							"Value": "{BusinessPartnerEmployerName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerOccupationGroup",
+							"_Name": "BusinessPartnerOccupationGroup",
+							"Value": "{BusinessPartnerOccupationGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BPEmployment_Edit"
+}

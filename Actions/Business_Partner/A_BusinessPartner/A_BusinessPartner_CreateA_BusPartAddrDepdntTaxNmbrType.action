@@ -1,0 +1,27 @@
+{
+    "ParentLink": {
+        "Property": "to_BusPartAddrDepdntTaxNmbr",
+        "Target": {
+            "EntitySet": "A_BusinessPartner",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartner_CreateA_BusPartAddrDepdntTaxNmbrType/#Control:BusinessPartner/#Value",
+        "AddressID": "#Page:A_BusinessPartner_CreateA_BusPartAddrDepdntTaxNmbrType/#Control:AddressID/#Value",
+        "BPTaxType": "#Page:A_BusinessPartner_CreateA_BusPartAddrDepdntTaxNmbrType/#Control:BPTaxType/#Value",
+        "BPTaxNumber": "#Page:A_BusinessPartner_CreateA_BusPartAddrDepdntTaxNmbrType/#Control:BPTaxNumber/#Value",
+        "BPTaxLongNumber": "#Page:A_BusinessPartner_CreateA_BusPartAddrDepdntTaxNmbrType/#Control:BPTaxLongNumber/#Value",
+        "AuthorizationGroup": "#Page:A_BusinessPartner_CreateA_BusPartAddrDepdntTaxNmbrType/#Control:AuthorizationGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BusPartAddrDepdntTaxNmbr",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

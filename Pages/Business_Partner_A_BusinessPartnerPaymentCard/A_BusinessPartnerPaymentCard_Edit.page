@@ -1,0 +1,127 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BusinessPartnerPaymentCard",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerPaymentCard/A_BusinessPartnerPaymentCard_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_A_BusinessPartnerPaymentCardType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "BusinessPartner",
+							"_Name": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "PaymentCardID",
+							"_Name": "PaymentCardID",
+							"Value": "{PaymentCardID}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "PaymentCardType",
+							"_Name": "PaymentCardType",
+							"Value": "{PaymentCardType}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "CardNumber",
+							"_Name": "CardNumber",
+							"Value": "{CardNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"_Name": "IsStandardCard",
+							"Caption": "IsStandardCard",
+							"Value": "{IsStandardCard}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "CardDescription",
+							"_Name": "CardDescription",
+							"Value": "{CardDescription}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "ValidityDate",
+							"Value": "{ValidityDate}",
+							"Caption": "ValidityDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "ValidityEndDate",
+							"Value": "{ValidityEndDate}",
+							"Caption": "ValidityEndDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "CardHolder",
+							"_Name": "CardHolder",
+							"Value": "{CardHolder}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CardIssuingBank",
+							"_Name": "CardIssuingBank",
+							"Value": "{CardIssuingBank}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "CardIssueDate",
+							"Value": "{CardIssueDate}",
+							"Caption": "CardIssueDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "PaymentCardLock",
+							"_Name": "PaymentCardLock",
+							"Value": "{PaymentCardLock}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "MaskedCardNumber",
+							"_Name": "MaskedCardNumber",
+							"Value": "{MaskedCardNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartnerPaymentCard_Edit"
+}

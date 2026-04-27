@@ -1,0 +1,30 @@
+{
+    "ParentLink": {
+        "Property": "to_URLAddress",
+        "Target": {
+            "EntitySet": "A_BusinessPartnerAddress",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "AddressID": "#Page:A_BusinessPartnerAddress_CreateA_AddressHomePageURLType/#Control:AddressID/#Value",
+        "Person": "#Page:A_BusinessPartnerAddress_CreateA_AddressHomePageURLType/#Control:Person/#Value",
+        "OrdinalNumber": "#Page:A_BusinessPartnerAddress_CreateA_AddressHomePageURLType/#Control:OrdinalNumber/#Value",
+        "ValidityStartDate": "#Page:A_BusinessPartnerAddress_CreateA_AddressHomePageURLType/#Control:ValidityStartDate/#Value",
+        "IsDefaultURLAddress": "#Page:A_BusinessPartnerAddress_CreateA_AddressHomePageURLType/#Control:IsDefaultURLAddress/#Value",
+        "SearchURLAddress": "#Page:A_BusinessPartnerAddress_CreateA_AddressHomePageURLType/#Control:SearchURLAddress/#Value",
+        "AddressCommunicationRemarkText": "#Page:A_BusinessPartnerAddress_CreateA_AddressHomePageURLType/#Control:AddressCommunicationRemarkText/#Value",
+        "URLFieldLength": "#Page:A_BusinessPartnerAddress_CreateA_AddressHomePageURLType/#Control:URLFieldLength/#Value",
+        "WebsiteURL": "#Page:A_BusinessPartnerAddress_CreateA_AddressHomePageURLType/#Control:WebsiteURL/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_AddressHomePageURL",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/BusinessPartner/Pages/ProfileDrawer.page",
+    "_Type": "Action.Type.Navigation"
+}

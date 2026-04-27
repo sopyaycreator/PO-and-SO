@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/BusinessPartner/Pages/Business_Partner_A_BusinessPartnerAddress/A_BusinessPartnerAddress_CreateA_AddressHomePageURLType.page",
+    "_Type": "Action.Type.Navigation"
+}

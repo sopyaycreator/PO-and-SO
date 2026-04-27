@@ -1,0 +1,95 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ObjectTable",
+					"DataSubscriptions": [
+						"/BusinessPartner/Services/Business_Partner.service"
+					],
+					"Target": {
+						"Service": "/BusinessPartner/Services/Material_Stock.service",
+						"EntitySet": "A_MatlStkInAcctMod"
+					},
+					"_Name": "MaterialStockSection",
+					"Visible": true,
+					"EmptySection": {
+						"Caption": "No Material Stock Found",
+						"FooterVisible": false
+					},
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"ObjectCell": {
+						"AttributeLabels": true,
+						"Attributes": [
+							{
+								"Value": "Base UOM: {MaterialBaseUnit}"
+							},
+							{
+								"Value": "Special Stock: {InventorySpecialStockType}"
+							}
+						],
+						"Title": "{Material}",
+						"Subhead": "{Plant}",
+						"Footnote": "Batch: {Batch}",
+						"Description": "Storage Location: {StorageLocation}",
+						"StatusText": "{MatlWrhsStkQtyInMatlBaseUnit}",
+						"AccessoryType": "None",
+						"Tags": [],
+						"AvatarStack": {
+							"ImageIsCircular": true,
+							"ImageHasBorder": false
+						},
+						"AvatarGrid": {
+							"ImageIsCircular": true
+						},
+						
+						"_Type": "ObjectTable.Type.ObjectCell",
+						"Selected": false,
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						}
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
+					"HighlightSelectedItem": false
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Material_Stock_List",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"SystemItem": "Refresh",
+				"Position": "Right",
+				"IsIconCircular": false
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar"
+	}
+}

@@ -1,0 +1,23 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BusinessPartnerContact",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "RelationshipNumber": "#Page:A_BusinessPartnerContact_Edit/#Control:RelationshipNumber/#Value",
+        "BusinessPartnerCompany": "#Page:A_BusinessPartnerContact_Edit/#Control:BusinessPartnerCompany/#Value",
+        "BusinessPartnerPerson": "#Page:A_BusinessPartnerContact_Edit/#Control:BusinessPartnerPerson/#Value",
+        "ValidityEndDate": "#Page:A_BusinessPartnerContact_Edit/#Control:ValidityEndDate/#Value",
+        "ValidityStartDate": "#Page:A_BusinessPartnerContact_Edit/#Control:ValidityStartDate/#Value",
+        "IsStandardRelationship": "#Page:A_BusinessPartnerContact_Edit/#Control:IsStandardRelationship/#Value",
+        "RelationshipCategory": "#Page:A_BusinessPartnerContact_Edit/#Control:RelationshipCategory/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

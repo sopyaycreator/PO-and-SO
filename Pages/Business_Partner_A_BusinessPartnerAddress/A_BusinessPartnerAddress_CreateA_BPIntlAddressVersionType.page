@@ -1,0 +1,283 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAddress/A_BusinessPartnerAddress_CreateA_BPIntlAddressVersionType.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_A_BPIntlAddressVersionType)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "BusinessPartner",
+							"_Name": "BusinessPartner",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AddressID",
+							"_Name": "AddressID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AddressRepresentationCode",
+							"_Name": "AddressRepresentationCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AddresseeFullName",
+							"_Name": "AddresseeFullName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AddressIDByExternalSystem",
+							"_Name": "AddressIDByExternalSystem",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AddressPersonID",
+							"_Name": "AddressPersonID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AddressSearchTerm1",
+							"_Name": "AddressSearchTerm1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AddressSearchTerm2",
+							"_Name": "AddressSearchTerm2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AddressTimeZone",
+							"_Name": "AddressTimeZone",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CareOfName",
+							"_Name": "CareOfName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CityName",
+							"_Name": "CityName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CityNumber",
+							"_Name": "CityNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CompanyPostalCode",
+							"_Name": "CompanyPostalCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Country",
+							"_Name": "Country",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DeliveryServiceNumber",
+							"_Name": "DeliveryServiceNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DeliveryServiceTypeCode",
+							"_Name": "DeliveryServiceTypeCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DistrictName",
+							"_Name": "DistrictName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FormOfAddress",
+							"_Name": "FormOfAddress",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "HouseNumber",
+							"_Name": "HouseNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "HouseNumberSupplementText",
+							"_Name": "HouseNumberSupplementText",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Language",
+							"_Name": "Language",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "OrganizationName1",
+							"_Name": "OrganizationName1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "OrganizationName2",
+							"_Name": "OrganizationName2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "OrganizationName3",
+							"_Name": "OrganizationName3",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "OrganizationName4",
+							"_Name": "OrganizationName4",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PersonFamilyName",
+							"_Name": "PersonFamilyName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PersonGivenName",
+							"_Name": "PersonGivenName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "POBox",
+							"_Name": "POBox",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "POBoxDeviatingCityName",
+							"_Name": "POBoxDeviatingCityName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "POBoxDeviatingCountry",
+							"_Name": "POBoxDeviatingCountry",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "POBoxDeviatingRegion",
+							"_Name": "POBoxDeviatingRegion",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "POBoxIsWithoutNumber",
+							"Caption": "POBoxIsWithoutNumber",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "POBoxLobbyName",
+							"_Name": "POBoxLobbyName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "POBoxPostalCode",
+							"_Name": "POBoxPostalCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PostalCode",
+							"_Name": "PostalCode",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PrfrdCommMediumType",
+							"_Name": "PrfrdCommMediumType",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Region",
+							"_Name": "Region",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SecondaryRegion",
+							"_Name": "SecondaryRegion",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SecondaryRegionName",
+							"_Name": "SecondaryRegionName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "StreetName",
+							"_Name": "StreetName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "StreetPrefixName1",
+							"_Name": "StreetPrefixName1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "StreetPrefixName2",
+							"_Name": "StreetPrefixName2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "StreetSuffixName1",
+							"_Name": "StreetSuffixName1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "StreetSuffixName2",
+							"_Name": "StreetSuffixName2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxJurisdiction",
+							"_Name": "TaxJurisdiction",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TertiaryRegion",
+							"_Name": "TertiaryRegion",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TertiaryRegionName",
+							"_Name": "TertiaryRegionName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TransportZone",
+							"_Name": "TransportZone",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "VillageName",
+							"_Name": "VillageName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartnerAddress_CreateA_BPIntlAddressVersionType"
+}

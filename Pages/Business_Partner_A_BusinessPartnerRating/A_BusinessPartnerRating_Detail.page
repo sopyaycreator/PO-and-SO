@@ -1,0 +1,127 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BusinessPartnerRating",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerRating/NavToA_BusinessPartnerRating_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Rules/Business_Partner/A_BusinessPartnerRating/A_BusinessPartnerRating_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_BusinessPartnerRatingType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{BusinessPartner}",
+						"Subhead": "{BusinessPartnerRatingProcedure}",
+						"BodyText": "",
+						"Footnote": "{BusinessPartnerRatingGrade}",
+						"Description": "{BPRatingValidityEndDate}",
+						"StatusText": "{BusinessPartnerRatingTrend}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{BPRatingValidityStartDate}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerRatingProcedure",
+							"Value": "{BusinessPartnerRatingProcedure}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPRatingValidityEndDate",
+							"Value": "{BPRatingValidityEndDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerRatingGrade",
+							"Value": "{BusinessPartnerRatingGrade}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerRatingTrend",
+							"Value": "{BusinessPartnerRatingTrend}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPRatingValidityStartDate",
+							"Value": "{BPRatingValidityStartDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPRatingCreationDate",
+							"Value": "{BPRatingCreationDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerRatingComment",
+							"Value": "{BusinessPartnerRatingComment}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerRatingIsAllowed",
+							"Value": "{BusinessPartnerRatingIsAllowed}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPRatingIsValidOnKeyDate",
+							"Value": "{BPRatingIsValidOnKeyDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerRatingKeyDate",
+							"Value": "{BusinessPartnerRatingKeyDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerRatingIsExpired",
+							"Value": "{BusinessPartnerRatingIsExpired}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPRatingLongComment",
+							"Value": "{BPRatingLongComment}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartnerRating_Detail"
+}

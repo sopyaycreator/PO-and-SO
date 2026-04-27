@@ -1,0 +1,27 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BPAddressIndependentFax",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BPAddressIndependentFax_Edit/#Control:BusinessPartner/#Value",
+        "AddressID": "#Page:A_BPAddressIndependentFax_Edit/#Control:AddressID/#Value",
+        "Person": "#Page:A_BPAddressIndependentFax_Edit/#Control:Person/#Value",
+        "OrdinalNumber": "#Page:A_BPAddressIndependentFax_Edit/#Control:OrdinalNumber/#Value",
+        "FaxCountry": "#Page:A_BPAddressIndependentFax_Edit/#Control:FaxCountry/#Value",
+        "FaxAreaCodeSubscriberNumber": "#Page:A_BPAddressIndependentFax_Edit/#Control:FaxAreaCodeSubscriberNumber/#Value",
+        "FaxNumberExtension": "#Page:A_BPAddressIndependentFax_Edit/#Control:FaxNumberExtension/#Value",
+        "InternationalFaxNumber": "#Page:A_BPAddressIndependentFax_Edit/#Control:InternationalFaxNumber/#Value",
+        "IsDefaultFaxNumber": "#Page:A_BPAddressIndependentFax_Edit/#Control:IsDefaultFaxNumber/#Value",
+        "ValidityEndDate": "#Page:A_BPAddressIndependentFax_Edit/#Control:ValidityEndDate/#Value",
+        "ValidityStartDate": "#Page:A_BPAddressIndependentFax_Edit/#Control:ValidityStartDate/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

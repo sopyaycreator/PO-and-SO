@@ -1,0 +1,23 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BPAddressIndependentWebsite",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BPAddressIndependentWebsite_Edit/#Control:BusinessPartner/#Value",
+        "AddressID": "#Page:A_BPAddressIndependentWebsite_Edit/#Control:AddressID/#Value",
+        "Person": "#Page:A_BPAddressIndependentWebsite_Edit/#Control:Person/#Value",
+        "OrdinalNumber": "#Page:A_BPAddressIndependentWebsite_Edit/#Control:OrdinalNumber/#Value",
+        "IsDefaultURLAddress": "#Page:A_BPAddressIndependentWebsite_Edit/#Control:IsDefaultURLAddress/#Value",
+        "URLFieldLength": "#Page:A_BPAddressIndependentWebsite_Edit/#Control:URLFieldLength/#Value",
+        "WebsiteURL": "#Page:A_BPAddressIndependentWebsite_Edit/#Control:WebsiteURL/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

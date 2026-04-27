@@ -1,0 +1,32 @@
+{
+    "ParentLink": {
+        "Property": "to_PartnerFunction",
+        "Target": {
+            "EntitySet": "A_SupplierPurchasingOrg",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Supplier": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType/#Control:Supplier/#Value",
+        "PurchasingOrganization": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType/#Control:PurchasingOrganization/#Value",
+        "SupplierSubrange": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType/#Control:SupplierSubrange/#Value",
+        "Plant": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType/#Control:Plant/#Value",
+        "PartnerFunction": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType/#Control:PartnerFunction/#Value",
+        "PartnerCounter": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType/#Control:PartnerCounter/#Value",
+        "DefaultPartner": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType/#Control:DefaultPartner/#Value",
+        "CreationDate": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType/#Control:CreationDate/#Value",
+        "CreatedByUser": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType/#Control:CreatedByUser/#Value",
+        "ReferenceSupplier": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType/#Control:ReferenceSupplier/#Value",
+        "AuthorizationGroup": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPartnerFuncType/#Control:AuthorizationGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_SupplierPartnerFunc",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

@@ -1,0 +1,152 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BusinessPartnerBank",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerBank/NavToA_BusinessPartnerBank_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Rules/Business_Partner/A_BusinessPartnerBank/A_BusinessPartnerBank_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_BusinessPartnerBankType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{BankName}",
+						"Subhead": "{BusinessPartner}",
+						"BodyText": "",
+						"Footnote": "{BankCountryKey}",
+						"Description": "{BankIdentification}",
+						"StatusText": "{BankNumber}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{SWIFTCode}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BankIdentification",
+							"Value": "{BankIdentification}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BankCountryKey",
+							"Value": "{BankCountryKey}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BankName",
+							"Value": "{BankName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BankNumber",
+							"Value": "{BankNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SWIFTCode",
+							"Value": "{SWIFTCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BankControlKey",
+							"Value": "{BankControlKey}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BankAccountHolderName",
+							"Value": "{BankAccountHolderName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BankAccountName",
+							"Value": "{BankAccountName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ValidityStartDate",
+							"Value": "{ValidityStartDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ValidityEndDate",
+							"Value": "{ValidityEndDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IBAN",
+							"Value": "{IBAN}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IBANValidityStartDate",
+							"Value": "{IBANValidityStartDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BankAccount",
+							"Value": "{BankAccount}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BankAccountReferenceText",
+							"Value": "{BankAccountReferenceText}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CollectionAuthInd",
+							"Value": "{CollectionAuthInd}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CityName",
+							"Value": "{CityName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartnerBank_Detail"
+}

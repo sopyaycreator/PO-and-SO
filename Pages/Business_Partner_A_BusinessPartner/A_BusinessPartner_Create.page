@@ -1,0 +1,427 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/A_BusinessPartner_CreateEntity.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_A_BusinessPartnerType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "BusinessPartner",
+							"_Name": "BusinessPartner",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Customer",
+							"_Name": "Customer",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Supplier",
+							"_Name": "Supplier",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AcademicTitle",
+							"_Name": "AcademicTitle",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AuthorizationGroup",
+							"_Name": "AuthorizationGroup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerCategory",
+							"_Name": "BusinessPartnerCategory",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerFullName",
+							"_Name": "BusinessPartnerFullName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerGrouping",
+							"_Name": "BusinessPartnerGrouping",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerName",
+							"_Name": "BusinessPartnerName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CorrespondenceLanguage",
+							"_Name": "CorrespondenceLanguage",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CreatedByUser",
+							"_Name": "CreatedByUser",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "CreationDate",
+							"Caption": "CreationDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "CreationTime",
+							"_Name": "CreationTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FirstName",
+							"_Name": "FirstName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FormOfAddress",
+							"_Name": "FormOfAddress",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Industry",
+							"_Name": "Industry",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InternationalLocationNumber1",
+							"_Name": "InternationalLocationNumber1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InternationalLocationNumber2",
+							"_Name": "InternationalLocationNumber2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "IsFemale",
+							"Caption": "IsFemale",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "IsMale",
+							"Caption": "IsMale",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "IsNaturalPerson",
+							"_Name": "IsNaturalPerson",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "IsSexUnknown",
+							"Caption": "IsSexUnknown",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "GenderCodeName",
+							"_Name": "GenderCodeName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Language",
+							"_Name": "Language",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "LastChangeDate",
+							"Caption": "LastChangeDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "LastChangeTime",
+							"_Name": "LastChangeTime",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LastChangedByUser",
+							"_Name": "LastChangedByUser",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LastName",
+							"_Name": "LastName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LegalForm",
+							"_Name": "LegalForm",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "OrganizationBPName1",
+							"_Name": "OrganizationBPName1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "OrganizationBPName2",
+							"_Name": "OrganizationBPName2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "OrganizationBPName3",
+							"_Name": "OrganizationBPName3",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "OrganizationBPName4",
+							"_Name": "OrganizationBPName4",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "OrganizationFoundationDate",
+							"Caption": "OrganizationFoundationDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "OrganizationLiquidationDate",
+							"Caption": "OrganizationLiquidationDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "SearchTerm1",
+							"_Name": "SearchTerm1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SearchTerm2",
+							"_Name": "SearchTerm2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AdditionalLastName",
+							"_Name": "AdditionalLastName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BirthDate",
+							"Caption": "BirthDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "BusinessPartnerBirthDateStatus",
+							"_Name": "BusinessPartnerBirthDateStatus",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerBirthplaceName",
+							"_Name": "BusinessPartnerBirthplaceName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BusinessPartnerDeathDate",
+							"Caption": "BusinessPartnerDeathDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"_Name": "BusinessPartnerIsBlocked",
+							"Caption": "BusinessPartnerIsBlocked",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "BusinessPartnerType",
+							"_Name": "BusinessPartnerType",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ETag",
+							"_Name": "ETag",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "GroupBusinessPartnerName1",
+							"_Name": "GroupBusinessPartnerName1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "GroupBusinessPartnerName2",
+							"_Name": "GroupBusinessPartnerName2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IndependentAddressID",
+							"_Name": "IndependentAddressID",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InternationalLocationNumber3",
+							"_Name": "InternationalLocationNumber3",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "MiddleName",
+							"_Name": "MiddleName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NameCountry",
+							"_Name": "NameCountry",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NameFormat",
+							"_Name": "NameFormat",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PersonFullName",
+							"_Name": "PersonFullName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PersonNumber",
+							"_Name": "PersonNumber",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "IsMarkedForArchiving",
+							"Caption": "IsMarkedForArchiving",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "BusinessPartnerIDByExtSystem",
+							"_Name": "BusinessPartnerIDByExtSystem",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerPrintFormat",
+							"_Name": "BusinessPartnerPrintFormat",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerOccupation",
+							"_Name": "BusinessPartnerOccupation",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusPartMaritalStatus",
+							"_Name": "BusPartMaritalStatus",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusPartNationality",
+							"_Name": "BusPartNationality",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerBirthName",
+							"_Name": "BusinessPartnerBirthName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerSupplementName",
+							"_Name": "BusinessPartnerSupplementName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NaturalPersonEmployerName",
+							"_Name": "NaturalPersonEmployerName",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LastNamePrefix",
+							"_Name": "LastNamePrefix",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "LastNameSecondPrefix",
+							"_Name": "LastNameSecondPrefix",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Initials",
+							"_Name": "Initials",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "BPDataControllerIsNotRequired",
+							"Caption": "BPDataControllerIsNotRequired",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "TradingPartner",
+							"_Name": "TradingPartner",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "YY1_CityREMAX_bus",
+							"_Name": "YY1_CityREMAX_bus",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "YY1_CCEmail_bus",
+							"_Name": "YY1_CCEmail_bus",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "YY1_Text_bus",
+							"_Name": "YY1_Text_bus",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "YY1_CCEmail_busF",
+							"KeyboardType": "Number",
+							"_Name": "YY1_CCEmail_busF",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "YY1_CityREMAX_busF",
+							"KeyboardType": "Number",
+							"_Name": "YY1_CityREMAX_busF",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "YY1_CityREMAX_busT",
+							"_Name": "YY1_CityREMAX_busT",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "YY1_Text_busF",
+							"KeyboardType": "Number",
+							"_Name": "YY1_Text_busF",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartner_Create"
+}

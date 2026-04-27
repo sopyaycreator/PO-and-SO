@@ -1,0 +1,56 @@
+{
+    "ParentLink": {
+        "Property": "to_CustomerCompany",
+        "Target": {
+            "EntitySet": "A_Customer",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Customer": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:Customer/#Value",
+        "CompanyCode": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:CompanyCode/#Value",
+        "APARToleranceGroup": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:APARToleranceGroup/#Value",
+        "AccountByCustomer": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:AccountByCustomer/#Value",
+        "AccountingClerk": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:AccountingClerk/#Value",
+        "AccountingClerkFaxNumber": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:AccountingClerkFaxNumber/#Value",
+        "AccountingClerkInternetAddress": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:AccountingClerkInternetAddress/#Value",
+        "AccountingClerkPhoneNumber": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:AccountingClerkPhoneNumber/#Value",
+        "AlternativePayerAccount": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:AlternativePayerAccount/#Value",
+        "AuthorizationGroup": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:AuthorizationGroup/#Value",
+        "CollectiveInvoiceVariant": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:CollectiveInvoiceVariant/#Value",
+        "CustomerAccountNote": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:CustomerAccountNote/#Value",
+        "CustomerHeadOffice": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:CustomerHeadOffice/#Value",
+        "CustomerSupplierClearingIsUsed": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:CustomerSupplierClearingIsUsed/#Value",
+        "HouseBank": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:HouseBank/#Value",
+        "InterestCalculationCode": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:InterestCalculationCode/#Value",
+        "InterestCalculationDate": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:InterestCalculationDate/#Value",
+        "IntrstCalcFrequencyInMonths": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:IntrstCalcFrequencyInMonths/#Value",
+        "IsToBeLocallyProcessed": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:IsToBeLocallyProcessed/#Value",
+        "ItemIsToBePaidSeparately": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:ItemIsToBePaidSeparately/#Value",
+        "LayoutSortingRule": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:LayoutSortingRule/#Value",
+        "PaymentBlockingReason": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:PaymentBlockingReason/#Value",
+        "PaymentMethodsList": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:PaymentMethodsList/#Value",
+        "PaymentReason": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:PaymentReason/#Value",
+        "PaymentTerms": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:PaymentTerms/#Value",
+        "PaytAdviceIsSentbyEDI": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:PaytAdviceIsSentbyEDI/#Value",
+        "PhysicalInventoryBlockInd": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:PhysicalInventoryBlockInd/#Value",
+        "ReconciliationAccount": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:ReconciliationAccount/#Value",
+        "RecordPaymentHistoryIndicator": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:RecordPaymentHistoryIndicator/#Value",
+        "UserAtCustomer": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:UserAtCustomer/#Value",
+        "DeletionIndicator": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:DeletionIndicator/#Value",
+        "CashPlanningGroup": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:CashPlanningGroup/#Value",
+        "KnownOrNegotiatedLeave": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:KnownOrNegotiatedLeave/#Value",
+        "ValueAdjustmentKey": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:ValueAdjustmentKey/#Value",
+        "CustomerAccountGroup": "#Page:A_Customer_CreateA_CustomerCompanyType/#Control:CustomerAccountGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_CustomerCompany",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

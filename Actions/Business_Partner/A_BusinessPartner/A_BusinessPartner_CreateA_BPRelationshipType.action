@@ -1,0 +1,35 @@
+{
+    "ParentLink": {
+        "Property": "to_BPRelationship",
+        "Target": {
+            "EntitySet": "A_BusinessPartner",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "RelationshipNumber": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:RelationshipNumber/#Value",
+        "BusinessPartner1": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:BusinessPartner1/#Value",
+        "BusinessPartner2": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:BusinessPartner2/#Value",
+        "ValidityEndDate": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:ValidityEndDate/#Value",
+        "ValidityStartDate": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:ValidityStartDate/#Value",
+        "IsStandardRelationship": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:IsStandardRelationship/#Value",
+        "RelationshipCategory": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:RelationshipCategory/#Value",
+        "BPRelationshipType": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:BPRelationshipType/#Value",
+        "CreatedByUser": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:CreatedByUser/#Value",
+        "CreationDate": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:CreationDate/#Value",
+        "CreationTime": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:CreationTime/#Value",
+        "LastChangedByUser": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:LastChangedByUser/#Value",
+        "LastChangeDate": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:LastChangeDate/#Value",
+        "LastChangeTime": "#Page:A_BusinessPartner_CreateA_BPRelationshipType/#Control:LastChangeTime/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BPRelationship",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

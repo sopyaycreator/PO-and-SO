@@ -1,0 +1,22 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_CustAddrDepdntInformation",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Customer": "#Page:A_CustAddrDepdntInformation_Edit/#Control:Customer/#Value",
+        "AddressID": "#Page:A_CustAddrDepdntInformation_Edit/#Control:AddressID/#Value",
+        "ExpressTrainStationName": "#Page:A_CustAddrDepdntInformation_Edit/#Control:ExpressTrainStationName/#Value",
+        "TrainStationName": "#Page:A_CustAddrDepdntInformation_Edit/#Control:TrainStationName/#Value",
+        "CityCode": "#Page:A_CustAddrDepdntInformation_Edit/#Control:CityCode/#Value",
+        "County": "#Page:A_CustAddrDepdntInformation_Edit/#Control:County/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

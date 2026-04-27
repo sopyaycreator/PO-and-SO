@@ -1,0 +1,33 @@
+{
+    "ParentLink": {
+        "Property": "to_CustomerDunning",
+        "Target": {
+            "EntitySet": "A_CustomerCompany",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Customer": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:Customer/#Value",
+        "CompanyCode": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:CompanyCode/#Value",
+        "DunningArea": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:DunningArea/#Value",
+        "DunningBlock": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:DunningBlock/#Value",
+        "DunningLevel": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:DunningLevel/#Value",
+        "DunningProcedure": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:DunningProcedure/#Value",
+        "DunningRecipient": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:DunningRecipient/#Value",
+        "LastDunnedOn": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:LastDunnedOn/#Value",
+        "LegDunningProcedureOn": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:LegDunningProcedureOn/#Value",
+        "DunningClerk": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:DunningClerk/#Value",
+        "AuthorizationGroup": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:AuthorizationGroup/#Value",
+        "CustomerAccountGroup": "#Page:A_CustomerCompany_CreateA_CustomerDunningType/#Control:CustomerAccountGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_CustomerDunning",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

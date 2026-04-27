@@ -1,0 +1,27 @@
+{
+    "ParentLink": {
+        "Property": "to_CustAddrDepdntInformation",
+        "Target": {
+            "EntitySet": "A_Customer",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Customer": "#Page:A_Customer_CreateA_CustAddrDepdntInformationType/#Control:Customer/#Value",
+        "AddressID": "#Page:A_Customer_CreateA_CustAddrDepdntInformationType/#Control:AddressID/#Value",
+        "ExpressTrainStationName": "#Page:A_Customer_CreateA_CustAddrDepdntInformationType/#Control:ExpressTrainStationName/#Value",
+        "TrainStationName": "#Page:A_Customer_CreateA_CustAddrDepdntInformationType/#Control:TrainStationName/#Value",
+        "CityCode": "#Page:A_Customer_CreateA_CustAddrDepdntInformationType/#Control:CityCode/#Value",
+        "County": "#Page:A_Customer_CreateA_CustAddrDepdntInformationType/#Control:County/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_CustAddrDepdntInformation",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

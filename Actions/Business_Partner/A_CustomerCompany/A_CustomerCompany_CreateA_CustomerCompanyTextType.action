@@ -1,0 +1,26 @@
+{
+    "ParentLink": {
+        "Property": "to_CompanyText",
+        "Target": {
+            "EntitySet": "A_CustomerCompany",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Customer": "#Page:A_CustomerCompany_CreateA_CustomerCompanyTextType/#Control:Customer/#Value",
+        "CompanyCode": "#Page:A_CustomerCompany_CreateA_CustomerCompanyTextType/#Control:CompanyCode/#Value",
+        "Language": "#Page:A_CustomerCompany_CreateA_CustomerCompanyTextType/#Control:Language/#Value",
+        "LongTextID": "#Page:A_CustomerCompany_CreateA_CustomerCompanyTextType/#Control:LongTextID/#Value",
+        "LongText": "#Page:A_CustomerCompany_CreateA_CustomerCompanyTextType/#Control:LongText/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_CustomerCompanyText",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

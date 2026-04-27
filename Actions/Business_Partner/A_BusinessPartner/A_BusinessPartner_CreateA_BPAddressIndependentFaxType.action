@@ -1,0 +1,32 @@
+{
+    "ParentLink": {
+        "Property": "to_AddressIndependentFax",
+        "Target": {
+            "EntitySet": "A_BusinessPartner",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentFaxType/#Control:BusinessPartner/#Value",
+        "AddressID": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentFaxType/#Control:AddressID/#Value",
+        "Person": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentFaxType/#Control:Person/#Value",
+        "OrdinalNumber": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentFaxType/#Control:OrdinalNumber/#Value",
+        "FaxCountry": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentFaxType/#Control:FaxCountry/#Value",
+        "FaxAreaCodeSubscriberNumber": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentFaxType/#Control:FaxAreaCodeSubscriberNumber/#Value",
+        "FaxNumberExtension": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentFaxType/#Control:FaxNumberExtension/#Value",
+        "InternationalFaxNumber": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentFaxType/#Control:InternationalFaxNumber/#Value",
+        "IsDefaultFaxNumber": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentFaxType/#Control:IsDefaultFaxNumber/#Value",
+        "ValidityEndDate": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentFaxType/#Control:ValidityEndDate/#Value",
+        "ValidityStartDate": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentFaxType/#Control:ValidityStartDate/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BPAddressIndependentFax",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

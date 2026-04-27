@@ -1,0 +1,9 @@
+{
+    "Service": "/BusinessPartner/Services/Business_Partner.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/Business_Partner/Service/DownloadStartedMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/Business_Partner/Service/SyncFailureMessage.action"
+}

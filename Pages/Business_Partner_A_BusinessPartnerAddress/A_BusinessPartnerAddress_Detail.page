@@ -1,0 +1,545 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BusinessPartnerAddress",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAddress/NavToA_BusinessPartnerAddress_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAddress/A_BusinessPartnerAddress_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_BusinessPartnerAddressType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{AdditionalStreetPrefixName}",
+						"Subhead": "{BusinessPartner}",
+						"BodyText": "",
+						"Footnote": "{ValidityStartDate}",
+						"Description": "{AddressID}",
+						"StatusText": "{ValidityEndDate}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{AuthorizationGroup}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AddressID",
+							"Value": "{AddressID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ValidityStartDate",
+							"Value": "{ValidityStartDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ValidityEndDate",
+							"Value": "{ValidityEndDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AdditionalStreetPrefixName",
+							"Value": "{AdditionalStreetPrefixName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AdditionalStreetSuffixName",
+							"Value": "{AdditionalStreetSuffixName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AddressTimeZone",
+							"Value": "{AddressTimeZone}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CareOfName",
+							"Value": "{CareOfName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CityCode",
+							"Value": "{CityCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CityName",
+							"Value": "{CityName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CompanyPostalCode",
+							"Value": "{CompanyPostalCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Country",
+							"Value": "{Country}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "County",
+							"Value": "{County}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DeliveryServiceNumber",
+							"Value": "{DeliveryServiceNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DeliveryServiceTypeCode",
+							"Value": "{DeliveryServiceTypeCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "District",
+							"Value": "{District}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FormOfAddress",
+							"Value": "{FormOfAddress}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FullName",
+							"Value": "{FullName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "HomeCityName",
+							"Value": "{HomeCityName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "HouseNumber",
+							"Value": "{HouseNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "HouseNumberSupplementText",
+							"Value": "{HouseNumberSupplementText}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Language",
+							"Value": "{Language}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "POBox",
+							"Value": "{POBox}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "POBoxDeviatingCityName",
+							"Value": "{POBoxDeviatingCityName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "POBoxDeviatingCountry",
+							"Value": "{POBoxDeviatingCountry}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "POBoxDeviatingRegion",
+							"Value": "{POBoxDeviatingRegion}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "POBoxIsWithoutNumber",
+							"Value": "{POBoxIsWithoutNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "POBoxLobbyName",
+							"Value": "{POBoxLobbyName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "POBoxPostalCode",
+							"Value": "{POBoxPostalCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Person",
+							"Value": "{Person}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PostalCode",
+							"Value": "{PostalCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PrfrdCommMediumType",
+							"Value": "{PrfrdCommMediumType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Region",
+							"Value": "{Region}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "StreetName",
+							"Value": "{StreetName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "StreetPrefixName",
+							"Value": "{StreetPrefixName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "StreetSuffixName",
+							"Value": "{StreetSuffixName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxJurisdiction",
+							"Value": "{TaxJurisdiction}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TransportZone",
+							"Value": "{TransportZone}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AddressIDByExternalSystem",
+							"Value": "{AddressIDByExternalSystem}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CountyCode",
+							"Value": "{CountyCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TownshipCode",
+							"Value": "{TownshipCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TownshipName",
+							"Value": "{TownshipName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Building",
+							"Value": "{Building}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Floor",
+							"Value": "{Floor}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "RoomNumber",
+							"Value": "{RoomNumber}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "to_AddressUsage",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{ValidityEndDate}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{AddressUsage}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ValidityStartDate}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{StandardUsage}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_AddressUsage",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BPIntlAddressVersion",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{AddressID}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddresseeFullName}",
+						"Footnote": "{AddressRepresentationCode}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{AddressIDByExternalSystem}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{AddressPersonID}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BPIntlAddressVersion",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_EmailAddress",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{OrdinalNumber}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{IsDefaultEmailAddress}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{EmailAddress}",
+						"Subhead": "{Person}",
+						"SubstatusText": "{SearchEmailAddress}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_EmailAddress",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_FaxNumber",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{OrdinalNumber}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{IsDefaultFaxNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{FaxCountry}",
+						"Subhead": "{Person}",
+						"SubstatusText": "{FaxNumber}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_FaxNumber",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_MobilePhoneNumber",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{OrdinalNumber}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{DestinationLocationCountry}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{IsDefaultPhoneNumber}",
+						"Subhead": "{Person}",
+						"SubstatusText": "{PhoneNumber}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_MobilePhoneNumber",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_PhoneNumber",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{OrdinalNumber}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{DestinationLocationCountry}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{IsDefaultPhoneNumber}",
+						"Subhead": "{Person}",
+						"SubstatusText": "{PhoneNumber}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_PhoneNumber",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_URLAddress",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{OrdinalNumber}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{ValidityStartDate}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{IsDefaultURLAddress}",
+						"Subhead": "{Person}",
+						"SubstatusText": "{SearchURLAddress}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_URLAddress",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"A_BuPaAddressUsage",
+				"A_BPIntlAddressVersion",
+				"A_AddressEmailAddress",
+				"A_AddressFaxNumber",
+				"A_AddressPhoneNumber",
+				"A_AddressPhoneNumber",
+				"A_AddressHomePageURL"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartnerAddress_Detail"
+}

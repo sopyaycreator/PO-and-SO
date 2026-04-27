@@ -1,0 +1,35 @@
+{
+    "ParentLink": {
+        "Property": "to_PartnerFunction",
+        "Target": {
+            "EntitySet": "A_CustomerSalesArea",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Customer": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:Customer/#Value",
+        "SalesOrganization": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:SalesOrganization/#Value",
+        "DistributionChannel": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:DistributionChannel/#Value",
+        "Division": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:Division/#Value",
+        "PartnerCounter": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:PartnerCounter/#Value",
+        "PartnerFunction": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:PartnerFunction/#Value",
+        "BPCustomerNumber": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:BPCustomerNumber/#Value",
+        "CustomerPartnerDescription": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:CustomerPartnerDescription/#Value",
+        "DefaultPartner": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:DefaultPartner/#Value",
+        "Supplier": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:Supplier/#Value",
+        "PersonnelNumber": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:PersonnelNumber/#Value",
+        "ContactPerson": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:ContactPerson/#Value",
+        "AddressID": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:AddressID/#Value",
+        "AuthorizationGroup": "#Page:A_CustomerSalesArea_CreateA_CustSalesPartnerFuncType/#Control:AuthorizationGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_CustSalesPartnerFunc",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

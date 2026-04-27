@@ -1,0 +1,50 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_CustUnldgPtAddrDepdntInfo",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Customer": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:Customer/#Value",
+        "AddressID": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:AddressID/#Value",
+        "UnloadingPointName": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:UnloadingPointName/#Value",
+        "CustomerFactoryCalenderCode": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:CustomerFactoryCalenderCode/#Value",
+        "BPGoodsReceivingHoursCode": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:BPGoodsReceivingHoursCode/#Value",
+        "IsDfltBPUnloadingPoint": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:IsDfltBPUnloadingPoint/#Value",
+        "MondayMorningOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:MondayMorningOpeningTime/#Value",
+        "MondayMorningClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:MondayMorningClosingTime/#Value",
+        "MondayAfternoonOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:MondayAfternoonOpeningTime/#Value",
+        "MondayAfternoonClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:MondayAfternoonClosingTime/#Value",
+        "TuesdayMorningOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:TuesdayMorningOpeningTime/#Value",
+        "TuesdayMorningClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:TuesdayMorningClosingTime/#Value",
+        "TuesdayAfternoonOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:TuesdayAfternoonOpeningTime/#Value",
+        "TuesdayAfternoonClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:TuesdayAfternoonClosingTime/#Value",
+        "WednesdayMorningOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:WednesdayMorningOpeningTime/#Value",
+        "WednesdayMorningClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:WednesdayMorningClosingTime/#Value",
+        "WednesdayAfternoonOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:WednesdayAfternoonOpeningTime/#Value",
+        "WednesdayAfternoonClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:WednesdayAfternoonClosingTime/#Value",
+        "ThursdayMorningOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:ThursdayMorningOpeningTime/#Value",
+        "ThursdayMorningClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:ThursdayMorningClosingTime/#Value",
+        "ThursdayAfternoonOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:ThursdayAfternoonOpeningTime/#Value",
+        "ThursdayAfternoonClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:ThursdayAfternoonClosingTime/#Value",
+        "FridayMorningOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:FridayMorningOpeningTime/#Value",
+        "FridayMorningClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:FridayMorningClosingTime/#Value",
+        "FridayAfternoonOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:FridayAfternoonOpeningTime/#Value",
+        "FridayAfternoonClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:FridayAfternoonClosingTime/#Value",
+        "SaturdayMorningOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:SaturdayMorningOpeningTime/#Value",
+        "SaturdayMorningClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:SaturdayMorningClosingTime/#Value",
+        "SaturdayAfternoonOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:SaturdayAfternoonOpeningTime/#Value",
+        "SaturdayAfternoonClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:SaturdayAfternoonClosingTime/#Value",
+        "SundayMorningOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:SundayMorningOpeningTime/#Value",
+        "SundayMorningClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:SundayMorningClosingTime/#Value",
+        "SundayAfternoonOpeningTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:SundayAfternoonOpeningTime/#Value",
+        "SundayAfternoonClosingTime": "#Page:A_CustUnldgPtAddrDepdntInfo_Edit/#Control:SundayAfternoonClosingTime/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

@@ -1,0 +1,351 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/A_Customer_CreateA_CustomerSalesAreaType.action",
+				"Position": "Right",
+				"SystemItem": "Save",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Create_A_CustomerSalesAreaType)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Customer",
+							"_Name": "Customer",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SalesOrganization",
+							"_Name": "SalesOrganization",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DistributionChannel",
+							"_Name": "DistributionChannel",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Division",
+							"_Name": "Division",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AccountByCustomer",
+							"_Name": "AccountByCustomer",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AuthorizationGroup",
+							"_Name": "AuthorizationGroup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BillingIsBlockedForCustomer",
+							"_Name": "BillingIsBlockedForCustomer",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "CompleteDeliveryIsDefined",
+							"Caption": "CompleteDeliveryIsDefined",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "CreditControlArea",
+							"_Name": "CreditControlArea",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Currency",
+							"_Name": "Currency",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "CustIsRlvtForSettlmtMgmt",
+							"Caption": "CustIsRlvtForSettlmtMgmt",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "CustomerABCClassification",
+							"_Name": "CustomerABCClassification",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerAccountAssignmentGroup",
+							"_Name": "CustomerAccountAssignmentGroup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerGroup",
+							"_Name": "CustomerGroup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "CustomerIsRebateRelevant",
+							"Caption": "CustomerIsRebateRelevant",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "CustomerPaymentTerms",
+							"_Name": "CustomerPaymentTerms",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerPriceGroup",
+							"_Name": "CustomerPriceGroup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerPricingProcedure",
+							"_Name": "CustomerPricingProcedure",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerStatisticsGroup",
+							"_Name": "CustomerStatisticsGroup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustProdProposalProcedure",
+							"_Name": "CustProdProposalProcedure",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DeliveryIsBlockedForCustomer",
+							"_Name": "DeliveryIsBlockedForCustomer",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DeliveryPriority",
+							"_Name": "DeliveryPriority",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IncotermsClassification",
+							"_Name": "IncotermsClassification",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IncotermsLocation2",
+							"_Name": "IncotermsLocation2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IncotermsVersion",
+							"_Name": "IncotermsVersion",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IncotermsLocation1",
+							"_Name": "IncotermsLocation1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "DeletionIndicator",
+							"Caption": "DeletionIndicator",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "IncotermsTransferLocation",
+							"_Name": "IncotermsTransferLocation",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "InspSbstHasNoTimeOrQuantity",
+							"Caption": "InspSbstHasNoTimeOrQuantity",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "InvoiceDate",
+							"_Name": "InvoiceDate",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ItemOrderProbabilityInPercent",
+							"_Name": "ItemOrderProbabilityInPercent",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "ManualInvoiceMaintIsRelevant",
+							"Caption": "ManualInvoiceMaintIsRelevant",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "MaxNmbrOfPartialDelivery",
+							"KeyboardType": "Number",
+							"_Name": "MaxNmbrOfPartialDelivery",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "OrderCombinationIsAllowed",
+							"Caption": "OrderCombinationIsAllowed",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "OrderIsBlockedForCustomer",
+							"_Name": "OrderIsBlockedForCustomer",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "OverdelivTolrtdLmtRatioInPct",
+							"KeyboardType": "Number",
+							"_Name": "OverdelivTolrtdLmtRatioInPct",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PartialDeliveryIsAllowed",
+							"_Name": "PartialDeliveryIsAllowed",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PriceListType",
+							"_Name": "PriceListType",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ProductUnitGroup",
+							"_Name": "ProductUnitGroup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ProofOfDeliveryTimeValue",
+							"KeyboardType": "Number",
+							"_Name": "ProofOfDeliveryTimeValue",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SalesGroup",
+							"_Name": "SalesGroup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SalesItemProposal",
+							"_Name": "SalesItemProposal",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SalesOffice",
+							"_Name": "SalesOffice",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ShippingCondition",
+							"_Name": "ShippingCondition",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "SlsDocIsRlvtForProofOfDeliv",
+							"Caption": "SlsDocIsRlvtForProofOfDeliv",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "SlsUnlmtdOvrdelivIsAllwd",
+							"Caption": "SlsUnlmtdOvrdelivIsAllwd",
+							"Value": false,
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "SupplyingPlant",
+							"_Name": "SupplyingPlant",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SalesDistrict",
+							"_Name": "SalesDistrict",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "UnderdelivTolrtdLmtRatioInPct",
+							"KeyboardType": "Number",
+							"_Name": "UnderdelivTolrtdLmtRatioInPct",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InvoiceListSchedule",
+							"_Name": "InvoiceListSchedule",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ExchangeRateType",
+							"_Name": "ExchangeRateType",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AdditionalCustomerGroup1",
+							"_Name": "AdditionalCustomerGroup1",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AdditionalCustomerGroup2",
+							"_Name": "AdditionalCustomerGroup2",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AdditionalCustomerGroup3",
+							"_Name": "AdditionalCustomerGroup3",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AdditionalCustomerGroup4",
+							"_Name": "AdditionalCustomerGroup4",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AdditionalCustomerGroup5",
+							"_Name": "AdditionalCustomerGroup5",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PaymentGuaranteeProcedure",
+							"_Name": "PaymentGuaranteeProcedure",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerAccountGroup",
+							"_Name": "CustomerAccountGroup",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "YY1_PaymentMethod_csa",
+							"_Name": "YY1_PaymentMethod_csa",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "YY1_PaymentMethod_csaF",
+							"KeyboardType": "Number",
+							"_Name": "YY1_PaymentMethod_csaF",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_Customer_CreateA_CustomerSalesAreaType"
+}

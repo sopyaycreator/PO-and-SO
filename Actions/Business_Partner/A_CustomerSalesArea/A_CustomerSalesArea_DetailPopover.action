@@ -1,0 +1,24 @@
+{
+    "PopoverItems": [{
+            "Title": "Add A_CustSalesPartnerFuncType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerSalesArea/NavToA_CustomerSalesArea_CreateA_CustSalesPartnerFuncType.action"
+        },
+        {
+            "Title": "Add A_CustomerSalesAreaTaxType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerSalesArea/NavToA_CustomerSalesArea_CreateA_CustomerSalesAreaTaxType.action"
+        },
+        {
+            "Title": "Add A_CustomerSalesAreaTextType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerSalesArea/NavToA_CustomerSalesArea_CreateA_CustomerSalesAreaTextType.action"
+        },
+        {
+            "Title": "Add A_CustSlsAreaAddrDepdntInfoType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerSalesArea/NavToA_CustomerSalesArea_CreateA_CustSlsAreaAddrDepdntInfoType.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/BusinessPartner/Rules/Business_Partner/A_CustomerSalesArea/A_CustomerSalesArea_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

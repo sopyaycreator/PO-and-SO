@@ -1,0 +1,29 @@
+{
+    "ParentLink": {
+        "Property": "to_AddressIndependentEmail",
+        "Target": {
+            "EntitySet": "A_BusinessPartner",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentEmailType/#Control:BusinessPartner/#Value",
+        "AddressID": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentEmailType/#Control:AddressID/#Value",
+        "Person": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentEmailType/#Control:Person/#Value",
+        "OrdinalNumber": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentEmailType/#Control:OrdinalNumber/#Value",
+        "EmailAddress": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentEmailType/#Control:EmailAddress/#Value",
+        "IsDefaultEmailAddress": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentEmailType/#Control:IsDefaultEmailAddress/#Value",
+        "ValidityStartDate": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentEmailType/#Control:ValidityStartDate/#Value",
+        "ValidityEndDate": "#Page:A_BusinessPartner_CreateA_BPAddressIndependentEmailType/#Control:ValidityEndDate/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BPAddressIndependentEmail",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

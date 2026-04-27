@@ -1,0 +1,72 @@
+{
+    "ParentLink": {
+        "Property": "to_ContactAddress",
+        "Target": {
+            "EntitySet": "A_BusinessPartnerContact",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "RelationshipNumber": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:RelationshipNumber/#Value",
+        "BusinessPartnerCompany": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:BusinessPartnerCompany/#Value",
+        "BusinessPartnerPerson": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:BusinessPartnerPerson/#Value",
+        "ValidityEndDate": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:ValidityEndDate/#Value",
+        "AddressID": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:AddressID/#Value",
+        "AddressNumber": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:AddressNumber/#Value",
+        "AdditionalStreetPrefixName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:AdditionalStreetPrefixName/#Value",
+        "AdditionalStreetSuffixName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:AdditionalStreetSuffixName/#Value",
+        "AddressTimeZone": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:AddressTimeZone/#Value",
+        "CareOfName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:CareOfName/#Value",
+        "CityCode": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:CityCode/#Value",
+        "CityName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:CityName/#Value",
+        "CompanyPostalCode": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:CompanyPostalCode/#Value",
+        "Country": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:Country/#Value",
+        "County": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:County/#Value",
+        "DeliveryServiceNumber": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:DeliveryServiceNumber/#Value",
+        "DeliveryServiceTypeCode": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:DeliveryServiceTypeCode/#Value",
+        "District": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:District/#Value",
+        "FormOfAddress": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:FormOfAddress/#Value",
+        "FullName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:FullName/#Value",
+        "HomeCityName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:HomeCityName/#Value",
+        "HouseNumber": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:HouseNumber/#Value",
+        "HouseNumberSupplementText": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:HouseNumberSupplementText/#Value",
+        "Language": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:Language/#Value",
+        "POBox": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:POBox/#Value",
+        "POBoxDeviatingCityName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:POBoxDeviatingCityName/#Value",
+        "POBoxDeviatingCountry": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:POBoxDeviatingCountry/#Value",
+        "POBoxDeviatingRegion": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:POBoxDeviatingRegion/#Value",
+        "POBoxIsWithoutNumber": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:POBoxIsWithoutNumber/#Value",
+        "POBoxLobbyName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:POBoxLobbyName/#Value",
+        "POBoxPostalCode": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:POBoxPostalCode/#Value",
+        "Person": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:Person/#Value",
+        "PostalCode": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:PostalCode/#Value",
+        "PrfrdCommMediumType": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:PrfrdCommMediumType/#Value",
+        "Region": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:Region/#Value",
+        "StreetName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:StreetName/#Value",
+        "StreetPrefixName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:StreetPrefixName/#Value",
+        "StreetSuffixName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:StreetSuffixName/#Value",
+        "TaxJurisdiction": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:TaxJurisdiction/#Value",
+        "TransportZone": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:TransportZone/#Value",
+        "AddressRepresentationCode": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:AddressRepresentationCode/#Value",
+        "ContactPersonBuilding": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:ContactPersonBuilding/#Value",
+        "ContactPersonPrfrdCommMedium": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:ContactPersonPrfrdCommMedium/#Value",
+        "ContactRelationshipDepartment": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:ContactRelationshipDepartment/#Value",
+        "ContactRelationshipFunction": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:ContactRelationshipFunction/#Value",
+        "CorrespondenceShortName": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:CorrespondenceShortName/#Value",
+        "Floor": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:Floor/#Value",
+        "InhouseMail": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:InhouseMail/#Value",
+        "IsDefaultAddress": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:IsDefaultAddress/#Value",
+        "RoomNumber": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:RoomNumber/#Value",
+        "PersonNumber": "#Page:A_BusinessPartnerContact_CreateA_BPContactToAddressType/#Control:PersonNumber/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BPContactToAddress",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

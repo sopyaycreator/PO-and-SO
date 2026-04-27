@@ -1,0 +1,21 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BusinessPartnerRole",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartnerRole_Edit/#Control:BusinessPartner/#Value",
+        "BusinessPartnerRole": "#Page:A_BusinessPartnerRole_Edit/#Control:BusinessPartnerRole/#Value",
+        "ValidFrom": "#Page:A_BusinessPartnerRole_Edit/#Control:ValidFrom/#Value",
+        "ValidTo": "#Page:A_BusinessPartnerRole_Edit/#Control:ValidTo/#Value",
+        "AuthorizationGroup": "#Page:A_BusinessPartnerRole_Edit/#Control:AuthorizationGroup/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

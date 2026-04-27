@@ -1,0 +1,20 @@
+{
+    "PopoverItems": [{
+            "Title": "Add A_SupplierCompanyTextType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierCompany/NavToA_SupplierCompany_CreateA_SupplierCompanyTextType.action"
+        },
+        {
+            "Title": "Add A_SupplierDunningType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierCompany/NavToA_SupplierCompany_CreateA_SupplierDunningType.action"
+        },
+        {
+            "Title": "Add A_SupplierWithHoldingTaxType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_SupplierCompany/NavToA_SupplierCompany_CreateA_SupplierWithHoldingTaxType.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/BusinessPartner/Rules/Business_Partner/A_SupplierCompany/A_SupplierCompany_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

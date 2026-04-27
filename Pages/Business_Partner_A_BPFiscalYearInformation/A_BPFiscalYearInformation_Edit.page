@@ -1,0 +1,270 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BPFiscalYearInformation",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPFiscalYearInformation/A_BPFiscalYearInformation_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_A_BPFiscalYearInformationType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "BusinessPartner",
+							"_Name": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "BusinessPartnerFiscalYear",
+							"_Name": "BusinessPartnerFiscalYear",
+							"Value": "{BusinessPartnerFiscalYear}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "BPBalanceSheetCurrency",
+							"_Name": "BPBalanceSheetCurrency",
+							"Value": "{BPBalanceSheetCurrency}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BPAnnualStockholderMeetingDate",
+							"Value": "{BPAnnualStockholderMeetingDate}",
+							"Caption": "BPAnnualStockholderMeetingDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BPFiscalYearStartDate",
+							"Value": "{BPFiscalYearStartDate}",
+							"Caption": "BPFiscalYearStartDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BPFiscalYearEndDate",
+							"Value": "{BPFiscalYearEndDate}",
+							"Caption": "BPFiscalYearEndDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"_Name": "BPFiscalYearIsClosed",
+							"Caption": "BPFiscalYearIsClosed",
+							"Value": "{BPFiscalYearIsClosed}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BPFiscalYearClosingDate",
+							"Value": "{BPFiscalYearClosingDate}",
+							"Caption": "BPFiscalYearClosingDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BPFsclYrCnsldtdFinStatementDte",
+							"Value": "{BPFsclYrCnsldtdFinStatementDte}",
+							"Caption": "BPFsclYrCnsldtdFinStatementDte",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "BPCapitalStockAmtInBalShtCrcy",
+							"_Name": "BPCapitalStockAmtInBalShtCrcy",
+							"Value": "{BPCapitalStockAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPIssdStockCptlAmtInBalShtCrcy",
+							"_Name": "BPIssdStockCptlAmtInBalShtCrcy",
+							"Value": "{BPIssdStockCptlAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPPartcipnCertAmtInBalShtCrcy",
+							"_Name": "BPPartcipnCertAmtInBalShtCrcy",
+							"Value": "{BPPartcipnCertAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPEquityCapitalAmtInBalShtCrcy",
+							"_Name": "BPEquityCapitalAmtInBalShtCrcy",
+							"Value": "{BPEquityCapitalAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPGrossPremiumAmtInBalShtCrcy",
+							"_Name": "BPGrossPremiumAmtInBalShtCrcy",
+							"Value": "{BPGrossPremiumAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPNetPremiumAmtInBalShtCrcy",
+							"_Name": "BPNetPremiumAmtInBalShtCrcy",
+							"Value": "{BPNetPremiumAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPAnnualSalesAmtInBalShtCrcy",
+							"_Name": "BPAnnualSalesAmtInBalShtCrcy",
+							"Value": "{BPAnnualSalesAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPAnnualNetIncAmtInBalShtCrcy",
+							"_Name": "BPAnnualNetIncAmtInBalShtCrcy",
+							"Value": "{BPAnnualNetIncAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPDividendDistrAmtInBalShtCrcy",
+							"_Name": "BPDividendDistrAmtInBalShtCrcy",
+							"Value": "{BPDividendDistrAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPDebtRatioInYears",
+							"_Name": "BPDebtRatioInYears",
+							"Value": "{BPDebtRatioInYears}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPAnnualPnLAmtInBalShtCrcy",
+							"_Name": "BPAnnualPnLAmtInBalShtCrcy",
+							"Value": "{BPAnnualPnLAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPBalSheetTotalAmtInBalShtCrcy",
+							"_Name": "BPBalSheetTotalAmtInBalShtCrcy",
+							"Value": "{BPBalSheetTotalAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPNumberOfEmployees",
+							"_Name": "BPNumberOfEmployees",
+							"Value": "{BPNumberOfEmployees}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPCptlReserveAmtInBalShtCrcy",
+							"_Name": "BPCptlReserveAmtInBalShtCrcy",
+							"Value": "{BPCptlReserveAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPLglRevnRsrvAmtInBalShtCrcy",
+							"_Name": "BPLglRevnRsrvAmtInBalShtCrcy",
+							"Value": "{BPLglRevnRsrvAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "RevnRsrvOwnStkAmtInBalShtCrcy",
+							"_Name": "RevnRsrvOwnStkAmtInBalShtCrcy",
+							"Value": "{RevnRsrvOwnStkAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPStatryReserveAmtInBalShtCrcy",
+							"_Name": "BPStatryReserveAmtInBalShtCrcy",
+							"Value": "{BPStatryReserveAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPOthRevnRsrvAmtInBalShtCrcy",
+							"_Name": "BPOthRevnRsrvAmtInBalShtCrcy",
+							"Value": "{BPOthRevnRsrvAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPPnLCarryfwdAmtInBalShtCrcy",
+							"_Name": "BPPnLCarryfwdAmtInBalShtCrcy",
+							"Value": "{BPPnLCarryfwdAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPSuborddLbltyAmtInBalShtCrcy",
+							"_Name": "BPSuborddLbltyAmtInBalShtCrcy",
+							"Value": "{BPSuborddLbltyAmtInBalShtCrcy}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPRetOnTotalCptlEmpldInPercent",
+							"_Name": "BPRetOnTotalCptlEmpldInPercent",
+							"Value": "{BPRetOnTotalCptlEmpldInPercent}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPDebtClearancePeriodInYears",
+							"_Name": "BPDebtClearancePeriodInYears",
+							"Value": "{BPDebtClearancePeriodInYears}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPFinancingCoeffInPercent",
+							"_Name": "BPFinancingCoeffInPercent",
+							"Value": "{BPFinancingCoeffInPercent}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPEquityRatioInPercent",
+							"_Name": "BPEquityRatioInPercent",
+							"Value": "{BPEquityRatioInPercent}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BPFiscalYearInformation_Edit"
+}

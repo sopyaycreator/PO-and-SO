@@ -1,0 +1,227 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BPFiscalYearInformation",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPFiscalYearInformation/NavToA_BPFiscalYearInformation_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Rules/Business_Partner/A_BPFiscalYearInformation/A_BPFiscalYearInformation_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_BPFiscalYearInformationType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{BusinessPartner}",
+						"Subhead": "{BusinessPartnerFiscalYear}",
+						"BodyText": "",
+						"Footnote": "{BPAnnualStockholderMeetingDate}",
+						"Description": "{BPBalanceSheetCurrency}",
+						"StatusText": "{BPFiscalYearStartDate}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{BPFiscalYearEndDate}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerFiscalYear",
+							"Value": "{BusinessPartnerFiscalYear}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPBalanceSheetCurrency",
+							"Value": "{BPBalanceSheetCurrency}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPAnnualStockholderMeetingDate",
+							"Value": "{BPAnnualStockholderMeetingDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPFiscalYearStartDate",
+							"Value": "{BPFiscalYearStartDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPFiscalYearEndDate",
+							"Value": "{BPFiscalYearEndDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPFiscalYearIsClosed",
+							"Value": "{BPFiscalYearIsClosed}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPFiscalYearClosingDate",
+							"Value": "{BPFiscalYearClosingDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPFsclYrCnsldtdFinStatementDte",
+							"Value": "{BPFsclYrCnsldtdFinStatementDte}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPCapitalStockAmtInBalShtCrcy",
+							"Value": "{BPCapitalStockAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPIssdStockCptlAmtInBalShtCrcy",
+							"Value": "{BPIssdStockCptlAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPPartcipnCertAmtInBalShtCrcy",
+							"Value": "{BPPartcipnCertAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPEquityCapitalAmtInBalShtCrcy",
+							"Value": "{BPEquityCapitalAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPGrossPremiumAmtInBalShtCrcy",
+							"Value": "{BPGrossPremiumAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPNetPremiumAmtInBalShtCrcy",
+							"Value": "{BPNetPremiumAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPAnnualSalesAmtInBalShtCrcy",
+							"Value": "{BPAnnualSalesAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPAnnualNetIncAmtInBalShtCrcy",
+							"Value": "{BPAnnualNetIncAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPDividendDistrAmtInBalShtCrcy",
+							"Value": "{BPDividendDistrAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPDebtRatioInYears",
+							"Value": "{BPDebtRatioInYears}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPAnnualPnLAmtInBalShtCrcy",
+							"Value": "{BPAnnualPnLAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPBalSheetTotalAmtInBalShtCrcy",
+							"Value": "{BPBalSheetTotalAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPNumberOfEmployees",
+							"Value": "{BPNumberOfEmployees}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPCptlReserveAmtInBalShtCrcy",
+							"Value": "{BPCptlReserveAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPLglRevnRsrvAmtInBalShtCrcy",
+							"Value": "{BPLglRevnRsrvAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "RevnRsrvOwnStkAmtInBalShtCrcy",
+							"Value": "{RevnRsrvOwnStkAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPStatryReserveAmtInBalShtCrcy",
+							"Value": "{BPStatryReserveAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPOthRevnRsrvAmtInBalShtCrcy",
+							"Value": "{BPOthRevnRsrvAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPPnLCarryfwdAmtInBalShtCrcy",
+							"Value": "{BPPnLCarryfwdAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPSuborddLbltyAmtInBalShtCrcy",
+							"Value": "{BPSuborddLbltyAmtInBalShtCrcy}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPRetOnTotalCptlEmpldInPercent",
+							"Value": "{BPRetOnTotalCptlEmpldInPercent}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPDebtClearancePeriodInYears",
+							"Value": "{BPDebtClearancePeriodInYears}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPFinancingCoeffInPercent",
+							"Value": "{BPFinancingCoeffInPercent}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPEquityRatioInPercent",
+							"Value": "{BPEquityRatioInPercent}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BPFiscalYearInformation_Detail"
+}

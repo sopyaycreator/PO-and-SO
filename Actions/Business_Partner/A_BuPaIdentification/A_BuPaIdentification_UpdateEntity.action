@@ -1,0 +1,26 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BuPaIdentification",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BuPaIdentification_Edit/#Control:BusinessPartner/#Value",
+        "BPIdentificationType": "#Page:A_BuPaIdentification_Edit/#Control:BPIdentificationType/#Value",
+        "BPIdentificationNumber": "#Page:A_BuPaIdentification_Edit/#Control:BPIdentificationNumber/#Value",
+        "BPIdnNmbrIssuingInstitute": "#Page:A_BuPaIdentification_Edit/#Control:BPIdnNmbrIssuingInstitute/#Value",
+        "BPIdentificationEntryDate": "#Page:A_BuPaIdentification_Edit/#Control:BPIdentificationEntryDate/#Value",
+        "Country": "#Page:A_BuPaIdentification_Edit/#Control:Country/#Value",
+        "Region": "#Page:A_BuPaIdentification_Edit/#Control:Region/#Value",
+        "ValidityStartDate": "#Page:A_BuPaIdentification_Edit/#Control:ValidityStartDate/#Value",
+        "ValidityEndDate": "#Page:A_BuPaIdentification_Edit/#Control:ValidityEndDate/#Value",
+        "AuthorizationGroup": "#Page:A_BuPaIdentification_Edit/#Control:AuthorizationGroup/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

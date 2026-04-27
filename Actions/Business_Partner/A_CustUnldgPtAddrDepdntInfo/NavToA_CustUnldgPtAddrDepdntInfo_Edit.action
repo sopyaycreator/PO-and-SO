@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/BusinessPartner/Pages/Business_Partner_A_CustUnldgPtAddrDepdntInfo/A_CustUnldgPtAddrDepdntInfo_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}

@@ -1,0 +1,28 @@
+{
+    "ParentLink": {
+        "Property": "to_SalesAreaTax",
+        "Target": {
+            "EntitySet": "A_CustomerSalesArea",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Customer": "#Page:A_CustomerSalesArea_CreateA_CustomerSalesAreaTaxType/#Control:Customer/#Value",
+        "SalesOrganization": "#Page:A_CustomerSalesArea_CreateA_CustomerSalesAreaTaxType/#Control:SalesOrganization/#Value",
+        "DistributionChannel": "#Page:A_CustomerSalesArea_CreateA_CustomerSalesAreaTaxType/#Control:DistributionChannel/#Value",
+        "Division": "#Page:A_CustomerSalesArea_CreateA_CustomerSalesAreaTaxType/#Control:Division/#Value",
+        "DepartureCountry": "#Page:A_CustomerSalesArea_CreateA_CustomerSalesAreaTaxType/#Control:DepartureCountry/#Value",
+        "CustomerTaxCategory": "#Page:A_CustomerSalesArea_CreateA_CustomerSalesAreaTaxType/#Control:CustomerTaxCategory/#Value",
+        "CustomerTaxClassification": "#Page:A_CustomerSalesArea_CreateA_CustomerSalesAreaTaxType/#Control:CustomerTaxClassification/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_CustomerSalesAreaTax",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

@@ -1,0 +1,293 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_Supplier",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Supplier/A_Supplier_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_A_SupplierType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Supplier",
+							"_Name": "Supplier",
+							"Value": "{Supplier}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "AlternativePayeeAccountNumber",
+							"_Name": "AlternativePayeeAccountNumber",
+							"Value": "{AlternativePayeeAccountNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AuthorizationGroup",
+							"_Name": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BusinessPartnerPanNumber",
+							"_Name": "BusinessPartnerPanNumber",
+							"Value": "{BusinessPartnerPanNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CreatedByUser",
+							"_Name": "CreatedByUser",
+							"Value": "{CreatedByUser}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "CreationDate",
+							"Value": "{CreationDate}",
+							"Caption": "CreationDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "Customer",
+							"_Name": "Customer",
+							"Value": "{Customer}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "PaymentIsBlockedForSupplier",
+							"Caption": "PaymentIsBlockedForSupplier",
+							"Value": "{PaymentIsBlockedForSupplier}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "PostingIsBlocked",
+							"Caption": "PostingIsBlocked",
+							"Value": "{PostingIsBlocked}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "PurchasingIsBlocked",
+							"Caption": "PurchasingIsBlocked",
+							"Value": "{PurchasingIsBlocked}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "SupplierAccountGroup",
+							"_Name": "SupplierAccountGroup",
+							"Value": "{SupplierAccountGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SupplierFullName",
+							"_Name": "SupplierFullName",
+							"Value": "{SupplierFullName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SupplierName",
+							"_Name": "SupplierName",
+							"Value": "{SupplierName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "VATRegistration",
+							"_Name": "VATRegistration",
+							"Value": "{VATRegistration}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "BirthDate",
+							"Value": "{BirthDate}",
+							"Caption": "BirthDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "ConcatenatedInternationalLocNo",
+							"_Name": "ConcatenatedInternationalLocNo",
+							"Value": "{ConcatenatedInternationalLocNo}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "DeletionIndicator",
+							"Caption": "DeletionIndicator",
+							"Value": "{DeletionIndicator}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "FiscalAddress",
+							"_Name": "FiscalAddress",
+							"Value": "{FiscalAddress}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Industry",
+							"_Name": "Industry",
+							"Value": "{Industry}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InternationalLocationNumber1",
+							"_Name": "InternationalLocationNumber1",
+							"Value": "{InternationalLocationNumber1}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InternationalLocationNumber2",
+							"_Name": "InternationalLocationNumber2",
+							"Value": "{InternationalLocationNumber2}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InternationalLocationNumber3",
+							"_Name": "InternationalLocationNumber3",
+							"Value": "{InternationalLocationNumber3}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IsNaturalPerson",
+							"_Name": "IsNaturalPerson",
+							"Value": "{IsNaturalPerson}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PaymentReason",
+							"_Name": "PaymentReason",
+							"Value": "{PaymentReason}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ResponsibleType",
+							"_Name": "ResponsibleType",
+							"Value": "{ResponsibleType}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "SuplrQltyInProcmtCertfnValidTo",
+							"Value": "{SuplrQltyInProcmtCertfnValidTo}",
+							"Caption": "SuplrQltyInProcmtCertfnValidTo",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "SuplrQualityManagementSystem",
+							"_Name": "SuplrQualityManagementSystem",
+							"Value": "{SuplrQualityManagementSystem}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SupplierCorporateGroup",
+							"_Name": "SupplierCorporateGroup",
+							"Value": "{SupplierCorporateGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SupplierProcurementBlock",
+							"_Name": "SupplierProcurementBlock",
+							"Value": "{SupplierProcurementBlock}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumber1",
+							"_Name": "TaxNumber1",
+							"Value": "{TaxNumber1}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumber2",
+							"_Name": "TaxNumber2",
+							"Value": "{TaxNumber2}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumber3",
+							"_Name": "TaxNumber3",
+							"Value": "{TaxNumber3}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumber4",
+							"_Name": "TaxNumber4",
+							"Value": "{TaxNumber4}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumber5",
+							"_Name": "TaxNumber5",
+							"Value": "{TaxNumber5}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumberResponsible",
+							"_Name": "TaxNumberResponsible",
+							"Value": "{TaxNumberResponsible}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumberType",
+							"_Name": "TaxNumberType",
+							"Value": "{TaxNumberType}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "SuplrProofOfDelivRlvtCode",
+							"_Name": "SuplrProofOfDelivRlvtCode",
+							"Value": "{SuplrProofOfDelivRlvtCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "BR_TaxIsSplit",
+							"Caption": "BR_TaxIsSplit",
+							"Value": "{BR_TaxIsSplit}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "DataExchangeInstructionKey",
+							"_Name": "DataExchangeInstructionKey",
+							"Value": "{DataExchangeInstructionKey}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "JP_SuplrAmtInCapitalAmount",
+							"_Name": "JP_SuplrAmtInCapitalAmount",
+							"Value": "{JP_SuplrAmtInCapitalAmount}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "JP_SupplierCapitalAmountCrcy",
+							"_Name": "JP_SupplierCapitalAmountCrcy",
+							"Value": "{JP_SupplierCapitalAmountCrcy}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_Supplier_Edit"
+}

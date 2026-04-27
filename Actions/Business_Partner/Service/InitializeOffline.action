@@ -1,0 +1,27 @@
+{
+    "Service": "/BusinessPartner/Services/Business_Partner.service",
+    "DefiningRequests": [{
+            "Name": "A_BusinessPartner",
+            "Query": "A_BusinessPartner"
+        },
+        {
+            "Name": "A_Customer",
+            "Query": "A_Customer"
+        },
+        {
+            "Name": "A_Supplier",
+            "Query": "A_Supplier"
+        },
+        {
+            "Name": "A_SupplierText",
+            "Query": "A_SupplierText"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/BusinessPartner/Actions/Business_Partner/Service/InitializeOfflineFailureMessage.action"
+}

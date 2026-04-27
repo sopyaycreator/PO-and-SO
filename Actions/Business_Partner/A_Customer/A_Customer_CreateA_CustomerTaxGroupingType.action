@@ -1,0 +1,29 @@
+{
+    "ParentLink": {
+        "Property": "to_CustomerTaxGrouping",
+        "Target": {
+            "EntitySet": "A_Customer",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Customer": "#Page:A_Customer_CreateA_CustomerTaxGroupingType/#Control:Customer/#Value",
+        "CustomerTaxGroupingCode": "#Page:A_Customer_CreateA_CustomerTaxGroupingType/#Control:CustomerTaxGroupingCode/#Value",
+        "CustTaxGrpExemptionCertificate": "#Page:A_Customer_CreateA_CustomerTaxGroupingType/#Control:CustTaxGrpExemptionCertificate/#Value",
+        "CustTaxGroupExemptionRate": "#Page:A_Customer_CreateA_CustomerTaxGroupingType/#Control:CustTaxGroupExemptionRate/#Value",
+        "CustTaxGroupExemptionStartDate": "#Page:A_Customer_CreateA_CustomerTaxGroupingType/#Control:CustTaxGroupExemptionStartDate/#Value",
+        "CustTaxGroupExemptionEndDate": "#Page:A_Customer_CreateA_CustomerTaxGroupingType/#Control:CustTaxGroupExemptionEndDate/#Value",
+        "CustTaxGroupSubjectedStartDate": "#Page:A_Customer_CreateA_CustomerTaxGroupingType/#Control:CustTaxGroupSubjectedStartDate/#Value",
+        "CustTaxGroupSubjectedEndDate": "#Page:A_Customer_CreateA_CustomerTaxGroupingType/#Control:CustTaxGroupSubjectedEndDate/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_CustomerTaxGrouping",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

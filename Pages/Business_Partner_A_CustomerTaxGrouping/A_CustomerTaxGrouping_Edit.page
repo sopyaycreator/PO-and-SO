@@ -1,0 +1,97 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_CustomerTaxGrouping",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerTaxGrouping/A_CustomerTaxGrouping_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_A_CustomerTaxGroupingType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Customer",
+							"_Name": "Customer",
+							"Value": "{Customer}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "CustomerTaxGroupingCode",
+							"_Name": "CustomerTaxGroupingCode",
+							"Value": "{CustomerTaxGroupingCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "CustTaxGrpExemptionCertificate",
+							"_Name": "CustTaxGrpExemptionCertificate",
+							"Value": "{CustTaxGrpExemptionCertificate}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustTaxGroupExemptionRate",
+							"_Name": "CustTaxGroupExemptionRate",
+							"Value": "{CustTaxGroupExemptionRate}",
+							"KeyboardType": "Number",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "CustTaxGroupExemptionStartDate",
+							"Value": "{CustTaxGroupExemptionStartDate}",
+							"Caption": "CustTaxGroupExemptionStartDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "CustTaxGroupExemptionEndDate",
+							"Value": "{CustTaxGroupExemptionEndDate}",
+							"Caption": "CustTaxGroupExemptionEndDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "CustTaxGroupSubjectedStartDate",
+							"Value": "{CustTaxGroupSubjectedStartDate}",
+							"Caption": "CustTaxGroupSubjectedStartDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "CustTaxGroupSubjectedEndDate",
+							"Value": "{CustTaxGroupSubjectedEndDate}",
+							"Caption": "CustTaxGroupSubjectedEndDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_CustomerTaxGrouping_Edit"
+}

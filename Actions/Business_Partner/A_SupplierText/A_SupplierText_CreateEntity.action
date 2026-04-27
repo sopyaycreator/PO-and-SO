@@ -1,0 +1,19 @@
+{
+    "CreateLinks": [],
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Supplier": "#Page:A_SupplierText_Create/#Control:Supplier/#Value",
+        "Language": "#Page:A_SupplierText_Create/#Control:Language/#Value",
+        "LongTextID": "#Page:A_SupplierText_Create/#Control:LongTextID/#Value",
+        "LongText": "#Page:A_SupplierText_Create/#Control:LongText/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_SupplierText",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateEntity"
+}

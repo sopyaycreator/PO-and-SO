@@ -1,0 +1,88 @@
+{
+    "PopoverItems": [{
+            "Title": "Add A_BPAddressIndependentEmailType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BPAddressIndependentEmailType.action"
+        },
+        {
+            "Title": "Add A_BPAddressIndependentFaxType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BPAddressIndependentFaxType.action"
+        },
+        {
+            "Title": "Add A_BPAddressIndependentMobileType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BPAddressIndependentMobileType.action"
+        },
+        {
+            "Title": "Add A_BPAddressIndependentPhoneType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BPAddressIndependentPhoneType.action"
+        },
+        {
+            "Title": "Add A_BPAddressIndependentWebsiteType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BPAddressIndependentWebsiteType.action"
+        },
+        {
+            "Title": "Add A_BPDataControllerType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BPDataControllerType.action"
+        },
+        {
+            "Title": "Add A_BPEmploymentType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BPEmploymentType.action"
+        },
+        {
+            "Title": "Add A_BPFiscalYearInformationType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BPFiscalYearInformationType.action"
+        },
+        {
+            "Title": "Add A_BPRelationshipType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BPRelationshipType.action"
+        },
+        {
+            "Title": "Add A_BuPaIdentificationType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BuPaIdentificationType.action"
+        },
+        {
+            "Title": "Add A_BuPaIndustryType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BuPaIndustryType.action"
+        },
+        {
+            "Title": "Add A_BusinessPartnerAddressType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BusinessPartnerAddressType.action"
+        },
+        {
+            "Title": "Add A_BusinessPartnerAliasType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BusinessPartnerAliasType.action"
+        },
+        {
+            "Title": "Add A_BusinessPartnerBankType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BusinessPartnerBankType.action"
+        },
+        {
+            "Title": "Add A_BusinessPartnerContactType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BusinessPartnerContactType.action"
+        },
+        {
+            "Title": "Add A_BusinessPartnerRatingType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BusinessPartnerRatingType.action"
+        },
+        {
+            "Title": "Add A_BusinessPartnerRoleType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BusinessPartnerRoleType.action"
+        },
+        {
+            "Title": "Add A_BusinessPartnerTaxNumberType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BusinessPartnerTaxNumberType.action"
+        },
+        {
+            "Title": "Add A_BusPartAddrDepdntTaxNmbrType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BusPartAddrDepdntTaxNmbrType.action"
+        },
+        {
+            "Title": "Add A_BusinessPartnerPaymentCardType",
+            "OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_CreateA_BusinessPartnerPaymentCardType.action"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/BusinessPartner/Rules/Business_Partner/A_BusinessPartner/A_BusinessPartner_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

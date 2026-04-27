@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/BusinessPartner/Pages/Business_Partner_A_CustomerCompany/A_CustomerCompany_CreateA_CustomerCompanyTextType.page",
+    "_Type": "Action.Type.Navigation"
+}

@@ -1,0 +1,24 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_CustomerTaxGrouping",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "Customer": "#Page:A_CustomerTaxGrouping_Edit/#Control:Customer/#Value",
+        "CustomerTaxGroupingCode": "#Page:A_CustomerTaxGrouping_Edit/#Control:CustomerTaxGroupingCode/#Value",
+        "CustTaxGrpExemptionCertificate": "#Page:A_CustomerTaxGrouping_Edit/#Control:CustTaxGrpExemptionCertificate/#Value",
+        "CustTaxGroupExemptionRate": "#Page:A_CustomerTaxGrouping_Edit/#Control:CustTaxGroupExemptionRate/#Value",
+        "CustTaxGroupExemptionStartDate": "#Page:A_CustomerTaxGrouping_Edit/#Control:CustTaxGroupExemptionStartDate/#Value",
+        "CustTaxGroupExemptionEndDate": "#Page:A_CustomerTaxGrouping_Edit/#Control:CustTaxGroupExemptionEndDate/#Value",
+        "CustTaxGroupSubjectedStartDate": "#Page:A_CustomerTaxGrouping_Edit/#Control:CustTaxGroupSubjectedStartDate/#Value",
+        "CustTaxGroupSubjectedEndDate": "#Page:A_CustomerTaxGrouping_Edit/#Control:CustTaxGroupSubjectedEndDate/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

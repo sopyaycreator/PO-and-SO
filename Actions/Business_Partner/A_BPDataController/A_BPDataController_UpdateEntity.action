@@ -1,0 +1,24 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BPDataController",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BPDataController_Edit/#Control:BusinessPartner/#Value",
+        "DataController": "#Page:A_BPDataController_Edit/#Control:DataController/#Value",
+        "PurposeForPersonalData": "#Page:A_BPDataController_Edit/#Control:PurposeForPersonalData/#Value",
+        "DataControlAssignmentStatus": "#Page:A_BPDataController_Edit/#Control:DataControlAssignmentStatus/#Value",
+        "BPDataControllerIsDerived": "#Page:A_BPDataController_Edit/#Control:BPDataControllerIsDerived/#Value",
+        "PurposeDerived": "#Page:A_BPDataController_Edit/#Control:PurposeDerived/#Value",
+        "PurposeType": "#Page:A_BPDataController_Edit/#Control:PurposeType/#Value",
+        "BusinessPurposeFlag": "#Page:A_BPDataController_Edit/#Control:BusinessPurposeFlag/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

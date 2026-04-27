@@ -1,0 +1,28 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BPAddressIndependentMobile",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BPAddressIndependentMobile_Edit/#Control:BusinessPartner/#Value",
+        "AddressID": "#Page:A_BPAddressIndependentMobile_Edit/#Control:AddressID/#Value",
+        "Person": "#Page:A_BPAddressIndependentMobile_Edit/#Control:Person/#Value",
+        "OrdinalNumber": "#Page:A_BPAddressIndependentMobile_Edit/#Control:OrdinalNumber/#Value",
+        "InternationalPhoneNumber": "#Page:A_BPAddressIndependentMobile_Edit/#Control:InternationalPhoneNumber/#Value",
+        "IsDefaultPhoneNumber": "#Page:A_BPAddressIndependentMobile_Edit/#Control:IsDefaultPhoneNumber/#Value",
+        "MobilePhoneCountry": "#Page:A_BPAddressIndependentMobile_Edit/#Control:MobilePhoneCountry/#Value",
+        "MobilePhoneNumber": "#Page:A_BPAddressIndependentMobile_Edit/#Control:MobilePhoneNumber/#Value",
+        "PhoneNumberExtension": "#Page:A_BPAddressIndependentMobile_Edit/#Control:PhoneNumberExtension/#Value",
+        "PhoneNumberType": "#Page:A_BPAddressIndependentMobile_Edit/#Control:PhoneNumberType/#Value",
+        "ValidityStartDate": "#Page:A_BPAddressIndependentMobile_Edit/#Control:ValidityStartDate/#Value",
+        "ValidityEndDate": "#Page:A_BPAddressIndependentMobile_Edit/#Control:ValidityEndDate/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

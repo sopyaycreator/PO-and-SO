@@ -1,0 +1,54 @@
+{
+    "ParentLink": {
+        "Property": "to_BPFiscalYearInformation",
+        "Target": {
+            "EntitySet": "A_BusinessPartner",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BusinessPartner/#Value",
+        "BusinessPartnerFiscalYear": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BusinessPartnerFiscalYear/#Value",
+        "BPBalanceSheetCurrency": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPBalanceSheetCurrency/#Value",
+        "BPAnnualStockholderMeetingDate": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPAnnualStockholderMeetingDate/#Value",
+        "BPFiscalYearStartDate": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPFiscalYearStartDate/#Value",
+        "BPFiscalYearEndDate": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPFiscalYearEndDate/#Value",
+        "BPFiscalYearIsClosed": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPFiscalYearIsClosed/#Value",
+        "BPFiscalYearClosingDate": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPFiscalYearClosingDate/#Value",
+        "BPFsclYrCnsldtdFinStatementDte": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPFsclYrCnsldtdFinStatementDte/#Value",
+        "BPCapitalStockAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPCapitalStockAmtInBalShtCrcy/#Value",
+        "BPIssdStockCptlAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPIssdStockCptlAmtInBalShtCrcy/#Value",
+        "BPPartcipnCertAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPPartcipnCertAmtInBalShtCrcy/#Value",
+        "BPEquityCapitalAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPEquityCapitalAmtInBalShtCrcy/#Value",
+        "BPGrossPremiumAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPGrossPremiumAmtInBalShtCrcy/#Value",
+        "BPNetPremiumAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPNetPremiumAmtInBalShtCrcy/#Value",
+        "BPAnnualSalesAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPAnnualSalesAmtInBalShtCrcy/#Value",
+        "BPAnnualNetIncAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPAnnualNetIncAmtInBalShtCrcy/#Value",
+        "BPDividendDistrAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPDividendDistrAmtInBalShtCrcy/#Value",
+        "BPDebtRatioInYears": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPDebtRatioInYears/#Value",
+        "BPAnnualPnLAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPAnnualPnLAmtInBalShtCrcy/#Value",
+        "BPBalSheetTotalAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPBalSheetTotalAmtInBalShtCrcy/#Value",
+        "BPNumberOfEmployees": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPNumberOfEmployees/#Value",
+        "BPCptlReserveAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPCptlReserveAmtInBalShtCrcy/#Value",
+        "BPLglRevnRsrvAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPLglRevnRsrvAmtInBalShtCrcy/#Value",
+        "RevnRsrvOwnStkAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:RevnRsrvOwnStkAmtInBalShtCrcy/#Value",
+        "BPStatryReserveAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPStatryReserveAmtInBalShtCrcy/#Value",
+        "BPOthRevnRsrvAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPOthRevnRsrvAmtInBalShtCrcy/#Value",
+        "BPPnLCarryfwdAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPPnLCarryfwdAmtInBalShtCrcy/#Value",
+        "BPSuborddLbltyAmtInBalShtCrcy": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPSuborddLbltyAmtInBalShtCrcy/#Value",
+        "BPRetOnTotalCptlEmpldInPercent": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPRetOnTotalCptlEmpldInPercent/#Value",
+        "BPDebtClearancePeriodInYears": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPDebtClearancePeriodInYears/#Value",
+        "BPFinancingCoeffInPercent": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPFinancingCoeffInPercent/#Value",
+        "BPEquityRatioInPercent": "#Page:A_BusinessPartner_CreateA_BPFiscalYearInformationType/#Control:BPEquityRatioInPercent/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BPFiscalYearInformation",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

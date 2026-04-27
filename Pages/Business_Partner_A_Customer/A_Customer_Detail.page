@@ -1,0 +1,624 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_Customer",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/A_Customer_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_CustomerType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{CustomerFullName}",
+						"Subhead": "{Customer}",
+						"BodyText": "",
+						"Footnote": "{BillingIsBlockedForCustomer}",
+						"Description": "{AuthorizationGroup}",
+						"StatusText": "{CreatedByUser}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{CreationDate}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "Customer",
+							"Value": "{Customer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BillingIsBlockedForCustomer",
+							"Value": "{BillingIsBlockedForCustomer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CreatedByUser",
+							"Value": "{CreatedByUser}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CreationDate",
+							"Value": "{CreationDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerAccountGroup",
+							"Value": "{CustomerAccountGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerClassification",
+							"Value": "{CustomerClassification}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerFullName",
+							"Value": "{CustomerFullName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPCustomerFullName",
+							"Value": "{BPCustomerFullName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerName",
+							"Value": "{CustomerName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPCustomerName",
+							"Value": "{BPCustomerName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DeliveryIsBlocked",
+							"Value": "{DeliveryIsBlocked}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FreeDefinedAttribute01",
+							"Value": "{FreeDefinedAttribute01}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FreeDefinedAttribute02",
+							"Value": "{FreeDefinedAttribute02}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FreeDefinedAttribute03",
+							"Value": "{FreeDefinedAttribute03}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FreeDefinedAttribute04",
+							"Value": "{FreeDefinedAttribute04}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FreeDefinedAttribute05",
+							"Value": "{FreeDefinedAttribute05}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FreeDefinedAttribute06",
+							"Value": "{FreeDefinedAttribute06}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FreeDefinedAttribute07",
+							"Value": "{FreeDefinedAttribute07}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FreeDefinedAttribute08",
+							"Value": "{FreeDefinedAttribute08}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FreeDefinedAttribute09",
+							"Value": "{FreeDefinedAttribute09}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FreeDefinedAttribute10",
+							"Value": "{FreeDefinedAttribute10}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "NFPartnerIsNaturalPerson",
+							"Value": "{NFPartnerIsNaturalPerson}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "OrderIsBlockedForCustomer",
+							"Value": "{OrderIsBlockedForCustomer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PostingIsBlocked",
+							"Value": "{PostingIsBlocked}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Supplier",
+							"Value": "{Supplier}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CustomerCorporateGroup",
+							"Value": "{CustomerCorporateGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FiscalAddress",
+							"Value": "{FiscalAddress}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Industry",
+							"Value": "{Industry}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IndustryCode1",
+							"Value": "{IndustryCode1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IndustryCode2",
+							"Value": "{IndustryCode2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IndustryCode3",
+							"Value": "{IndustryCode3}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IndustryCode4",
+							"Value": "{IndustryCode4}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IndustryCode5",
+							"Value": "{IndustryCode5}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InternationalLocationNumber1",
+							"Value": "{InternationalLocationNumber1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InternationalLocationNumber2",
+							"Value": "{InternationalLocationNumber2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InternationalLocationNumber3",
+							"Value": "{InternationalLocationNumber3}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "NielsenRegion",
+							"Value": "{NielsenRegion}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentReason",
+							"Value": "{PaymentReason}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ResponsibleType",
+							"Value": "{ResponsibleType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumber1",
+							"Value": "{TaxNumber1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumber2",
+							"Value": "{TaxNumber2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumber3",
+							"Value": "{TaxNumber3}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumber4",
+							"Value": "{TaxNumber4}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumber5",
+							"Value": "{TaxNumber5}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TaxNumberType",
+							"Value": "{TaxNumberType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "VATRegistration",
+							"Value": "{VATRegistration}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "DeletionIndicator",
+							"Value": "{DeletionIndicator}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ExpressTrainStationName",
+							"Value": "{ExpressTrainStationName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TrainStationName",
+							"Value": "{TrainStationName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CityCode",
+							"Value": "{CityCode}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "County",
+							"Value": "{County}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BR_ICMSTaxPayerType",
+							"Value": "{BR_ICMSTaxPayerType}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "to_CustAddrDepdntExtIdentifier",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{CustomerExternalRefID}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "",
+						"Subhead": "{Customer}",
+						"SubstatusText": "",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustAddrDepdntExtIdentifier/NavToA_CustAddrDepdntExtIdentifier_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_CustAddrDepdntExtIdentifier",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_CustAddrDepdntInformation",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{AddressID}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ExpressTrainStationName}",
+						"Footnote": "{TrainStationName}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{CityCode}",
+						"Subhead": "{Customer}",
+						"SubstatusText": "{County}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustAddrDepdntInformation/NavToA_CustAddrDepdntInformation_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_CustAddrDepdntInformation",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_CustomerCompany",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{APARToleranceGroup}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Customer}",
+						"Footnote": "{AccountByCustomer}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{AccountingClerk}",
+						"Subhead": "{CompanyCode}",
+						"SubstatusText": "{AccountingClerkFaxNumber}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerCompany/NavToA_CustomerCompany_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_CustomerCompany",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_CustomerSalesArea",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{DistributionChannel}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Customer}",
+						"Footnote": "{Division}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{AccountByCustomer}",
+						"Subhead": "{SalesOrganization}",
+						"SubstatusText": "{AuthorizationGroup}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerSalesArea/NavToA_CustomerSalesArea_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_CustomerSalesArea",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_CustomerTaxGrouping",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{CustTaxGrpExemptionCertificate}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{Customer}",
+						"Footnote": "{CustTaxGroupExemptionRate}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{CustTaxGroupExemptionStartDate}",
+						"Subhead": "{CustomerTaxGroupingCode}",
+						"SubstatusText": "{CustTaxGroupExemptionEndDate}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerTaxGrouping/NavToA_CustomerTaxGrouping_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_CustomerTaxGrouping",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_CustomerText",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{Language}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{LongTextID}",
+						"Footnote": "{LongText}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "",
+						"Subhead": "{Customer}",
+						"SubstatusText": "",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerText/NavToA_CustomerText_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_CustomerText",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_CustomerUnloadingPoint",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{CustomerFactoryCalenderCode}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{UnloadingPointName}",
+						"Footnote": "{BPGoodsReceivingHoursCode}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{IsDfltBPUnloadingPoint}",
+						"Subhead": "{Customer}",
+						"SubstatusText": "{MondayMorningOpeningTime}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerUnloadingPoint/NavToA_CustomerUnloadingPoint_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_CustomerUnloadingPoint",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_CustUnldgPtAddrDepdntInfo",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{AddressID}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{UnloadingPointName}",
+						"Footnote": "{CustomerFactoryCalenderCode}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{BPGoodsReceivingHoursCode}",
+						"Subhead": "{Customer}",
+						"SubstatusText": "{IsDfltBPUnloadingPoint}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustUnldgPtAddrDepdntInfo/NavToA_CustUnldgPtAddrDepdntInfo_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_CustUnldgPtAddrDepdntInfo",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"A_CustAddrDepdntExtIdentifier",
+				"A_CustAddrDepdntInformation",
+				"A_CustomerCompany",
+				"A_CustomerSalesArea",
+				"A_CustomerTaxGrouping",
+				"A_CustomerText",
+				"A_CustomerUnloadingPoint",
+				"A_CustUnldgPtAddrDepdntInfo"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_Customer_Detail"
+}

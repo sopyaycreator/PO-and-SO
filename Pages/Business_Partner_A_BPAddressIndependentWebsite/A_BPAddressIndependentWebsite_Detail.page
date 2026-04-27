@@ -1,0 +1,97 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BPAddressIndependentWebsite",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPAddressIndependentWebsite/NavToA_BPAddressIndependentWebsite_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Rules/Business_Partner/A_BPAddressIndependentWebsite/A_BPAddressIndependentWebsite_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_BPAddressIndependentWebsiteType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{AddressID}",
+						"Subhead": "{BusinessPartner}",
+						"BodyText": "",
+						"Footnote": "{OrdinalNumber}",
+						"Description": "{Person}",
+						"StatusText": "{IsDefaultURLAddress}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{URLFieldLength}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AddressID",
+							"Value": "{AddressID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Person",
+							"Value": "{Person}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "OrdinalNumber",
+							"Value": "{OrdinalNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsDefaultURLAddress",
+							"Value": "{IsDefaultURLAddress}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "URLFieldLength",
+							"Value": "{URLFieldLength}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "WebsiteURL",
+							"Value": "{WebsiteURL}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BPAddressIndependentWebsite_Detail"
+}

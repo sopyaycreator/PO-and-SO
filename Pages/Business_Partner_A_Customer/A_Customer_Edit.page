@@ -1,0 +1,362 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_Customer",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/A_Customer_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_A_CustomerType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Customer",
+							"_Name": "Customer",
+							"Value": "{Customer}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "AuthorizationGroup",
+							"_Name": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BillingIsBlockedForCustomer",
+							"_Name": "BillingIsBlockedForCustomer",
+							"Value": "{BillingIsBlockedForCustomer}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CreatedByUser",
+							"_Name": "CreatedByUser",
+							"Value": "{CreatedByUser}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "CreationDate",
+							"Value": "{CreationDate}",
+							"Caption": "CreationDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "CustomerAccountGroup",
+							"_Name": "CustomerAccountGroup",
+							"Value": "{CustomerAccountGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerClassification",
+							"_Name": "CustomerClassification",
+							"Value": "{CustomerClassification}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerFullName",
+							"_Name": "CustomerFullName",
+							"Value": "{CustomerFullName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPCustomerFullName",
+							"_Name": "BPCustomerFullName",
+							"Value": "{BPCustomerFullName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerName",
+							"_Name": "CustomerName",
+							"Value": "{CustomerName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BPCustomerName",
+							"_Name": "BPCustomerName",
+							"Value": "{BPCustomerName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "DeliveryIsBlocked",
+							"_Name": "DeliveryIsBlocked",
+							"Value": "{DeliveryIsBlocked}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FreeDefinedAttribute01",
+							"_Name": "FreeDefinedAttribute01",
+							"Value": "{FreeDefinedAttribute01}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FreeDefinedAttribute02",
+							"_Name": "FreeDefinedAttribute02",
+							"Value": "{FreeDefinedAttribute02}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FreeDefinedAttribute03",
+							"_Name": "FreeDefinedAttribute03",
+							"Value": "{FreeDefinedAttribute03}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FreeDefinedAttribute04",
+							"_Name": "FreeDefinedAttribute04",
+							"Value": "{FreeDefinedAttribute04}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FreeDefinedAttribute05",
+							"_Name": "FreeDefinedAttribute05",
+							"Value": "{FreeDefinedAttribute05}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FreeDefinedAttribute06",
+							"_Name": "FreeDefinedAttribute06",
+							"Value": "{FreeDefinedAttribute06}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FreeDefinedAttribute07",
+							"_Name": "FreeDefinedAttribute07",
+							"Value": "{FreeDefinedAttribute07}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FreeDefinedAttribute08",
+							"_Name": "FreeDefinedAttribute08",
+							"Value": "{FreeDefinedAttribute08}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FreeDefinedAttribute09",
+							"_Name": "FreeDefinedAttribute09",
+							"Value": "{FreeDefinedAttribute09}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FreeDefinedAttribute10",
+							"_Name": "FreeDefinedAttribute10",
+							"Value": "{FreeDefinedAttribute10}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NFPartnerIsNaturalPerson",
+							"_Name": "NFPartnerIsNaturalPerson",
+							"Value": "{NFPartnerIsNaturalPerson}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "OrderIsBlockedForCustomer",
+							"_Name": "OrderIsBlockedForCustomer",
+							"Value": "{OrderIsBlockedForCustomer}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "PostingIsBlocked",
+							"Caption": "PostingIsBlocked",
+							"Value": "{PostingIsBlocked}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "Supplier",
+							"_Name": "Supplier",
+							"Value": "{Supplier}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerCorporateGroup",
+							"_Name": "CustomerCorporateGroup",
+							"Value": "{CustomerCorporateGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "FiscalAddress",
+							"_Name": "FiscalAddress",
+							"Value": "{FiscalAddress}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "Industry",
+							"_Name": "Industry",
+							"Value": "{Industry}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IndustryCode1",
+							"_Name": "IndustryCode1",
+							"Value": "{IndustryCode1}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IndustryCode2",
+							"_Name": "IndustryCode2",
+							"Value": "{IndustryCode2}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IndustryCode3",
+							"_Name": "IndustryCode3",
+							"Value": "{IndustryCode3}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IndustryCode4",
+							"_Name": "IndustryCode4",
+							"Value": "{IndustryCode4}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "IndustryCode5",
+							"_Name": "IndustryCode5",
+							"Value": "{IndustryCode5}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InternationalLocationNumber1",
+							"_Name": "InternationalLocationNumber1",
+							"Value": "{InternationalLocationNumber1}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InternationalLocationNumber2",
+							"_Name": "InternationalLocationNumber2",
+							"Value": "{InternationalLocationNumber2}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InternationalLocationNumber3",
+							"_Name": "InternationalLocationNumber3",
+							"Value": "{InternationalLocationNumber3}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "NielsenRegion",
+							"_Name": "NielsenRegion",
+							"Value": "{NielsenRegion}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PaymentReason",
+							"_Name": "PaymentReason",
+							"Value": "{PaymentReason}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ResponsibleType",
+							"_Name": "ResponsibleType",
+							"Value": "{ResponsibleType}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumber1",
+							"_Name": "TaxNumber1",
+							"Value": "{TaxNumber1}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumber2",
+							"_Name": "TaxNumber2",
+							"Value": "{TaxNumber2}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumber3",
+							"_Name": "TaxNumber3",
+							"Value": "{TaxNumber3}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumber4",
+							"_Name": "TaxNumber4",
+							"Value": "{TaxNumber4}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumber5",
+							"_Name": "TaxNumber5",
+							"Value": "{TaxNumber5}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TaxNumberType",
+							"_Name": "TaxNumberType",
+							"Value": "{TaxNumberType}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "VATRegistration",
+							"_Name": "VATRegistration",
+							"Value": "{VATRegistration}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "DeletionIndicator",
+							"Caption": "DeletionIndicator",
+							"Value": "{DeletionIndicator}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "ExpressTrainStationName",
+							"_Name": "ExpressTrainStationName",
+							"Value": "{ExpressTrainStationName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "TrainStationName",
+							"_Name": "TrainStationName",
+							"Value": "{TrainStationName}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CityCode",
+							"_Name": "CityCode",
+							"Value": "{CityCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "County",
+							"_Name": "County",
+							"Value": "{County}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "BR_ICMSTaxPayerType",
+							"_Name": "BR_ICMSTaxPayerType",
+							"Value": "{BR_ICMSTaxPayerType}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_Customer_Edit"
+}

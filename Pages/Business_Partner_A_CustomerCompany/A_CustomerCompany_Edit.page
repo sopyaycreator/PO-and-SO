@@ -1,0 +1,255 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_CustomerCompany",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"Position": "Left",
+				"SystemItem": "Cancel",
+				"OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"Position": "Right",
+				"SystemItem": "Save",
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_CustomerCompany/A_CustomerCompany_UpdateEntity.action",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,Update_A_CustomerCompanyType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "Customer",
+							"_Name": "Customer",
+							"Value": "{Customer}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "CompanyCode",
+							"_Name": "CompanyCode",
+							"Value": "{CompanyCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"IsEditable": false
+						},
+						{
+							"Caption": "APARToleranceGroup",
+							"_Name": "APARToleranceGroup",
+							"Value": "{APARToleranceGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AccountByCustomer",
+							"_Name": "AccountByCustomer",
+							"Value": "{AccountByCustomer}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AccountingClerk",
+							"_Name": "AccountingClerk",
+							"Value": "{AccountingClerk}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AccountingClerkFaxNumber",
+							"_Name": "AccountingClerkFaxNumber",
+							"Value": "{AccountingClerkFaxNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AccountingClerkInternetAddress",
+							"_Name": "AccountingClerkInternetAddress",
+							"Value": "{AccountingClerkInternetAddress}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AccountingClerkPhoneNumber",
+							"_Name": "AccountingClerkPhoneNumber",
+							"Value": "{AccountingClerkPhoneNumber}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AlternativePayerAccount",
+							"_Name": "AlternativePayerAccount",
+							"Value": "{AlternativePayerAccount}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "AuthorizationGroup",
+							"_Name": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CollectiveInvoiceVariant",
+							"_Name": "CollectiveInvoiceVariant",
+							"Value": "{CollectiveInvoiceVariant}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerAccountNote",
+							"_Name": "CustomerAccountNote",
+							"Value": "{CustomerAccountNote}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerHeadOffice",
+							"_Name": "CustomerHeadOffice",
+							"Value": "{CustomerHeadOffice}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "CustomerSupplierClearingIsUsed",
+							"Caption": "CustomerSupplierClearingIsUsed",
+							"Value": "{CustomerSupplierClearingIsUsed}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "HouseBank",
+							"_Name": "HouseBank",
+							"Value": "{HouseBank}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "InterestCalculationCode",
+							"_Name": "InterestCalculationCode",
+							"Value": "{InterestCalculationCode}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Mode": "Datetime",
+							"_Name": "InterestCalculationDate",
+							"Value": "{InterestCalculationDate}",
+							"Caption": "InterestCalculationDate",
+							"_Type": "Control.Type.FormCell.DatePicker"
+						},
+						{
+							"Caption": "IntrstCalcFrequencyInMonths",
+							"_Name": "IntrstCalcFrequencyInMonths",
+							"Value": "{IntrstCalcFrequencyInMonths}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "IsToBeLocallyProcessed",
+							"Caption": "IsToBeLocallyProcessed",
+							"Value": "{IsToBeLocallyProcessed}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "ItemIsToBePaidSeparately",
+							"Caption": "ItemIsToBePaidSeparately",
+							"Value": "{ItemIsToBePaidSeparately}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "LayoutSortingRule",
+							"_Name": "LayoutSortingRule",
+							"Value": "{LayoutSortingRule}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PaymentBlockingReason",
+							"_Name": "PaymentBlockingReason",
+							"Value": "{PaymentBlockingReason}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PaymentMethodsList",
+							"_Name": "PaymentMethodsList",
+							"Value": "{PaymentMethodsList}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PaymentReason",
+							"_Name": "PaymentReason",
+							"Value": "{PaymentReason}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "PaymentTerms",
+							"_Name": "PaymentTerms",
+							"Value": "{PaymentTerms}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "PaytAdviceIsSentbyEDI",
+							"Caption": "PaytAdviceIsSentbyEDI",
+							"Value": "{PaytAdviceIsSentbyEDI}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"_Name": "PhysicalInventoryBlockInd",
+							"Caption": "PhysicalInventoryBlockInd",
+							"Value": "{PhysicalInventoryBlockInd}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "ReconciliationAccount",
+							"_Name": "ReconciliationAccount",
+							"Value": "{ReconciliationAccount}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "RecordPaymentHistoryIndicator",
+							"Caption": "RecordPaymentHistoryIndicator",
+							"Value": "{RecordPaymentHistoryIndicator}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "UserAtCustomer",
+							"_Name": "UserAtCustomer",
+							"Value": "{UserAtCustomer}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"_Name": "DeletionIndicator",
+							"Caption": "DeletionIndicator",
+							"Value": "{DeletionIndicator}",
+							"_Type": "Control.Type.FormCell.Switch"
+						},
+						{
+							"Caption": "CashPlanningGroup",
+							"_Name": "CashPlanningGroup",
+							"Value": "{CashPlanningGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "KnownOrNegotiatedLeave",
+							"_Name": "KnownOrNegotiatedLeave",
+							"Value": "{KnownOrNegotiatedLeave}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "ValueAdjustmentKey",
+							"_Name": "ValueAdjustmentKey",
+							"Value": "{ValueAdjustmentKey}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "CustomerAccountGroup",
+							"_Name": "CustomerAccountGroup",
+							"Value": "{CustomerAccountGroup}",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_CustomerCompany_Edit"
+}

@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/BusinessPartner/Pages/Business_Partner_A_SupplierPurchasingOrg/A_SupplierPurchasingOrg_CreateA_SupplierPurchasingOrgTextType.page",
+    "_Type": "Action.Type.Navigation"
+}

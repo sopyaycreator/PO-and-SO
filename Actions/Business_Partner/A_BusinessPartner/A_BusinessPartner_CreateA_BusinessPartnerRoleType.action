@@ -1,0 +1,26 @@
+{
+    "ParentLink": {
+        "Property": "to_BusinessPartnerRole",
+        "Target": {
+            "EntitySet": "A_BusinessPartner",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRoleType/#Control:BusinessPartner/#Value",
+        "BusinessPartnerRole": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRoleType/#Control:BusinessPartnerRole/#Value",
+        "ValidFrom": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRoleType/#Control:ValidFrom/#Value",
+        "ValidTo": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRoleType/#Control:ValidTo/#Value",
+        "AuthorizationGroup": "#Page:A_BusinessPartner_CreateA_BusinessPartnerRoleType/#Control:AuthorizationGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_BusinessPartnerRole",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

@@ -1,0 +1,30 @@
+{
+    "ParentLink": {
+        "Property": "to_FaxNumber",
+        "Target": {
+            "EntitySet": "A_BusinessPartnerAddress",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "AddressID": "#Page:A_BusinessPartnerAddress_CreateA_AddressFaxNumberType/#Control:AddressID/#Value",
+        "Person": "#Page:A_BusinessPartnerAddress_CreateA_AddressFaxNumberType/#Control:Person/#Value",
+        "OrdinalNumber": "#Page:A_BusinessPartnerAddress_CreateA_AddressFaxNumberType/#Control:OrdinalNumber/#Value",
+        "IsDefaultFaxNumber": "#Page:A_BusinessPartnerAddress_CreateA_AddressFaxNumberType/#Control:IsDefaultFaxNumber/#Value",
+        "FaxCountry": "#Page:A_BusinessPartnerAddress_CreateA_AddressFaxNumberType/#Control:FaxCountry/#Value",
+        "FaxNumber": "#Page:A_BusinessPartnerAddress_CreateA_AddressFaxNumberType/#Control:FaxNumber/#Value",
+        "FaxNumberExtension": "#Page:A_BusinessPartnerAddress_CreateA_AddressFaxNumberType/#Control:FaxNumberExtension/#Value",
+        "InternationalFaxNumber": "#Page:A_BusinessPartnerAddress_CreateA_AddressFaxNumberType/#Control:InternationalFaxNumber/#Value",
+        "AddressCommunicationRemarkText": "#Page:A_BusinessPartnerAddress_CreateA_AddressFaxNumberType/#Control:AddressCommunicationRemarkText/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_AddressFaxNumber",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

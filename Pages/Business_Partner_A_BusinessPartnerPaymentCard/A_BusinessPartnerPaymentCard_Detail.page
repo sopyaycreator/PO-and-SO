@@ -1,0 +1,127 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BusinessPartnerPaymentCard",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerPaymentCard/NavToA_BusinessPartnerPaymentCard_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Rules/Business_Partner/A_BusinessPartnerPaymentCard/A_BusinessPartnerPaymentCard_DeleteConfirmation.js",
+				"Position": "Right",
+				"SystemItem": "Trash",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_BusinessPartnerPaymentCardType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{PaymentCardID}",
+						"Subhead": "{BusinessPartner}",
+						"BodyText": "",
+						"Footnote": "{CardNumber}",
+						"Description": "{PaymentCardType}",
+						"StatusText": "{IsStandardCard}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{CardDescription}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentCardID",
+							"Value": "{PaymentCardID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentCardType",
+							"Value": "{PaymentCardType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CardNumber",
+							"Value": "{CardNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsStandardCard",
+							"Value": "{IsStandardCard}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CardDescription",
+							"Value": "{CardDescription}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ValidityDate",
+							"Value": "{ValidityDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ValidityEndDate",
+							"Value": "{ValidityEndDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CardHolder",
+							"Value": "{CardHolder}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CardIssuingBank",
+							"Value": "{CardIssuingBank}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CardIssueDate",
+							"Value": "{CardIssueDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PaymentCardLock",
+							"Value": "{PaymentCardLock}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "MaskedCardNumber",
+							"Value": "{MaskedCardNumber}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartnerPaymentCard_Detail"
+}

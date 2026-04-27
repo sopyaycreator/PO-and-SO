@@ -1,0 +1,29 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BusinessPartnerRating",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BusinessPartnerRating_Edit/#Control:BusinessPartner/#Value",
+        "BusinessPartnerRatingProcedure": "#Page:A_BusinessPartnerRating_Edit/#Control:BusinessPartnerRatingProcedure/#Value",
+        "BPRatingValidityEndDate": "#Page:A_BusinessPartnerRating_Edit/#Control:BPRatingValidityEndDate/#Value",
+        "BusinessPartnerRatingGrade": "#Page:A_BusinessPartnerRating_Edit/#Control:BusinessPartnerRatingGrade/#Value",
+        "BusinessPartnerRatingTrend": "#Page:A_BusinessPartnerRating_Edit/#Control:BusinessPartnerRatingTrend/#Value",
+        "BPRatingValidityStartDate": "#Page:A_BusinessPartnerRating_Edit/#Control:BPRatingValidityStartDate/#Value",
+        "BPRatingCreationDate": "#Page:A_BusinessPartnerRating_Edit/#Control:BPRatingCreationDate/#Value",
+        "BusinessPartnerRatingComment": "#Page:A_BusinessPartnerRating_Edit/#Control:BusinessPartnerRatingComment/#Value",
+        "BusinessPartnerRatingIsAllowed": "#Page:A_BusinessPartnerRating_Edit/#Control:BusinessPartnerRatingIsAllowed/#Value",
+        "BPRatingIsValidOnKeyDate": "#Page:A_BusinessPartnerRating_Edit/#Control:BPRatingIsValidOnKeyDate/#Value",
+        "BusinessPartnerRatingKeyDate": "#Page:A_BusinessPartnerRating_Edit/#Control:BusinessPartnerRatingKeyDate/#Value",
+        "BusinessPartnerRatingIsExpired": "#Page:A_BusinessPartnerRating_Edit/#Control:BusinessPartnerRatingIsExpired/#Value",
+        "BPRatingLongComment": "#Page:A_BusinessPartnerRating_Edit/#Control:BPRatingLongComment/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

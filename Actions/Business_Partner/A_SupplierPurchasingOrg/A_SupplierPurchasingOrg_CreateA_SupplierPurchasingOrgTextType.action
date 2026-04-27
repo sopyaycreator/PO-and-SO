@@ -1,0 +1,26 @@
+{
+    "ParentLink": {
+        "Property": "to_PurchasingOrgText",
+        "Target": {
+            "EntitySet": "A_SupplierPurchasingOrg",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Supplier": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPurchasingOrgTextType/#Control:Supplier/#Value",
+        "PurchasingOrganization": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPurchasingOrgTextType/#Control:PurchasingOrganization/#Value",
+        "Language": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPurchasingOrgTextType/#Control:Language/#Value",
+        "LongTextID": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPurchasingOrgTextType/#Control:LongTextID/#Value",
+        "LongText": "#Page:A_SupplierPurchasingOrg_CreateA_SupplierPurchasingOrgTextType/#Control:LongText/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_SupplierPurchasingOrgText",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

@@ -1,0 +1,134 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BusinessPartnerContact",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerContact/NavToA_BusinessPartnerContact_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerContact/A_BusinessPartnerContact_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_BusinessPartnerContactType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{RelationshipNumber}",
+						"Subhead": "{BusinessPartnerCompany}",
+						"BodyText": "",
+						"Footnote": "{ValidityEndDate}",
+						"Description": "{BusinessPartnerPerson}",
+						"StatusText": "{ValidityStartDate}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{IsStandardRelationship}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "RelationshipNumber",
+							"Value": "{RelationshipNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerCompany",
+							"Value": "{BusinessPartnerCompany}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerPerson",
+							"Value": "{BusinessPartnerPerson}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ValidityEndDate",
+							"Value": "{ValidityEndDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ValidityStartDate",
+							"Value": "{ValidityStartDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsStandardRelationship",
+							"Value": "{IsStandardRelationship}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "RelationshipCategory",
+							"Value": "{RelationshipCategory}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "to_ContactAddress",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BusinessPartnerCompany}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AdditionalStreetPrefixName}",
+						"Footnote": "{BusinessPartnerPerson}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ValidityEndDate}",
+						"Subhead": "{RelationshipNumber}",
+						"SubstatusText": "{AddressID}",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_ContactAddress",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"A_BPContactToAddress"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartnerContact_Detail"
+}

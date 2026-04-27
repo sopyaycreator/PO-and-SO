@@ -1,0 +1,23 @@
+{
+    "_Type": "Action.Type.ODataService.UpdateEntity",
+    "Target": {
+        "EntitySet": "A_BPEmployment",
+        "Service": "/BusinessPartner/Services/Business_Partner.service",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "Properties": {
+        "BusinessPartner": "#Page:A_BPEmployment_Edit/#Control:BusinessPartner/#Value",
+        "BPEmploymentStartDate": "#Page:A_BPEmployment_Edit/#Control:BPEmploymentStartDate/#Value",
+        "BPEmploymentEndDate": "#Page:A_BPEmployment_Edit/#Control:BPEmploymentEndDate/#Value",
+        "BPEmploymentStatus": "#Page:A_BPEmployment_Edit/#Control:BPEmploymentStatus/#Value",
+        "BusPartEmplrIndstryCode": "#Page:A_BPEmployment_Edit/#Control:BusPartEmplrIndstryCode/#Value",
+        "BusinessPartnerEmployerName": "#Page:A_BPEmployment_Edit/#Control:BusinessPartnerEmployerName/#Value",
+        "BusinessPartnerOccupationGroup": "#Page:A_BPEmployment_Edit/#Control:BusinessPartnerOccupationGroup/#Value"
+    },
+    "UpdateLinks": [],
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": "/BusinessPartner/Actions/UpdateEntitySuccessMessage.action",
+    "OnFailure": "/BusinessPartner/Actions/UpdateEntityFailureMessage.action"
+}

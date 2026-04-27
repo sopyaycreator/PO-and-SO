@@ -1,0 +1,1178 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/BusinessPartner/Services/Business_Partner.service",
+		"EntitySet": "A_BusinessPartner",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_Edit.action",
+				"Position": "Right",
+				"SystemItem": "Edit",
+				"_Type": "Control.Type.ActionBarItem"
+			},
+			{
+				"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/A_BusinessPartner_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More",
+				"_Type": "Control.Type.ActionBarItem"
+			}
+		],
+		"Caption": "$(L,A_BusinessPartnerType_Detail)",
+		"_Type": "Control.Type.ActionBar"
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{AcademicTitle}",
+						"Subhead": "{BusinessPartner}",
+						"BodyText": "",
+						"Footnote": "{Supplier}",
+						"Description": "{Customer}",
+						"StatusText": "{AuthorizationGroup}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{BusinessPartnerCategory}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "BusinessPartner",
+							"Value": "{BusinessPartner}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Customer",
+							"Value": "{Customer}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Supplier",
+							"Value": "{Supplier}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AcademicTitle",
+							"Value": "{AcademicTitle}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AuthorizationGroup",
+							"Value": "{AuthorizationGroup}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerCategory",
+							"Value": "{BusinessPartnerCategory}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerFullName",
+							"Value": "{BusinessPartnerFullName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerGrouping",
+							"Value": "{BusinessPartnerGrouping}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerName",
+							"Value": "{BusinessPartnerName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CorrespondenceLanguage",
+							"Value": "{CorrespondenceLanguage}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CreatedByUser",
+							"Value": "{CreatedByUser}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CreationDate",
+							"Value": "{CreationDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "CreationTime",
+							"Value": "{CreationTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FirstName",
+							"Value": "{FirstName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "FormOfAddress",
+							"Value": "{FormOfAddress}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Industry",
+							"Value": "{Industry}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InternationalLocationNumber1",
+							"Value": "{InternationalLocationNumber1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InternationalLocationNumber2",
+							"Value": "{InternationalLocationNumber2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsFemale",
+							"Value": "{IsFemale}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsMale",
+							"Value": "{IsMale}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsNaturalPerson",
+							"Value": "{IsNaturalPerson}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsSexUnknown",
+							"Value": "{IsSexUnknown}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "GenderCodeName",
+							"Value": "{GenderCodeName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Language",
+							"Value": "{Language}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LastChangeDate",
+							"Value": "{LastChangeDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LastChangeTime",
+							"Value": "{LastChangeTime}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LastChangedByUser",
+							"Value": "{LastChangedByUser}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LastName",
+							"Value": "{LastName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LegalForm",
+							"Value": "{LegalForm}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "OrganizationBPName1",
+							"Value": "{OrganizationBPName1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "OrganizationBPName2",
+							"Value": "{OrganizationBPName2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "OrganizationBPName3",
+							"Value": "{OrganizationBPName3}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "OrganizationBPName4",
+							"Value": "{OrganizationBPName4}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "OrganizationFoundationDate",
+							"Value": "{OrganizationFoundationDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "OrganizationLiquidationDate",
+							"Value": "{OrganizationLiquidationDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SearchTerm1",
+							"Value": "{SearchTerm1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "SearchTerm2",
+							"Value": "{SearchTerm2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "AdditionalLastName",
+							"Value": "{AdditionalLastName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BirthDate",
+							"Value": "{BirthDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerBirthDateStatus",
+							"Value": "{BusinessPartnerBirthDateStatus}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerBirthplaceName",
+							"Value": "{BusinessPartnerBirthplaceName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerDeathDate",
+							"Value": "{BusinessPartnerDeathDate}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerIsBlocked",
+							"Value": "{BusinessPartnerIsBlocked}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerType",
+							"Value": "{BusinessPartnerType}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "ETag",
+							"Value": "{ETag}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "GroupBusinessPartnerName1",
+							"Value": "{GroupBusinessPartnerName1}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "GroupBusinessPartnerName2",
+							"Value": "{GroupBusinessPartnerName2}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IndependentAddressID",
+							"Value": "{IndependentAddressID}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "InternationalLocationNumber3",
+							"Value": "{InternationalLocationNumber3}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "MiddleName",
+							"Value": "{MiddleName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "NameCountry",
+							"Value": "{NameCountry}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "NameFormat",
+							"Value": "{NameFormat}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PersonFullName",
+							"Value": "{PersonFullName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "PersonNumber",
+							"Value": "{PersonNumber}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "IsMarkedForArchiving",
+							"Value": "{IsMarkedForArchiving}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerIDByExtSystem",
+							"Value": "{BusinessPartnerIDByExtSystem}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerPrintFormat",
+							"Value": "{BusinessPartnerPrintFormat}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerOccupation",
+							"Value": "{BusinessPartnerOccupation}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusPartMaritalStatus",
+							"Value": "{BusPartMaritalStatus}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusPartNationality",
+							"Value": "{BusPartNationality}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerBirthName",
+							"Value": "{BusinessPartnerBirthName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BusinessPartnerSupplementName",
+							"Value": "{BusinessPartnerSupplementName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "NaturalPersonEmployerName",
+							"Value": "{NaturalPersonEmployerName}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LastNamePrefix",
+							"Value": "{LastNamePrefix}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "LastNameSecondPrefix",
+							"Value": "{LastNameSecondPrefix}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "Initials",
+							"Value": "{Initials}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "BPDataControllerIsNotRequired",
+							"Value": "{BPDataControllerIsNotRequired}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "TradingPartner",
+							"Value": "{TradingPartner}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "YY1_CityREMAX_bus",
+							"Value": "{YY1_CityREMAX_bus}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "YY1_CCEmail_bus",
+							"Value": "{YY1_CCEmail_bus}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "YY1_Text_bus",
+							"Value": "{YY1_Text_bus}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "YY1_CCEmail_busF",
+							"Value": "{YY1_CCEmail_busF}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "YY1_CityREMAX_busF",
+							"Value": "{YY1_CityREMAX_busF}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "YY1_CityREMAX_busT",
+							"Value": "{YY1_CityREMAX_busT}",
+							"_Type": "KeyValue.Type.Item"
+						},
+						{
+							"KeyName": "YY1_Text_busF",
+							"Value": "{YY1_Text_busF}",
+							"_Type": "KeyValue.Type.Item"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "to_AddressIndependentEmail",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{Person}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{OrdinalNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{EmailAddress}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{IsDefaultEmailAddress}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPAddressIndependentEmail/NavToA_BPAddressIndependentEmail_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_AddressIndependentEmail",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_AddressIndependentFax",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{Person}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{OrdinalNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{FaxCountry}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{FaxAreaCodeSubscriberNumber}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPAddressIndependentFax/NavToA_BPAddressIndependentFax_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_AddressIndependentFax",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_AddressIndependentMobile",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{Person}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{OrdinalNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{InternationalPhoneNumber}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{IsDefaultPhoneNumber}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPAddressIndependentMobile/NavToA_BPAddressIndependentMobile_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_AddressIndependentMobile",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_AddressIndependentPhone",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{Person}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{OrdinalNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{DestinationLocationCountry}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{InternationalPhoneNumber}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPAddressIndependentPhone/NavToA_BPAddressIndependentPhone_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_AddressIndependentPhone",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_AddressIndependentWebsite",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{Person}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{OrdinalNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{IsDefaultURLAddress}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{URLFieldLength}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPAddressIndependentWebsite/NavToA_BPAddressIndependentWebsite_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_AddressIndependentWebsite",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BPDataController",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{PurposeForPersonalData}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{BusinessPartner}",
+						"Footnote": "{DataControlAssignmentStatus}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{BPDataControllerIsDerived}",
+						"Subhead": "{DataController}",
+						"SubstatusText": "{PurposeDerived}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPDataController/NavToA_BPDataController_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BPDataController",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BPEmployment",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BPEmploymentStartDate}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{BusinessPartnerEmployerName}",
+						"Footnote": "{BPEmploymentEndDate}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{BPEmploymentStatus}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{BusPartEmplrIndstryCode}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPEmployment/NavToA_BPEmployment_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BPEmployment",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BPFiscalYearInformation",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BPBalanceSheetCurrency}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{BusinessPartner}",
+						"Footnote": "{BPAnnualStockholderMeetingDate}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{BPFiscalYearStartDate}",
+						"Subhead": "{BusinessPartnerFiscalYear}",
+						"SubstatusText": "{BPFiscalYearEndDate}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPFiscalYearInformation/NavToA_BPFiscalYearInformation_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BPFiscalYearInformation",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BPRelationship",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BusinessPartner2}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{RelationshipNumber}",
+						"Footnote": "{ValidityEndDate}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ValidityStartDate}",
+						"Subhead": "{BusinessPartner1}",
+						"SubstatusText": "{IsStandardRelationship}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BPRelationship/NavToA_BPRelationship_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BPRelationship",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BuPaIdentification",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BPIdentificationNumber}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{BusinessPartner}",
+						"Footnote": "{BPIdnNmbrIssuingInstitute}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{BPIdentificationEntryDate}",
+						"Subhead": "{BPIdentificationType}",
+						"SubstatusText": "{Country}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BuPaIdentification/NavToA_BuPaIdentification_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BuPaIdentification",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BuPaIndustry",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BusinessPartner}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{IndustrySector}",
+						"Footnote": "{IsStandardIndustry}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{IndustryKeyDescription}",
+						"Subhead": "{IndustrySystemType}",
+						"SubstatusText": "",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BuPaIndustry/NavToA_BuPaIndustry_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BuPaIndustry",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BusinessPartnerAddress",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{AddressID}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AdditionalStreetPrefixName}",
+						"Footnote": "{ValidityStartDate}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ValidityEndDate}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{AuthorizationGroup}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAddress/NavToA_BusinessPartnerAddress_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BusinessPartnerAddress",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BusinessPartnerAlias",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BPAliasPositionNumber}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{BusinessPartnerAliasName}",
+						"Footnote": "",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerAlias/NavToA_BusinessPartnerAlias_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BusinessPartnerAlias",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BusinessPartnerBank",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BankIdentification}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{BankName}",
+						"Footnote": "{BankCountryKey}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{BankNumber}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{SWIFTCode}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerBank/NavToA_BusinessPartnerBank_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BusinessPartnerBank",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BusinessPartnerContact",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BusinessPartnerPerson}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{RelationshipNumber}",
+						"Footnote": "{ValidityEndDate}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{ValidityStartDate}",
+						"Subhead": "{BusinessPartnerCompany}",
+						"SubstatusText": "{IsStandardRelationship}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerContact/NavToA_BusinessPartnerContact_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BusinessPartnerContact",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BusinessPartnerRating",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BPRatingValidityEndDate}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{BusinessPartner}",
+						"Footnote": "{BusinessPartnerRatingGrade}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{BusinessPartnerRatingTrend}",
+						"Subhead": "{BusinessPartnerRatingProcedure}",
+						"SubstatusText": "{BPRatingValidityStartDate}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerRating/NavToA_BusinessPartnerRating_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BusinessPartnerRating",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BusinessPartnerRole",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{ValidFrom}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{BusinessPartner}",
+						"Footnote": "{ValidTo}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{AuthorizationGroup}",
+						"Subhead": "{BusinessPartnerRole}",
+						"SubstatusText": "",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerRole/NavToA_BusinessPartnerRole_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BusinessPartnerRole",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BusinessPartnerTax",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BPTaxNumber}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{BusinessPartner}",
+						"Footnote": "{BPTaxLongNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{AuthorizationGroup}",
+						"Subhead": "{BPTaxType}",
+						"SubstatusText": "",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerTaxNumber/NavToA_BusinessPartnerTaxNumber_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BusinessPartnerTax",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_BusPartAddrDepdntTaxNmbr",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{BPTaxType}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{AddressID}",
+						"Footnote": "{BPTaxNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{BPTaxLongNumber}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{AuthorizationGroup}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusPartAddrDepdntTaxNmbr/NavToA_BusPartAddrDepdntTaxNmbr_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_BusPartAddrDepdntTaxNmbr",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				},
+				{
+					"Header": {
+						"Caption": "to_PaymentCard",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{PaymentCardType}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{PaymentCardID}",
+						"Footnote": "{CardNumber}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{IsStandardCard}",
+						"Subhead": "{BusinessPartner}",
+						"SubstatusText": "{CardDescription}",
+						"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartnerPaymentCard/NavToA_BusinessPartnerPaymentCard_Detail.action",
+						"_Type": "ObjectTable.Type.ObjectCell"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/to_PaymentCard",
+						"Service": "/BusinessPartner/Services/Business_Partner.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"A_BPAddressIndependentEmail",
+				"A_BPAddressIndependentFax",
+				"A_BPAddressIndependentMobile",
+				"A_BPAddressIndependentPhone",
+				"A_BPAddressIndependentWebsite",
+				"A_BPDataController",
+				"A_BPEmployment",
+				"A_BPFiscalYearInformation",
+				"A_BPRelationship",
+				"A_BuPaIdentification",
+				"A_BuPaIndustry",
+				"A_BusinessPartnerAddress",
+				"A_BusinessPartnerAlias",
+				"A_BusinessPartnerBank",
+				"A_BusinessPartnerContact",
+				"A_BusinessPartnerRating",
+				"A_BusinessPartnerRole",
+				"A_BusinessPartnerTaxNumber",
+				"A_BusPartAddrDepdntTaxNmbr",
+				"A_BusinessPartnerPaymentCard"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_BusinessPartner_Detail"
+}

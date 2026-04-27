@@ -1,0 +1,61 @@
+{
+    "ParentLink": {
+        "Property": "to_SupplierPurchasingOrg",
+        "Target": {
+            "EntitySet": "A_Supplier",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/BusinessPartner/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/BusinessPartner/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Supplier": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:Supplier/#Value",
+        "PurchasingOrganization": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:PurchasingOrganization/#Value",
+        "AutomaticEvaluatedRcptSettlmt": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:AutomaticEvaluatedRcptSettlmt/#Value",
+        "CalculationSchemaGroupCode": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:CalculationSchemaGroupCode/#Value",
+        "DeletionIndicator": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:DeletionIndicator/#Value",
+        "EvaldReceiptSettlementIsActive": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:EvaldReceiptSettlementIsActive/#Value",
+        "IncotermsClassification": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:IncotermsClassification/#Value",
+        "IncotermsTransferLocation": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:IncotermsTransferLocation/#Value",
+        "IncotermsVersion": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:IncotermsVersion/#Value",
+        "IncotermsLocation1": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:IncotermsLocation1/#Value",
+        "IncotermsLocation2": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:IncotermsLocation2/#Value",
+        "IntrastatCrsBorderTrMode": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:IntrastatCrsBorderTrMode/#Value",
+        "InvoiceIsGoodsReceiptBased": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:InvoiceIsGoodsReceiptBased/#Value",
+        "InvoiceIsMMServiceEntryBased": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:InvoiceIsMMServiceEntryBased/#Value",
+        "MaterialPlannedDeliveryDurn": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:MaterialPlannedDeliveryDurn/#Value",
+        "MinimumOrderAmount": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:MinimumOrderAmount/#Value",
+        "PaymentTerms": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:PaymentTerms/#Value",
+        "PlanningCycle": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:PlanningCycle/#Value",
+        "PricingDateControl": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:PricingDateControl/#Value",
+        "ProdStockAndSlsDataTransfPrfl": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:ProdStockAndSlsDataTransfPrfl/#Value",
+        "ProductUnitGroup": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:ProductUnitGroup/#Value",
+        "PurOrdAutoGenerationIsAllowed": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:PurOrdAutoGenerationIsAllowed/#Value",
+        "PurchaseOrderCurrency": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:PurchaseOrderCurrency/#Value",
+        "PurchasingGroup": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:PurchasingGroup/#Value",
+        "PurchasingIsBlockedForSupplier": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:PurchasingIsBlockedForSupplier/#Value",
+        "RoundingProfile": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:RoundingProfile/#Value",
+        "ShippingCondition": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:ShippingCondition/#Value",
+        "SuplrDiscountInKindIsGranted": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:SuplrDiscountInKindIsGranted/#Value",
+        "SuplrInvcRevalIsAllowed": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:SuplrInvcRevalIsAllowed/#Value",
+        "SuplrIsRlvtForSettlmtMgmt": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:SuplrIsRlvtForSettlmtMgmt/#Value",
+        "SuplrPurgOrgIsRlvtForPriceDetn": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:SuplrPurgOrgIsRlvtForPriceDetn/#Value",
+        "SupplierABCClassificationCode": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:SupplierABCClassificationCode/#Value",
+        "SupplierAccountNumber": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:SupplierAccountNumber/#Value",
+        "SupplierIsReturnsSupplier": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:SupplierIsReturnsSupplier/#Value",
+        "SupplierPhoneNumber": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:SupplierPhoneNumber/#Value",
+        "SupplierRespSalesPersonName": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:SupplierRespSalesPersonName/#Value",
+        "SupplierConfirmationControlKey": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:SupplierConfirmationControlKey/#Value",
+        "IsOrderAcknRqd": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:IsOrderAcknRqd/#Value",
+        "AuthorizationGroup": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:AuthorizationGroup/#Value",
+        "SupplierAccountGroup": "#Page:A_Supplier_CreateA_SupplierPurchasingOrgType/#Control:SupplierAccountGroup/#Value"
+    },
+    "Target": {
+        "EntitySet": "A_SupplierPurchasingOrg",
+        "Service": "/BusinessPartner/Services/Business_Partner.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}
