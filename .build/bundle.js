@@ -510,6 +510,7 @@ let businesspartner_rules_logging_setuserloglevel_js = __webpack_require__(/*! .
 let businesspartner_rules_logging_togglelogging_js = __webpack_require__(/*! ./BusinessPartner/Rules/Logging/ToggleLogging.js */ "./build.definitions/BusinessPartner/Rules/Logging/ToggleLogging.js")
 let businesspartner_rules_logging_tracecategories_js = __webpack_require__(/*! ./BusinessPartner/Rules/Logging/TraceCategories.js */ "./build.definitions/BusinessPartner/Rules/Logging/TraceCategories.js")
 let businesspartner_rules_logging_userlogsetting_js = __webpack_require__(/*! ./BusinessPartner/Rules/Logging/UserLogSetting.js */ "./build.definitions/BusinessPartner/Rules/Logging/UserLogSetting.js")
+let businesspartner_rules_opensapnew_js = __webpack_require__(/*! ./BusinessPartner/Rules/OpenSAPNew.js */ "./build.definitions/BusinessPartner/Rules/OpenSAPNew.js")
 let businesspartner_rules_service_initialize_js = __webpack_require__(/*! ./BusinessPartner/Rules/Service/Initialize.js */ "./build.definitions/BusinessPartner/Rules/Service/Initialize.js")
 let businesspartner_services_business_partner_service = __webpack_require__(/*! ./BusinessPartner/Services/Business_Partner.service */ "./build.definitions/BusinessPartner/Services/Business_Partner.service")
 let businesspartner_services_material_stock_service = __webpack_require__(/*! ./BusinessPartner/Services/Material_Stock.service */ "./build.definitions/BusinessPartner/Services/Material_Stock.service")
@@ -1015,6 +1016,7 @@ module.exports = {
 	businesspartner_rules_logging_togglelogging_js : businesspartner_rules_logging_togglelogging_js,
 	businesspartner_rules_logging_tracecategories_js : businesspartner_rules_logging_tracecategories_js,
 	businesspartner_rules_logging_userlogsetting_js : businesspartner_rules_logging_userlogsetting_js,
+	businesspartner_rules_opensapnew_js : businesspartner_rules_opensapnew_js,
 	businesspartner_rules_service_initialize_js : businesspartner_rules_service_initialize_js,
 	businesspartner_services_business_partner_service : businesspartner_services_business_partner_service,
 	businesspartner_services_material_stock_service : businesspartner_services_material_stock_service,
@@ -2497,6 +2499,31 @@ function UserLogSetting(clientAPI) {
 
 /***/ }),
 
+/***/ "./build.definitions/BusinessPartner/Rules/OpenSAPNew.js":
+/*!***************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Rules/OpenSAPNew.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ OpenSAPNews)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function OpenSAPNews(clientAPI) {
+  // Get the NativeScript utils module from the clientAPI
+  const utils = clientAPI.nativescript.utilsModule;
+
+  // Open the external URL
+  return utils.openUrl("https://news.sap.com");
+}
+
+/***/ }),
+
 /***/ "./build.definitions/BusinessPartner/Rules/Service/Initialize.js":
 /*!***********************************************************************!*\
   !*** ./build.definitions/BusinessPartner/Rules/Service/Initialize.js ***!
@@ -2550,9 +2577,10 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../c
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.BusinessCard {
-  background-color: rgba(35, 110, 143, 0.936);
+  background: radial-gradient(circle at center, rgba(59, 183, 36, 0.936), rgba(34, 49, 186, 0.9));
+  background-color: rgba(166, 143, 37, 0.936);
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.css"],"names":[],"mappings":"AAAA;EACE,2CAA2C;AAC7C","sourcesContent":[".BusinessCard {\n  background-color: rgba(35, 110, 143, 0.936);\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.css"],"names":[],"mappings":"AAAA;EACE,+FAA+F;EAC/F,2CAA2C;AAC7C","sourcesContent":[".BusinessCard {\n  background: radial-gradient(circle at center, rgba(59, 183, 36, 0.936), rgba(34, 49, 186, 0.9));\n  background-color: rgba(166, 143, 37, 0.936);\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -2570,9 +2598,11 @@ var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.BusinessCard{
-  background-color: rgba(35, 110, 143, 0.936);
-}`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.less"],"names":[],"mappings":"AAAA;EACE,2CAA2C;AAC7C","sourcesContent":[".BusinessCard{\n  background-color: rgba(35, 110, 143, 0.936);\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.BusinessCard {
+  background: radial-gradient(circle at center, rgba(59, 183, 36, 0.936), rgba(34, 49, 186, 0.9));
+  
+  background-color: rgba(166, 143, 37, 0.936);
+}`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.less"],"names":[],"mappings":"AAAA;EACE,+FAA+F;;EAE/F,2CAA2C;AAC7C","sourcesContent":[".BusinessCard {\n  background: radial-gradient(circle at center, rgba(59, 183, 36, 0.936), rgba(34, 49, 186, 0.9));\n  \n  background-color: rgba(166, 143, 37, 0.936);\n}"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -2591,9 +2621,10 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../c
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.ns-light .BusinessCard {
-	background-color: rgba(35, 110, 143, 0.936);
+	background: radial-gradient(circle at center, rgba(59, 183, 36, 0.936), rgba(34, 49, 186, 0.9));
+	background-color: rgba(166, 143, 37, 0.936);
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,2CAA2C;AAC5C","sourcesContent":[".ns-light .BusinessCard {\n\tbackground-color: rgba(35, 110, 143, 0.936);\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,+FAA+F;CAC/F,2CAA2C;AAC5C","sourcesContent":[".ns-light .BusinessCard {\n\tbackground: radial-gradient(circle at center, rgba(59, 183, 36, 0.936), rgba(34, 49, 186, 0.9));\n\tbackground-color: rgba(166, 143, 37, 0.936);\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -2612,9 +2643,10 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../c
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `BusinessCard {
-	background-color: rgba(35, 110, 143, 0.936);
+	background: radial-gradient(circle at center, rgba(59, 183, 36, 0.936), rgba(34, 49, 186, 0.9));
+	background-color: rgba(166, 143, 37, 0.936);
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,2CAA2C;AAC5C","sourcesContent":["BusinessCard {\n\tbackground-color: rgba(35, 110, 143, 0.936);\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA;CACC,+FAA+F;CAC/F,2CAA2C;AAC5C","sourcesContent":["BusinessCard {\n\tbackground: radial-gradient(circle at center, rgba(59, 183, 36, 0.936), rgba(34, 49, 186, 0.9));\n\tbackground-color: rgba(166, 143, 37, 0.936);\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -4058,7 +4090,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \***********************************************************/
 /***/ ((module) => {
 
-module.exports = {"Styles":{"backgroundColor":"#1961cdff"},"Controls":[{"Styles":{"backgroundColor":"#FFFFFF"},"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"Header":{"Styles":{"Caption":"BusinessPartnerCard"},"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Business Partner"},"_Type":"Section.Type.ObjectCardCollection","_Name":"SectionObjectCardCollection_BusinessPartner","EmptySection":{"FooterVisible":false},"Cards":[{"StyleClass":"BusinessPartnerCard","_Type":"ObjectCardCollection.Type.Card","_Name":"Card_BusinessPartner","Visible":true,"Title":"Business Partner","Subhead":"A_BusinessPartner","Footnote":"Master Data","DetailImage":"sap-icon://customer","DetailImageIsCircular":true,"Description":"View all business partners","OnPress":"/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_List.action","Styles":{"BackgroundColor":"BusinessCard"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Customer","Title":"Customer","Subhead":"A_Customer","Footnote":"Sales Data","DetailImage":"sap-icon://customer-order-entry","Description":"View customer list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_List.action","Styles":{"BackgroundColor":"BusinessCard"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Supplier","Title":"Supplier","Subhead":"A_Supplier","Footnote":"Procurement","DetailImage":"sap-icon://supplier","Description":"View supplier list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_List.action","Styles":{"BackgroundColor":"BusinessCard"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_MaterialStock","Title":"Material Stock","Subhead":"Overview","Footnote":"Inventory","DetailImage":"sap-icon://inventory","Description":"Material stock overview","OnPress":"/BusinessPartner/Actions/NavToMaterialStock_List.action","Styles":{"BackgroundColor":"BusinessCard"}}],"Layout":{"LayoutType":"HorizontalScroll"}}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"Drawer","Caption":"Profile","Icon":"sap-icon://employee","Position":"Left","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Drawer/OpenProfileDrawer.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"UserMenu","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Application/UserMenuPopover.action"}],"_Name":"Main","_Type":"Control.Type.ActionBar","Caption":"SAP","PrefersLargeCaption":true}}
+module.exports = {"Styles":{"backgroundColor":"#1961cdff"},"Controls":[{"Styles":{"backgroundColor":"#FFFFFF"},"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader1","AccessoryType":"None","UseTopPadding":true,"Caption":"New To-Dos"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","_Name":"SAPNewsSection","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCells":[{"ObjectCell":{"DisplayDescriptionInTab":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Type":"ObjectTable.Type.ObjectCell","_Name":"ObjectCollectionTypeObjectCell0","Title":"The Engagement Divide: 15 Reasons It's Time to Fix CX","Subhead":"SAP Community News","Footnote":"2026-04-21 12:15:00.000Z","StatusText":"Live","DetailImage":"sap-icon://sap-logo-shape","DetailImageIsCircular":false,"AccessoryType":"disclosureIndicator","OnPress":"/BusinessPartner/Rules/OpenSAPNew.js"}}],"HighlightSelectedItem":false},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":true},"_Type":"Section.Type.ObjectCardCollection","_Name":"SectionObjectCardCollection_BusinessPartner","EmptySection":{"FooterVisible":false},"Cards":[{"StyleClass":"BusinessPartnerCard","_Type":"ObjectCardCollection.Type.Card","_Name":"Card_BusinessPartner","Visible":true,"Title":"Business Partner","Subhead":"A_BusinessPartner","Footnote":"Master Data","DetailImage":"sap-icon://customer","DetailImageIsCircular":true,"Description":"View all business partners","OnPress":"/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_List.action","Styles":{"BackgroundColor":"BusinessCard"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Customer","Title":"Customer","Subhead":"A_Customer","Footnote":"Sales Data","DetailImage":"sap-icon://customer-order-entry","Description":"View customer list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_List.action","Styles":{"BackgroundColor":"BusinessCard"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Supplier","Title":"Supplier","Subhead":"A_Supplier","Footnote":"Procurement","DetailImage":"sap-icon://supplier","Description":"View supplier list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_List.action","Styles":{"BackgroundColor":"BusinessCard"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_MaterialStock","Title":"Material Stock","Subhead":"Overview","Footnote":"Inventory","DetailImage":"sap-icon://inventory","Description":"Material stock overview","OnPress":"/BusinessPartner/Actions/NavToMaterialStock_List.action","Styles":{"BackgroundColor":"BusinessCard"}}],"Layout":{"LayoutType":"HorizontalScroll"}}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"Drawer","Caption":"Profile","Icon":"sap-icon://employee","Position":"Left","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Drawer/OpenProfileDrawer.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"UserMenu","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Application/UserMenuPopover.action"}],"_Name":"Main","_Type":"Control.Type.ActionBar","Caption":"SAP","PrefersLargeCaption":true}}
 
 /***/ }),
 
@@ -4078,7 +4110,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \****************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.BottomNavigation","_Name":"BottomNavigation0","Items":[{"_Type":"Control.Type.TabItem","Caption":"Start","Image":"sap-icon://home","PageToOpen":"/BusinessPartner/Pages/Main.page","_Name":"HomeTab"},{"_Type":"Control.Type.TabItem","Caption":"Apps","Image":"sap-icon://grid","_Name":"AppsTab"},{"_Type":"Control.Type.TabItem","Caption":"To-Dos","Image":"sap-icon://checklist","_Name":"To-Dos"}]}],"_Type":"Page","_Name":"MainTab","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"_Type":"Control.Type.BottomNavigation","_Name":"BottomNavigation0","Items":[{"_Type":"Control.Type.TabItem","Caption":"Start","Image":"sap-icon://home","PageToOpen":"/BusinessPartner/Pages/Main.page","_Name":"HomeTab"},{"_Type":"Control.Type.TabItem","Caption":"Apps","Image":"sap-icon://grid","_Name":"AppsTab"},{"_Type":"Control.Type.TabItem","Caption":"To-Dos","Image":"sap-icon://task","_Name":"To-Dos"}]}],"_Type":"Page","_Name":"MainTab","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
 
 /***/ }),
 
@@ -7251,7 +7283,7 @@ __webpack_require__.d(exports, {
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"BusinessCard":{"background-color":"rgba(35, 110, 143, 0.936)"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"BusinessCard":{"background":"radial-gradient(circle at center, rgba(59, 183, 36, 0.936), rgba(34, 49, 186, 0.9))","background-color":"rgba(166, 143, 37, 0.936)"}}');
 
 /***/ }),
 

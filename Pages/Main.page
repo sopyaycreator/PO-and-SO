@@ -22,12 +22,6 @@
 						"UseTopPadding": true,
 						"Caption": "New To-Dos"
 					},
-					"_Type": "Section.Type.ObjectTable",
-					"_Name": "SAPNewsSection",
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
 					"Separators": {
 						"TopSectionSeparator": false,
 						"BottomSectionSeparator": true,
@@ -35,33 +29,38 @@
 						"FooterSeparator": true,
 						"ControlSeparator": true
 					},
-					"ObjectCells": [
-						{
-							"ObjectCell": {
-								"DisplayDescriptionInTab": true,
-								"_Type": "ObjectTable.Type.ObjectCell",
-								"_Name": "ObjectCollectionTypeObjectCell0",
-								"Title": "The Engagement Divide: 15 Reasons It's Time to Fix CX",
-								"Subhead": "SAP Community News",
-								"Footnote": "2026-04-21 12:15:00.000Z",
-								"StatusText": "Live",
-								"AccessoryType": "disclosureIndicator",
-								"Icons": [
-									"sap-icon://sap-logo-shape"
-								],
-								"OnPress": "/BusinessPartner/Actions/ExternalNav/OpenSAPNews.action",
-								"ContextMenu": {
-									"PerformFirstActionWithFullSwipe": true
-								}
-							}
-						}
-					],
 					"Grouping": {
 						"GroupingProperties": [],
 						"Header": {
 							"Items": []
 						}
 					},
+					"_Type": "Section.Type.ObjectTable",
+					"_Name": "SAPNewsSection",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"ObjectCells": [
+						{
+							"ObjectCell": {
+								"DisplayDescriptionInTab": true,
+								"ContextMenu": {
+									"PerformFirstActionWithFullSwipe": true
+								},
+								"_Type": "ObjectTable.Type.ObjectCell",
+								"_Name": "ObjectCollectionTypeObjectCell0",
+								"Title": "The Engagement Divide: 15 Reasons It's Time to Fix CX",
+								"Subhead": "SAP Community News",
+								"Footnote": "2026-04-21 12:15:00.000Z",
+								"StatusText": "Live",
+								"DetailImage": "sap-icon://sap-logo-shape",
+    							"DetailImageIsCircular": false,
+								"AccessoryType": "disclosureIndicator",
+								"OnPress": "/BusinessPartner/Rules/OpenSAPNew.js"
+							}
+						}
+					],
 					"HighlightSelectedItem": false
 				},
 				{

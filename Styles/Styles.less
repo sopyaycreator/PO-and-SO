@@ -1,5 +1,31 @@
+/* Color Variables */
+@sap-brand-navy: #001E4D;
+@sap-action-blue: #0070F2;
+@weather-purple-dark: #4A148C;
+@weather-purple-light: #7B1FA2;
+@app-background: #F2F2F7;
+
+/* Global Page Style */
+.MainPageBackground {
+    background-color: @app-background;
+}
+
+/* Featured News Label Style */
+.NewsLabel {
+    color: @sap-action-blue; /* Matches 'SAP Community News' text */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Weather Tile Style */
+.WeatherCardPurple {
+    background: linear-gradient(135deg, @weather-purple-dark 0%, @weather-purple-light 100%);
+    color: #FFFFFF;
+    border-radius: 18px; /* Smooth rounded corners like the screenshot */
+}
+
+/* Monitoring Apps Grid Cards */
 .BusinessCard {
-  background: radial-gradient(circle at center, rgba(59, 183, 36, 0.936), rgba(34, 49, 186, 0.9));
-  
-  background-color: rgba(166, 143, 37, 0.936);
+    background-color: #FFFFFF;
+    border-radius: 24px; /* Very round corners as seen in Monitoring Apps */
 }
