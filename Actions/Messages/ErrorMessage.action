@@ -1,0 +1,7 @@
+{
+  "_Type": "Action.Type.Message",
+  "Title": "Scan Error",
+  "Message": "Failed to access the scanner or the scan was interrupted.",
+  "OKCaption": "OK",
+  "OnSuccess": "/BusinessPartner/Actions/ClosePage.action"
+}

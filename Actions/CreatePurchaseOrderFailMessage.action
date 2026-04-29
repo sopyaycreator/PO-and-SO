@@ -1,0 +1,11 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "#ActionResults:create/error",
+	"Title": "Message",
+	"Duration": 3,
+	"IsIconHidden": false,
+	"Animated": true,
+	"MaxNumberOfLines": 2
+}
+
+	

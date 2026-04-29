@@ -1,0 +1,9 @@
+{
+  "_Type": "Action.Type.OpenBarcodeScanner",
+  "ActionResult": {
+    "_Name": "BarcodeScanner"
+  },
+  "OnSuccess": "/BusinessPartner/Rules/BarcodeScanner/ProcessScanResult.js",
+  "OnFailure": "/BusinessPartner/Actions/Messages/ErrorMessage.action"
+ 
+}

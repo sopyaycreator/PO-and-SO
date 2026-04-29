@@ -1,0 +1,10 @@
+{
+	"DestinationName": "Material_Document_Overview",
+	"OfflineEnabled": false,
+	"OnlineOptions": {
+		"ServiceOptions": {
+			"dataVersion": 200
+		}
+	},
+	"SourceType": "Mobile"
+}

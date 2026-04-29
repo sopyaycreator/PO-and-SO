@@ -4,12 +4,11 @@ export default function Initialize(context) {
 
     // Initialize all your Data sources
     let _Business_Partner = context.executeAction('/BusinessPartner/Actions/Business_Partner/Service/InitializeOffline.action');
-    let _Material_Stock =
-        context.executeAction('/BusinessPartner/Actions/Material_Stock/Service/InitializeOffline.action');
-
+    let _Material_Stock = context.executeAction('/BusinessPartner/Actions/Material_Stock/Service/InitializeOffline.action');
+    let _Material_Document = context.executeAction('/BusinessPartner/Actions/Material_Document/Service/InitializeOffline.action');
     //You can add more service initialize actions here
 
-    return Promise.all([_Business_Partner,  _Material_Stock]).then(() => {
+    return Promise.all([_Business_Partner,  _Material_Stock, _Material_Document]).then(() => {
         // After Initializing the DB connections
 
         // Display successful initialization  message to the user

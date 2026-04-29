@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/BusinessPartner/Pages/Purchase_Order/Create_Purchase_Order.page",
+    "_Type": "Action.Type.Navigation"
+}

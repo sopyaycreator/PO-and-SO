@@ -1,0 +1,91 @@
+{
+  "_Type": "Page",
+  "_Name": "Create_PurchaseOrder_Page",
+  "ActionBar": {
+    "_Type": "Control.Type.ActionBar",
+    "Caption": "Create Purchase Order",
+    "Items": [
+      {
+        "_Type": "Control.Type.ActionBarItem",
+        "Position": "Left",
+        "SystemItem": "Cancel",
+        "OnPress": "/BusinessPartner/Actions/CloseModalPage_Cancel.action"
+      },
+      {
+        "_Type": "Control.Type.ActionBarItem",
+        "Position": "Right",
+        "SystemItem": "Save",
+        "OnPress": "/BusinessPartner/Actions/Purchase_Order/CreatePurchaseOrder.action"
+      }
+    ]
+  },
+  "Controls": [
+    {
+      "_Type": "Control.Type.SectionedTable",
+      "_Name": "SectionedTable0",
+      "Sections": [
+        {
+          "_Type": "Section.Type.FormCell",
+          "_Name": "PurchaseOrderForm",
+          "Visible": true,
+          "Controls": [
+            {
+              "_Type": "Control.Type.FormCell.DatePicker",
+              "_Name": "PostingDate",
+              "Caption": "Posting Date",
+              "Mode": "Date"
+            },
+            {
+              "_Type": "Control.Type.FormCell.DatePicker",
+              "_Name": "DocumentDate",
+              "Caption": "Document Date",
+              "Mode": "Date"
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "GoodsMovementCode",
+              "Caption": "Goods Movement Code",
+              "Value": "01"
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "Material",
+              "Caption": "Material"
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "Plant",
+              "Caption": "Plant",
+              
+              "Value": "5502"
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "StorageLocation",
+              "Caption": "Storage Location",
+              "Value": "5522"
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "GoodsMovementType",
+              "Caption": "Goods Movement Type",
+              
+              "Value": "501"
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "Quantity",
+              "Caption": "Quantity",
+              "KeyboardType": "Number"
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "Unit",
+              "Caption": "Unit"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

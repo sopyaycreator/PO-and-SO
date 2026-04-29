@@ -1,0 +1,24 @@
+{
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnFailure": "/BusinessPartner/Actions/Business_Partner/Service/InitializeOfflineFailureMessage.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"Service": "/BusinessPartner/Services/Material_Document_Overview.service",
+	"DefiningRequests": [
+		{
+			"Name": "A_MaterialDocumentHeader",
+			"Query": "A_MaterialDocumentHeader"
+		},
+		{
+			"Name": "A_MaterialDocumentItem",
+			"Query": "A_MaterialDocumentItem"
+		},
+		{
+			"Name": "A_SerialNumberMaterialDocument",
+			"Query": "A_SerialNumberMaterialDocument"
+		}
+	]
+}

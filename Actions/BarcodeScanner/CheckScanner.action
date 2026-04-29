@@ -1,0 +1,5 @@
+{
+	"_Type": "Action.Type.CheckBarcodeScannerPrerequisite",
+	"OnFailure": "/BusinessPartner/Actions/BarcodeScanner/OpenBarcodeScanner.action",
+	"OnSuccess": "/BusinessPartner/Actions/BarcodeScanner/OpenBarcodeScanner.action"
+}

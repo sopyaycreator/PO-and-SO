@@ -1,0 +1,22 @@
+{
+  "_Type": "Action.Type.ODataService.CreateEntity",
+  "Target": {
+    "Service": "/BusinessPartner/Services/Material_Document_Overview.service",
+    "EntitySet": "A_MaterialDocumentHeader"
+  },
+  "Properties": {
+    "DocumentDate": "#Page:Create_PurchaseOrder_Page/#Control:DocumentDate/#Value",
+    "PostingDate": "#Page:Create_PurchaseOrder_Page/#Control:PostingDate/#Value",
+    "GoodsMovementCode": "#Page:Create_PurchaseOrder_Page/#Control:GoodsMovementCode/#Value",
+    "to_MaterialDocumentItem": [
+      {
+        "Plant": "#Page:Create_PurchaseOrder_Page/#Control:Plant/#Value",
+        "StorageLocation": "#Page:Create_PurchaseOrder_Page/#Control:StorageLocation/#Value",
+        "GoodsMovementType": "#Page:Create_PurchaseOrder_Page/#Control:GoodsMovementType/#Value",
+        "Material": "#Page:Create_PurchaseOrder_Page/#Control:Material/#Value",
+        "EntryUnit": "#Page:Create_PurchaseOrder_Page/#Control:Unit/#Value",
+        "QuantityInEntryUnit": "#Page:Create_PurchaseOrder_Page/#Control:Quantity/#Value"
+      }
+    ]
+  }
+}

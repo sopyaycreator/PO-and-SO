@@ -31,7 +31,8 @@
 		"Destination": [
 			"pos1122",
 			"PO",
-			"Business_Partner"
+			"Business_Partner",
+			"Material_Document_Overview"
 		]
 	},
 	"Onboarding": {

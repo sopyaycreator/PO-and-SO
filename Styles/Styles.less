@@ -29,3 +29,71 @@
     background-color: #FFFFFF;
     border-radius: 24px; /* Very round corners as seen in Monitoring Apps */
 }
+.ObjectCardBackground {
+  background-color: #f0afa0;
+}
+
+.ObjectCardTitle {
+  font-color: #339966;
+}
+
+.ObjectCardSubHead {
+  font-color: #ff00ff;
+}
+
+.ObjectCardFootnote {
+  font-color: #339966;
+}
+
+.ObjectCardDescription {
+  font-color: #ffbb33;
+}
+
+.ObjectCardStatusText {
+  font-color: #ff0000; /*Android support Red, Green & default color only*/
+}
+
+.ObjectCardPrimaryAction {
+  font-color: green;
+  background-color: cyan;
+
+}
+
+.ObjectCardSecondaryAction {
+  font-color: green;
+  background-color: orange;
+  
+}
+
+.font-icon-class {
+  color: #339966;
+}
+
+/* Additional CSS Shadow Parts for the BackgroundColor, Title, SubHead & StatusText styles of Web Client */
+.ObjectCardBackground::part(root) {
+  background-color: #ff0000;
+}
+
+.ObjectCardTitle::part(title) {
+  font-color: #339966;
+}
+
+.ObjectCardSubHead::part(subtitle) {
+  font-color: #ff00ff;
+}
+
+.ObjectCardStatusText::part(status) {
+  font-color: #339966;
+}
+
+.CompactCardLayout {
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.TightCardSpacing {
+    margin: 0 !important;
+    padding: 4px !important;
+}

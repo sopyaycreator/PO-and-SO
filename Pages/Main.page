@@ -19,15 +19,15 @@
 						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionCommonTypeHeader1",
 						"AccessoryType": "None",
-						"UseTopPadding": true,
+						"UseTopPadding": false,
 						"Caption": "New To-Dos"
 					},
 					"Separators": {
 						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": false,
+						"FooterSeparator": false,
+						"ControlSeparator": false
 					},
 					"Grouping": {
 						"GroupingProperties": [],
@@ -54,10 +54,22 @@
 								"Subhead": "SAP Community News",
 								"Footnote": "2026-04-21 12:15:00.000Z",
 								"StatusText": "Live",
-								"DetailImage": "sap-icon://sap-logo-shape",
-    							"DetailImageIsCircular": false,
 								"AccessoryType": "disclosureIndicator",
-								"OnPress": "/BusinessPartner/Rules/OpenSAPNew.js"
+								"OnPress": "/BusinessPartner/Rules/OpenSAPNew.js",
+								"Styles": {
+									"Title": "NewsTitleStyle",
+									"Subhead": "NewsSubheadStyle",
+									"Footnote": "NewsDateStyle"
+								},
+								"AvatarStack": {
+									"Avatars": [
+										{
+											"Image": "/BusinessPartner/Images/SAP_2011_logo.png"
+										}
+									],
+									"ImageIsCircular": false,
+									"ImageHasBorder": false
+								}
 							}
 						}
 					],
@@ -75,7 +87,8 @@
 						"_Type": "SectionCommon.Type.Header",
 						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
-						"UseTopPadding": true
+						"UseTopPadding": false,
+						"Caption": "Monitoring Apps"
 					},
 					"_Type": "Section.Type.ObjectCardCollection",
 					"_Name": "SectionObjectCardCollection_BusinessPartner",
@@ -83,59 +96,91 @@
 						"FooterVisible": false
 					},
 					"Cards": [
+							{
+							"_Type": "ObjectCardCollection.Type.Card",
+							"_Name": "Purchase Order",
+							"Title": "Purchase Order",
+							"Footnote": "Purchase Order",
+							"DetailImage": "sap-icon://credit-card",
+							"Description": "View Purchase Order",
+							"OnPress": "/BusinessPartner/Actions/Purchase_Order/NavToCreate_Purchase_Order.action",
+							"Styles": {
+								"Description": "ObjectCardDescription"
+							}
+						},
 						{
-							"StyleClass": "BusinessPartnerCard",
+							
 							"_Type": "ObjectCardCollection.Type.Card",
 							"_Name": "Card_BusinessPartner",
 							"Visible": true,
 							"Title": "Business Partner",
-							"Subhead": "A_BusinessPartner",
+						
 							"Footnote": "Master Data",
 							"DetailImage": "sap-icon://customer",
 							"DetailImageIsCircular": true,
 							"Description": "View all business partners",
 							"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_List.action",
 							"Styles": {
-								"BackgroundColor": "BusinessCard"
+								"Description": "ObjectCardDescription"
 							}
 						},
 						{
 							"_Type": "ObjectCardCollection.Type.Card",
 							"_Name": "Card_Customer",
 							"Title": "Customer",
-							"Subhead": "A_Customer",
+							
 							"Footnote": "Sales Data",
 							"DetailImage": "sap-icon://customer-order-entry",
 							"Description": "View customer list",
 							"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_List.action",
 							"Styles": {
-								"BackgroundColor": "BusinessCard"
+								"Description": "ObjectCardDescription"
 							}
-						},
+						}
+					],
+					"Layout": {
+						"LayoutType": "HorizontalScroll"
+					}
+				},
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": false,
+						"HeaderSeparator": false,
+						"FooterSeparator": false,
+						"ControlSeparator": false
+					},
+					
+					"_Type": "Section.Type.ObjectCardCollection",
+					"_Name": "SectionObjectCardCollection_MaterialStock",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Cards": [			
 						{
 							"_Type": "ObjectCardCollection.Type.Card",
 							"_Name": "Card_Supplier",
 							"Title": "Supplier",
-							"Subhead": "A_Supplier",
+					
 							"Footnote": "Procurement",
 							"DetailImage": "sap-icon://supplier",
 							"Description": "View supplier list",
 							"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_List.action",
 							"Styles": {
-								"BackgroundColor": "BusinessCard"
+								"Description": "ObjectCardDescription"
 							}
 						},
 						{
 							"_Type": "ObjectCardCollection.Type.Card",
 							"_Name": "Card_MaterialStock",
 							"Title": "Material Stock",
-							"Subhead": "Overview",
+							
 							"Footnote": "Inventory",
 							"DetailImage": "sap-icon://inventory",
 							"Description": "Material stock overview",
 							"OnPress": "/BusinessPartner/Actions/NavToMaterialStock_List.action",
 							"Styles": {
-								"BackgroundColor": "BusinessCard"
+								"Description": "ObjectCardDescription"
 							}
 						}
 					],
@@ -150,14 +195,13 @@
 	"_Name": "Main",
 	"ActionBar": {
 		"Items": [
-			{
-				"_Type": "Control.Type.ActionBarItem",
-				"_Name": "Drawer",
-				"Caption": "Profile",
-				"Icon": "sap-icon://employee",
-				"Position": "Left",
-				"IsIconCircular": false,
-				"OnPress": "/BusinessPartner/Actions/Drawer/OpenProfileDrawer.action"
+				{
+				"_Name": "BarcodeScanner",
+				"Icon": "sap-icon://bar-code",
+				"Position": "Right",
+				"IsIconCircular": true,
+				"OnPress": "/BusinessPartner/Actions/BarcodeScanner/CheckScanner.action",
+				"Text": "Scan"
 			},
 			{
 				"_Type": "Control.Type.ActionBarItem",
