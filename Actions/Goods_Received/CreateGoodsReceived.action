@@ -1,0 +1,28 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "CreateMaterialDoc"
+	},
+	"OnFailure": "/BusinessPartner/Rules/Error/GetDetailedError.js",
+	"OnSuccess": "/BusinessPartner/Actions/Messages/CreateGoodReceivedSuccess.action",
+	"Target": {
+		"Service": "/BusinessPartner/Services/Material_Document_Overview.service",
+		"EntitySet": "A_MaterialDocumentHeader"
+	},
+	"Properties": {
+		"DocumentDate": "#Page:Goods_Issue/#Control:DocumentDate/#Value",
+		"PostingDate": "#Page:Goods_Issue/#Control:PostingDate/#Value",
+		"GoodsMovementCode": "#Page:Goods_Issue/#Control:GoodsMovementCode/#Value",
+		"to_MaterialDocumentItem": [
+			{
+				"Material": "#Page:Goods_Issue/#Control:Material/#Value",
+				"Plant": "#Page:Goods_Issue/#Control:Plant/#Value",
+				"StorageLocation": "#Page:Goods_Issue/#Control:StorageLocation/#Value",
+				"GoodsMovementType": "#Page:Goods_Issue/#Control:GoodsMovementType/#Value",
+				"CostCenter": "#Page:Goods_Issue/#Control:CostCenter/#Value",
+				"EntryUnit": "#Page:Goods_Issue/#Control:Unit/#Value",
+				"QuantityInEntryUnit": "#Page:Goods_Issue/#Control:Quantity/#Value"
+			}
+		]
+	}
+}

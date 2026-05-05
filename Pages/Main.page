@@ -52,7 +52,6 @@
 								"_Name": "ObjectCollectionTypeObjectCell0",
 								"Title": "The Engagement Divide: 15 Reasons It's Time to Fix CX",
 								"Subhead": "SAP Community News",
-								"Footnote": "2026-04-21 12:15:00.000Z",
 								"StatusText": "Live",
 								"AccessoryType": "disclosureIndicator",
 								"OnPress": "/BusinessPartner/Rules/OpenSAPNew.js",
@@ -88,7 +87,7 @@
 						"_Name": "SectionCommonTypeHeader0",
 						"AccessoryType": "None",
 						"UseTopPadding": false,
-						"Caption": "Monitoring Apps"
+						"Caption": "Favorite Apps"
 					},
 					"_Type": "Section.Type.ObjectCardCollection",
 					"_Name": "SectionObjectCardCollection_BusinessPartner",
@@ -96,51 +95,19 @@
 						"FooterVisible": false
 					},
 					"Cards": [
-							{
+						{
 							"_Type": "ObjectCardCollection.Type.Card",
 							"_Name": "Purchase Order",
-							"Title": "Purchase Order",
-							"Footnote": "Purchase Order",
+							"Title": "Transfer",
+							"Footnote": "Transfer Within Plant",
 							"DetailImage": "sap-icon://credit-card",
-							"Description": "View Purchase Order",
+							"Description": "View Transfer",
 							"OnPress": "/BusinessPartner/Actions/Purchase_Order/NavToCreate_Purchase_Order.action",
 							"Styles": {
 								"Description": "ObjectCardDescription"
 							}
-						},
-						{
-							
-							"_Type": "ObjectCardCollection.Type.Card",
-							"_Name": "Card_BusinessPartner",
-							"Visible": true,
-							"Title": "Business Partner",
-						
-							"Footnote": "Master Data",
-							"DetailImage": "sap-icon://customer",
-							"DetailImageIsCircular": true,
-							"Description": "View all business partners",
-							"OnPress": "/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_List.action",
-							"Styles": {
-								"Description": "ObjectCardDescription"
-							}
-						},
-						{
-							"_Type": "ObjectCardCollection.Type.Card",
-							"_Name": "Card_Customer",
-							"Title": "Customer",
-							
-							"Footnote": "Sales Data",
-							"DetailImage": "sap-icon://customer-order-entry",
-							"Description": "View customer list",
-							"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_List.action",
-							"Styles": {
-								"Description": "ObjectCardDescription"
-							}
 						}
-					],
-					"Layout": {
-						"LayoutType": "HorizontalScroll"
-					}
+					]
 				},
 				{
 					"Separators": {
@@ -150,43 +117,25 @@
 						"FooterSeparator": false,
 						"ControlSeparator": false
 					},
-					
 					"_Type": "Section.Type.ObjectCardCollection",
 					"_Name": "SectionObjectCardCollection_MaterialStock",
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"Cards": [			
+					"Cards": [
 						{
 							"_Type": "ObjectCardCollection.Type.Card",
-							"_Name": "Card_Supplier",
-							"Title": "Supplier",
-					
-							"Footnote": "Procurement",
-							"DetailImage": "sap-icon://supplier",
-							"Description": "View supplier list",
-							"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_List.action",
-							"Styles": {
-								"Description": "ObjectCardDescription"
-							}
-						},
-						{
-							"_Type": "ObjectCardCollection.Type.Card",
-							"_Name": "Card_MaterialStock",
-							"Title": "Material Stock",
-							
-							"Footnote": "Inventory",
-							"DetailImage": "sap-icon://inventory",
-							"Description": "Material stock overview",
-							"OnPress": "/BusinessPartner/Actions/NavToMaterialStock_List.action",
+							"_Name": "Goods Received",
+							"Title": "Goods Issue",
+							"Footnote": "Goods Issue or Goods Received",
+							"DetailImage": "sap-icon://receipt",
+							"Description": "View Goods Issue",
+							"OnPress": "/BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action",
 							"Styles": {
 								"Description": "ObjectCardDescription"
 							}
 						}
-					],
-					"Layout": {
-						"LayoutType": "HorizontalScroll"
-					}
+					]
 				}
 			]
 		}
@@ -195,13 +144,15 @@
 	"_Name": "Main",
 	"ActionBar": {
 		"Items": [
-				{
+			{
+				"Text": "Scan",
+				"_Type": "Control.Type.ActionBarItem",
 				"_Name": "BarcodeScanner",
+				"Caption": "",
 				"Icon": "sap-icon://bar-code",
 				"Position": "Right",
 				"IsIconCircular": true,
-				"OnPress": "/BusinessPartner/Actions/BarcodeScanner/CheckScanner.action",
-				"Text": "Scan"
+				"OnPress": "/BusinessPartner/Actions/BarcodeScanner/CheckScanner.action"
 			},
 			{
 				"_Type": "Control.Type.ActionBarItem",

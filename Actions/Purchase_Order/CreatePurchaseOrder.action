@@ -1,22 +1,30 @@
 {
-  "_Type": "Action.Type.ODataService.CreateEntity",
-  "Target": {
-    "Service": "/BusinessPartner/Services/Material_Document_Overview.service",
-    "EntitySet": "A_MaterialDocumentHeader"
-  },
-  "Properties": {
-    "DocumentDate": "#Page:Create_PurchaseOrder_Page/#Control:DocumentDate/#Value",
-    "PostingDate": "#Page:Create_PurchaseOrder_Page/#Control:PostingDate/#Value",
-    "GoodsMovementCode": "#Page:Create_PurchaseOrder_Page/#Control:GoodsMovementCode/#Value",
-    "to_MaterialDocumentItem": [
-      {
-        "Plant": "#Page:Create_PurchaseOrder_Page/#Control:Plant/#Value",
-        "StorageLocation": "#Page:Create_PurchaseOrder_Page/#Control:StorageLocation/#Value",
-        "GoodsMovementType": "#Page:Create_PurchaseOrder_Page/#Control:GoodsMovementType/#Value",
-        "Material": "#Page:Create_PurchaseOrder_Page/#Control:Material/#Value",
-        "EntryUnit": "#Page:Create_PurchaseOrder_Page/#Control:Unit/#Value",
-        "QuantityInEntryUnit": "#Page:Create_PurchaseOrder_Page/#Control:Quantity/#Value"
-      }
-    ]
-  }
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "CreateMaterialDoc"
+	},
+	"OnFailure": "/BusinessPartner/Rules/Error/GetDetailedError.js",
+	"OnSuccess": "/BusinessPartner/Actions/Messages/CreatePurchaseOrderSuccess.action",
+	
+	"Target": {
+		"Service": "/BusinessPartner/Services/Material_Document_Overview.service",
+		"EntitySet": "A_MaterialDocumentHeader"
+	},
+	"Properties": {
+		"DocumentDate": "#Page:Transfer_Within_Plant/#Control:DocumentDate/#Value",
+		"PostingDate": "#Page:Transfer_Within_Plant/#Control:PostingDate/#Value",
+		"GoodsMovementCode": "#Page:Transfer_Within_Plant/#Control:GoodsMovementCode/#Value",
+		"to_MaterialDocumentItem": [
+			{
+				"Material": "#Page:Transfer_Within_Plant/#Control:Material/#Value",
+				"Plant": "#Page:Transfer_Within_Plant/#Control:Plant/#Value",
+				"StorageLocation": "#Page:Transfer_Within_Plant/#Control:StorageLocation/#Value",
+				"GoodsMovementType": "#Page:Transfer_Within_Plant/#Control:GoodsMovementType/#Value",
+				"EntryUnit": "#Page:Transfer_Within_Plant/#Control:Unit/#Value",
+				"QuantityInEntryUnit": "#Page:Transfer_Within_Plant/#Control:Quantity/#Value",
+				"IssuingOrReceivingPlant": "#Page:Transfer_Within_Plant/#Control:IssuingOrReceivingPlant/#Value",
+				"IssuingOrReceivingStorageLoc": "#Page:Transfer_Within_Plant/#Control:IssuingOrReceivingStorageLoc/#Value"
+			}
+		]
+	}
 }

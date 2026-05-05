@@ -313,15 +313,21 @@ let businesspartner_actions_errorarchive_errorarchive_syncfailure_action = __web
 let businesspartner_actions_errorarchive_navtoerrorarchive_detail_action = __webpack_require__(/*! ./BusinessPartner/Actions/ErrorArchive/NavToErrorArchive_Detail.action */ "./build.definitions/BusinessPartner/Actions/ErrorArchive/NavToErrorArchive_Detail.action")
 let businesspartner_actions_errorarchive_navtoerrorarchive_list_action = __webpack_require__(/*! ./BusinessPartner/Actions/ErrorArchive/NavToErrorArchive_List.action */ "./build.definitions/BusinessPartner/Actions/ErrorArchive/NavToErrorArchive_List.action")
 let businesspartner_actions_genericbannermessage_action = __webpack_require__(/*! ./BusinessPartner/Actions/GenericBannerMessage.action */ "./build.definitions/BusinessPartner/Actions/GenericBannerMessage.action")
+let businesspartner_actions_genericerror_action = __webpack_require__(/*! ./BusinessPartner/Actions/GenericError.action */ "./build.definitions/BusinessPartner/Actions/GenericError.action")
 let businesspartner_actions_genericmessagebox_action = __webpack_require__(/*! ./BusinessPartner/Actions/GenericMessageBox.action */ "./build.definitions/BusinessPartner/Actions/GenericMessageBox.action")
 let businesspartner_actions_genericnavigation_action = __webpack_require__(/*! ./BusinessPartner/Actions/GenericNavigation.action */ "./build.definitions/BusinessPartner/Actions/GenericNavigation.action")
 let businesspartner_actions_generictoastmessage_action = __webpack_require__(/*! ./BusinessPartner/Actions/GenericToastMessage.action */ "./build.definitions/BusinessPartner/Actions/GenericToastMessage.action")
+let businesspartner_actions_goods_received_creategoodsreceived_action = __webpack_require__(/*! ./BusinessPartner/Actions/Goods_Received/CreateGoodsReceived.action */ "./build.definitions/BusinessPartner/Actions/Goods_Received/CreateGoodsReceived.action")
+let businesspartner_actions_goods_received_navtogoods_received_action = __webpack_require__(/*! ./BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action */ "./build.definitions/BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action")
 let businesspartner_actions_logging_loguploadfailure_action = __webpack_require__(/*! ./BusinessPartner/Actions/Logging/LogUploadFailure.action */ "./build.definitions/BusinessPartner/Actions/Logging/LogUploadFailure.action")
 let businesspartner_actions_logging_loguploadsuccessful_action = __webpack_require__(/*! ./BusinessPartner/Actions/Logging/LogUploadSuccessful.action */ "./build.definitions/BusinessPartner/Actions/Logging/LogUploadSuccessful.action")
 let businesspartner_actions_logging_uploadlog_action = __webpack_require__(/*! ./BusinessPartner/Actions/Logging/UploadLog.action */ "./build.definitions/BusinessPartner/Actions/Logging/UploadLog.action")
 let businesspartner_actions_logging_uploadlogprogress_action = __webpack_require__(/*! ./BusinessPartner/Actions/Logging/UploadLogProgress.action */ "./build.definitions/BusinessPartner/Actions/Logging/UploadLogProgress.action")
 let businesspartner_actions_material_document_service_initializeoffline_action = __webpack_require__(/*! ./BusinessPartner/Actions/Material_Document/Service/InitializeOffline.action */ "./build.definitions/BusinessPartner/Actions/Material_Document/Service/InitializeOffline.action")
 let businesspartner_actions_material_stock_service_initializeoffline_action = __webpack_require__(/*! ./BusinessPartner/Actions/Material_Stock/Service/InitializeOffline.action */ "./build.definitions/BusinessPartner/Actions/Material_Stock/Service/InitializeOffline.action")
+let businesspartner_actions_messages_creategoodreceivedfail_action = __webpack_require__(/*! ./BusinessPartner/Actions/Messages/CreateGoodReceivedFail.action */ "./build.definitions/BusinessPartner/Actions/Messages/CreateGoodReceivedFail.action")
+let businesspartner_actions_messages_creategoodreceivedsuccess_action = __webpack_require__(/*! ./BusinessPartner/Actions/Messages/CreateGoodReceivedSuccess.action */ "./build.definitions/BusinessPartner/Actions/Messages/CreateGoodReceivedSuccess.action")
+let businesspartner_actions_messages_createpurchaseordersuccess_action = __webpack_require__(/*! ./BusinessPartner/Actions/Messages/CreatePurchaseOrderSuccess.action */ "./build.definitions/BusinessPartner/Actions/Messages/CreatePurchaseOrderSuccess.action")
 let businesspartner_actions_messages_errormessage_action = __webpack_require__(/*! ./BusinessPartner/Actions/Messages/ErrorMessage.action */ "./build.definitions/BusinessPartner/Actions/Messages/ErrorMessage.action")
 let businesspartner_actions_messages_toastmessage_action = __webpack_require__(/*! ./BusinessPartner/Actions/Messages/ToastMessage.action */ "./build.definitions/BusinessPartner/Actions/Messages/ToastMessage.action")
 let businesspartner_actions_navtomaterialstock_list_action = __webpack_require__(/*! ./BusinessPartner/Actions/NavToMaterialStock_List.action */ "./build.definitions/BusinessPartner/Actions/NavToMaterialStock_List.action")
@@ -339,6 +345,7 @@ let businesspartner_jsconfig_json = __webpack_require__(/*! ./BusinessPartner/js
 let businesspartner_pages_application_about_page = __webpack_require__(/*! ./BusinessPartner/Pages/Application/About.page */ "./build.definitions/BusinessPartner/Pages/Application/About.page")
 let businesspartner_pages_application_support_page = __webpack_require__(/*! ./BusinessPartner/Pages/Application/Support.page */ "./build.definitions/BusinessPartner/Pages/Application/Support.page")
 let businesspartner_pages_application_useractivitylog_page = __webpack_require__(/*! ./BusinessPartner/Pages/Application/UserActivityLog.page */ "./build.definitions/BusinessPartner/Pages/Application/UserActivityLog.page")
+let businesspartner_pages_applications_page_page = __webpack_require__(/*! ./BusinessPartner/Pages/Applications_Page.page */ "./build.definitions/BusinessPartner/Pages/Applications_Page.page")
 let businesspartner_pages_business_partner_a_bpaddressindependentemail_a_bpaddressindependentemail_detail_page = __webpack_require__(/*! ./BusinessPartner/Pages/Business_Partner_A_BPAddressIndependentEmail/A_BPAddressIndependentEmail_Detail.page */ "./build.definitions/BusinessPartner/Pages/Business_Partner_A_BPAddressIndependentEmail/A_BPAddressIndependentEmail_Detail.page")
 let businesspartner_pages_business_partner_a_bpaddressindependentemail_a_bpaddressindependentemail_edit_page = __webpack_require__(/*! ./BusinessPartner/Pages/Business_Partner_A_BPAddressIndependentEmail/A_BPAddressIndependentEmail_Edit.page */ "./build.definitions/BusinessPartner/Pages/Business_Partner_A_BPAddressIndependentEmail/A_BPAddressIndependentEmail_Edit.page")
 let businesspartner_pages_business_partner_a_bpaddressindependentfax_a_bpaddressindependentfax_detail_page = __webpack_require__(/*! ./BusinessPartner/Pages/Business_Partner_A_BPAddressIndependentFax/A_BPAddressIndependentFax_Detail.page */ "./build.definitions/BusinessPartner/Pages/Business_Partner_A_BPAddressIndependentFax/A_BPAddressIndependentFax_Detail.page")
@@ -467,6 +474,7 @@ let businesspartner_pages_business_partner_a_suppliertext_a_suppliertext_edit_pa
 let businesspartner_pages_business_partner_a_suppliertext_a_suppliertext_list_page = __webpack_require__(/*! ./BusinessPartner/Pages/Business_Partner_A_SupplierText/A_SupplierText_List.page */ "./build.definitions/BusinessPartner/Pages/Business_Partner_A_SupplierText/A_SupplierText_List.page")
 let businesspartner_pages_errorarchive_errorarchive_detail_page = __webpack_require__(/*! ./BusinessPartner/Pages/ErrorArchive/ErrorArchive_Detail.page */ "./build.definitions/BusinessPartner/Pages/ErrorArchive/ErrorArchive_Detail.page")
 let businesspartner_pages_errorarchive_errorarchive_list_page = __webpack_require__(/*! ./BusinessPartner/Pages/ErrorArchive/ErrorArchive_List.page */ "./build.definitions/BusinessPartner/Pages/ErrorArchive/ErrorArchive_List.page")
+let businesspartner_pages_goodsreceived_create_goodsreceived_page = __webpack_require__(/*! ./BusinessPartner/Pages/GoodsReceived/Create_GoodsReceived.page */ "./build.definitions/BusinessPartner/Pages/GoodsReceived/Create_GoodsReceived.page")
 let businesspartner_pages_main_page = __webpack_require__(/*! ./BusinessPartner/Pages/Main.page */ "./build.definitions/BusinessPartner/Pages/Main.page")
 let businesspartner_pages_material_stock_material_stock_list_page = __webpack_require__(/*! ./BusinessPartner/Pages/Material_Stock/Material_Stock_List.page */ "./build.definitions/BusinessPartner/Pages/Material_Stock/Material_Stock_List.page")
 let businesspartner_pages_navigation_bottom_nav_page = __webpack_require__(/*! ./BusinessPartner/Pages/Navigation/bottom_nav.page */ "./build.definitions/BusinessPartner/Pages/Navigation/bottom_nav.page")
@@ -515,6 +523,8 @@ let businesspartner_rules_business_partner_a_suppliercompany_a_suppliercompany_d
 let businesspartner_rules_business_partner_a_supplierpurchasingorg_a_supplierpurchasingorg_deleteconfirmation_js = __webpack_require__(/*! ./BusinessPartner/Rules/Business_Partner/A_SupplierPurchasingOrg/A_SupplierPurchasingOrg_DeleteConfirmation.js */ "./build.definitions/BusinessPartner/Rules/Business_Partner/A_SupplierPurchasingOrg/A_SupplierPurchasingOrg_DeleteConfirmation.js")
 let businesspartner_rules_business_partner_a_suppliertext_a_suppliertext_deleteconfirmation_js = __webpack_require__(/*! ./BusinessPartner/Rules/Business_Partner/A_SupplierText/A_SupplierText_DeleteConfirmation.js */ "./build.definitions/BusinessPartner/Rules/Business_Partner/A_SupplierText/A_SupplierText_DeleteConfirmation.js")
 let businesspartner_rules_business_partner_errorarchive_checkforsyncerror_js = __webpack_require__(/*! ./BusinessPartner/Rules/Business_Partner/ErrorArchive_CheckForSyncError.js */ "./build.definitions/BusinessPartner/Rules/Business_Partner/ErrorArchive_CheckForSyncError.js")
+let businesspartner_rules_error_getdetailederror_js = __webpack_require__(/*! ./BusinessPartner/Rules/Error/GetDetailedError.js */ "./build.definitions/BusinessPartner/Rules/Error/GetDetailedError.js")
+let businesspartner_rules_filterapplist_js = __webpack_require__(/*! ./BusinessPartner/Rules/FilterAppList.js */ "./build.definitions/BusinessPartner/Rules/FilterAppList.js")
 let businesspartner_rules_logging_loglevels_js = __webpack_require__(/*! ./BusinessPartner/Rules/Logging/LogLevels.js */ "./build.definitions/BusinessPartner/Rules/Logging/LogLevels.js")
 let businesspartner_rules_logging_settracecategories_js = __webpack_require__(/*! ./BusinessPartner/Rules/Logging/SetTraceCategories.js */ "./build.definitions/BusinessPartner/Rules/Logging/SetTraceCategories.js")
 let businesspartner_rules_logging_setuserloglevel_js = __webpack_require__(/*! ./BusinessPartner/Rules/Logging/SetUserLogLevel.js */ "./build.definitions/BusinessPartner/Rules/Logging/SetUserLogLevel.js")
@@ -831,15 +841,21 @@ module.exports = {
 	businesspartner_actions_errorarchive_navtoerrorarchive_detail_action : businesspartner_actions_errorarchive_navtoerrorarchive_detail_action,
 	businesspartner_actions_errorarchive_navtoerrorarchive_list_action : businesspartner_actions_errorarchive_navtoerrorarchive_list_action,
 	businesspartner_actions_genericbannermessage_action : businesspartner_actions_genericbannermessage_action,
+	businesspartner_actions_genericerror_action : businesspartner_actions_genericerror_action,
 	businesspartner_actions_genericmessagebox_action : businesspartner_actions_genericmessagebox_action,
 	businesspartner_actions_genericnavigation_action : businesspartner_actions_genericnavigation_action,
 	businesspartner_actions_generictoastmessage_action : businesspartner_actions_generictoastmessage_action,
+	businesspartner_actions_goods_received_creategoodsreceived_action : businesspartner_actions_goods_received_creategoodsreceived_action,
+	businesspartner_actions_goods_received_navtogoods_received_action : businesspartner_actions_goods_received_navtogoods_received_action,
 	businesspartner_actions_logging_loguploadfailure_action : businesspartner_actions_logging_loguploadfailure_action,
 	businesspartner_actions_logging_loguploadsuccessful_action : businesspartner_actions_logging_loguploadsuccessful_action,
 	businesspartner_actions_logging_uploadlog_action : businesspartner_actions_logging_uploadlog_action,
 	businesspartner_actions_logging_uploadlogprogress_action : businesspartner_actions_logging_uploadlogprogress_action,
 	businesspartner_actions_material_document_service_initializeoffline_action : businesspartner_actions_material_document_service_initializeoffline_action,
 	businesspartner_actions_material_stock_service_initializeoffline_action : businesspartner_actions_material_stock_service_initializeoffline_action,
+	businesspartner_actions_messages_creategoodreceivedfail_action : businesspartner_actions_messages_creategoodreceivedfail_action,
+	businesspartner_actions_messages_creategoodreceivedsuccess_action : businesspartner_actions_messages_creategoodreceivedsuccess_action,
+	businesspartner_actions_messages_createpurchaseordersuccess_action : businesspartner_actions_messages_createpurchaseordersuccess_action,
 	businesspartner_actions_messages_errormessage_action : businesspartner_actions_messages_errormessage_action,
 	businesspartner_actions_messages_toastmessage_action : businesspartner_actions_messages_toastmessage_action,
 	businesspartner_actions_navtomaterialstock_list_action : businesspartner_actions_navtomaterialstock_list_action,
@@ -857,6 +873,7 @@ module.exports = {
 	businesspartner_pages_application_about_page : businesspartner_pages_application_about_page,
 	businesspartner_pages_application_support_page : businesspartner_pages_application_support_page,
 	businesspartner_pages_application_useractivitylog_page : businesspartner_pages_application_useractivitylog_page,
+	businesspartner_pages_applications_page_page : businesspartner_pages_applications_page_page,
 	businesspartner_pages_business_partner_a_bpaddressindependentemail_a_bpaddressindependentemail_detail_page : businesspartner_pages_business_partner_a_bpaddressindependentemail_a_bpaddressindependentemail_detail_page,
 	businesspartner_pages_business_partner_a_bpaddressindependentemail_a_bpaddressindependentemail_edit_page : businesspartner_pages_business_partner_a_bpaddressindependentemail_a_bpaddressindependentemail_edit_page,
 	businesspartner_pages_business_partner_a_bpaddressindependentfax_a_bpaddressindependentfax_detail_page : businesspartner_pages_business_partner_a_bpaddressindependentfax_a_bpaddressindependentfax_detail_page,
@@ -985,6 +1002,7 @@ module.exports = {
 	businesspartner_pages_business_partner_a_suppliertext_a_suppliertext_list_page : businesspartner_pages_business_partner_a_suppliertext_a_suppliertext_list_page,
 	businesspartner_pages_errorarchive_errorarchive_detail_page : businesspartner_pages_errorarchive_errorarchive_detail_page,
 	businesspartner_pages_errorarchive_errorarchive_list_page : businesspartner_pages_errorarchive_errorarchive_list_page,
+	businesspartner_pages_goodsreceived_create_goodsreceived_page : businesspartner_pages_goodsreceived_create_goodsreceived_page,
 	businesspartner_pages_main_page : businesspartner_pages_main_page,
 	businesspartner_pages_material_stock_material_stock_list_page : businesspartner_pages_material_stock_material_stock_list_page,
 	businesspartner_pages_navigation_bottom_nav_page : businesspartner_pages_navigation_bottom_nav_page,
@@ -1033,6 +1051,8 @@ module.exports = {
 	businesspartner_rules_business_partner_a_supplierpurchasingorg_a_supplierpurchasingorg_deleteconfirmation_js : businesspartner_rules_business_partner_a_supplierpurchasingorg_a_supplierpurchasingorg_deleteconfirmation_js,
 	businesspartner_rules_business_partner_a_suppliertext_a_suppliertext_deleteconfirmation_js : businesspartner_rules_business_partner_a_suppliertext_a_suppliertext_deleteconfirmation_js,
 	businesspartner_rules_business_partner_errorarchive_checkforsyncerror_js : businesspartner_rules_business_partner_errorarchive_checkforsyncerror_js,
+	businesspartner_rules_error_getdetailederror_js : businesspartner_rules_error_getdetailederror_js,
+	businesspartner_rules_filterapplist_js : businesspartner_rules_filterapplist_js,
 	businesspartner_rules_logging_loglevels_js : businesspartner_rules_logging_loglevels_js,
 	businesspartner_rules_logging_settracecategories_js : businesspartner_rules_logging_settracecategories_js,
 	businesspartner_rules_logging_setuserloglevel_js : businesspartner_rules_logging_setuserloglevel_js,
@@ -2305,6 +2325,90 @@ function CheckForSyncError(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/BusinessPartner/Rules/Error/GetDetailedError.js":
+/*!***************************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Rules/Error/GetDetailedError.js ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ GetDetailedError)
+/* harmony export */ });
+function GetDetailedError(context) {
+  // 1. Get the result of the action that just failed
+  // Replace 'YourFailedAction' with the actual name of your OData action
+  let actionResult = context.getActionResult('CreateMaterialDoc');
+  let errorMessage = "An unexpected error occurred.";
+  if (actionResult && actionResult.error) {
+    let error = actionResult.error;
+
+    // 2. Build a structured technical string
+    errorMessage = `Technical Details:\n`;
+    errorMessage += `• Code: ${error.code || 'N/A'}\n`;
+    errorMessage += `• Status: ${error.statusCode || 'N/A'}\n`;
+    errorMessage += `• Message: ${error.message || 'No message'}\n`;
+
+    // 3. Try to parse backend OData error messages (if available)
+    if (error.responseBody) {
+      try {
+        let body = JSON.parse(error.responseBody);
+        if (body.error && body.error.message) {
+          errorMessage += `• Server: ${body.error.message.value || body.error.message}`;
+        }
+      } catch (e) {
+        errorMessage += `• Body: ${error.responseBody.substring(0, 100)}`;
+      }
+    }
+  }
+
+  // 4. Trigger a standard Message Action to show this string
+  return context.executeAction({
+    "Name": "/BusinessPartner/Actions/GenericError.action",
+    "Properties": {
+      "Message": errorMessage,
+      "Title": "Transaction Failed",
+      "OKCaption": "Close"
+    }
+  });
+}
+
+/***/ }),
+
+/***/ "./build.definitions/BusinessPartner/Rules/FilterAppList.js":
+/*!******************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Rules/FilterAppList.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FilterAppList)
+/* harmony export */ });
+function FilterAppList(context) {
+  let search = context.searchString;
+  let data = [{
+    Title: "Goods Issue",
+    Description: "Goods Issue or Goods Received",
+    Action: "/BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action"
+  }, {
+    Title: "Customer",
+    Description: "Sales Data",
+    Action: "/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_List.action"
+  }, {
+    Title: "Supplier",
+    Description: "Procurement",
+    Action: "/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_List.action"
+  }];
+  if (!search) return data;
+  search = search.toLowerCase();
+  return data.filter(item => item.Title.toLowerCase().includes(search) || item.Description.toLowerCase().includes(search));
+}
+
+/***/ }),
+
 /***/ "./build.definitions/BusinessPartner/Rules/Logging/LogLevels.js":
 /*!**********************************************************************!*\
   !*** ./build.definitions/BusinessPartner/Rules/Logging/LogLevels.js ***!
@@ -3163,6 +3267,16 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
 /***/ ((module) => {
 
 module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable","Sections":[{"Controls":[{"Value":false,"_Type":"Control.Type.FormCell.Switch","_Name":"EnableLogSwitch","IsVisible":true,"Separator":true,"Caption":"Enable Logging","OnValueChange":"/BusinessPartner/Rules/Logging/ToggleLogging.js","IsEditable":true},{"IsSearchEnabled":false,"_Type":"Control.Type.FormCell.ListPicker","_Name":"LogLevelListPicker","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Log Level","OnValueChange":"/BusinessPartner/Rules/Logging/SetUserLogLevel.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":true,"AllowDefaultValueIfOneItem":false,"IsEditable":false,"PickerItems":"/BusinessPartner/Rules/Logging/LogLevels.js"},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"TracingCategoriesListPicker","IsVisible":false,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":true,"Caption":"Tracing Categories","PickerPrompt":"Select Categories for Tracing","OnValueChange":"/BusinessPartner/Rules/Logging/SetTraceCategories.js","IsSelectedSectionEnabled":true,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":"/BusinessPartner/Rules/Logging/TraceCategories.js"},{"Value":false,"_Type":"Control.Type.FormCell.Switch","_Name":"odataTrace","IsVisible":false,"Separator":true,"Caption":"OData Tracing","OnValueChange":"/BusinessPartner/Rules/Logging/SetTraceCategories.js","IsEditable":true}],"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"FormCellSection0"},{"Controls":[{"_Type":"Control.Type.FormCell.Button","_Name":"Send","IsVisible":true,"Separator":true,"Title":"Send Activity Log","Alignment":"Center","ButtonType":"Text","Semantic":"Tint","ImagePosition":"Leading","Enabled":true,"OnPress":"/BusinessPartner/Actions/Logging/UploadLogProgress.action"}],"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"FormCellSection1"}]}],"_Type":"Page","_Name":"UserActivityLog","ActionBar":{"Caption":"Activity Log","PrefersLargeCaption":false,"_Type":"Control.Type.ActionBar"},"OnLoaded":"/BusinessPartner/Rules/Logging/UserLogSetting.js"}
+
+/***/ }),
+
+/***/ "./build.definitions/BusinessPartner/Pages/Applications_Page.page":
+/*!************************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Pages/Applications_Page.page ***!
+  \************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Styles":{"backgroundColor":"#1961cdff"},"Controls":[{"Styles":{"backgroundColor":"#FFFFFF"},"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":false,"Caption":"Monitoring Apps"},"_Type":"Section.Type.ObjectCardCollection","_Name":"SectionObjectCardCollection_BusinessPartner","EmptySection":{"FooterVisible":false},"Cards":[{"_Type":"ObjectCardCollection.Type.Card","_Name":"Purchase Order","Title":"Transfer","Footnote":"Transfer Within Plant","DetailImage":"sap-icon://credit-card","Description":"View Transfer","OnPress":"/BusinessPartner/Actions/Purchase_Order/NavToCreate_Purchase_Order.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Goods Received","Title":"Goods Issue","Footnote":"Goods Issue or Goods Received","DetailImage":"sap-icon://receipt","Description":"View Goods Issue","OnPress":"/BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Supplier","Title":"Supplier","Footnote":"Procurement","DetailImage":"sap-icon://supplier","Description":"View supplier list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_List.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_MaterialStock","Title":"Material Stock","Footnote":"Inventory","DetailImage":"sap-icon://inventory","Description":"Material stock overview","OnPress":"/BusinessPartner/Actions/NavToMaterialStock_List.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_BusinessPartner","Visible":true,"Title":"Business Partner","Footnote":"Master Data","DetailImage":"sap-icon://customer","DetailImageIsCircular":true,"Description":"View all business partners","OnPress":"/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_List.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Customer","Title":"Customer","Footnote":"Sales Data","DetailImage":"sap-icon://customer-order-entry","Description":"View customer list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_List.action","Styles":{"Description":"ObjectCardDescription"}}],"Layout":{"LayoutType":"HorizontalScroll"}},{"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ChartContent":{"Title":"Sales for Store","Subtitle":"Displaying of Sales for Store","StatusText":"8h ago","IsReadOnly":false,"ChartView":{"ChartType":"Column","SeriesTitles":["S1"],"SeriesColor":["#5899DA"],"Data":[[431000,494000,491000,536000,675000,680000]],"CategoryTitles":["C1","C2","C3","C4","C5","C6"],"CategoryAxisTitle":"Category Axis Title","ValueAxisTitle":"Value Axis Title","TrendItems":[{"TrendTitle":"100%","TrendImage":"res://arrow_up.png"}]},"SummaryView":{"SeriesTitles":["Sales for S1"],"AggregateItem":{"Title":"Total Sales","TrendTitle":"100%","TrendImage":"res://arrow_up.png","Value":{"LeadingUnit":"$","TrailingUnit":"k","Function":"Sum","Metrics":["3307"]}}},"Target":{"Service":"/BusinessPartner/Services/Material_Document_Overview.service","EntitySet":"A_MaterialDocumentItem"}},"_Type":"Section.Type.ChartContent","_Name":"SectionChartContent0","Visible":true}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"Text":"Scan","_Type":"Control.Type.ActionBarItem","_Name":"BarcodeScanner","Caption":"","Icon":"sap-icon://bar-code","Position":"Right","IsIconCircular":true,"OnPress":"/BusinessPartner/Actions/BarcodeScanner/CheckScanner.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"UserMenu","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Application/UserMenuPopover.action"}],"_Name":"Main","_Type":"Control.Type.ActionBar","Caption":"APP","PrefersLargeCaption":true}}
 
 /***/ }),
 
@@ -4446,13 +4560,23 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
 
 /***/ }),
 
+/***/ "./build.definitions/BusinessPartner/Pages/GoodsReceived/Create_GoodsReceived.page":
+/*!*****************************************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Pages/GoodsReceived/Create_GoodsReceived.page ***!
+  \*****************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Controls":[{"_Type":"Control.Type.FormCell.DatePicker","_Name":"PostingDate","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Posting Date","IsEditable":true,"Mode":"Date"},{"_Type":"Control.Type.FormCell.DatePicker","_Name":"DocumentDate","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Document Date","IsEditable":true,"Mode":"Date"},{"Value":"03","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementCode","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Goods Movement Code","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Material","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Material","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Plant","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Plant","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"StorageLocation","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Storage Location","Enabled":true,"IsEditable":true},{"Value":"201","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementType","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Goods Movement Type","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Quantity","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Quantity","KeyboardType":"Number","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Unit","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Unit","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"CostCenter","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Cost Center","Enabled":true,"IsEditable":true}],"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"PurchaseOrderForm"}]}],"_Type":"Page","_Name":"Goods_Issue","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/CloseModalPage_Cancel.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"","SystemItem":"Save","Position":"Right","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Goods_Received/CreateGoodsReceived.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Goods Issue"}}
+
+/***/ }),
+
 /***/ "./build.definitions/BusinessPartner/Pages/Main.page":
 /*!***********************************************************!*\
   !*** ./build.definitions/BusinessPartner/Pages/Main.page ***!
   \***********************************************************/
 /***/ ((module) => {
 
-module.exports = {"Styles":{"backgroundColor":"#1961cdff"},"Controls":[{"Styles":{"backgroundColor":"#FFFFFF"},"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader1","AccessoryType":"None","UseTopPadding":false,"Caption":"New To-Dos"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","_Name":"SAPNewsSection","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCells":[{"ObjectCell":{"DisplayDescriptionInTab":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Type":"ObjectTable.Type.ObjectCell","_Name":"ObjectCollectionTypeObjectCell0","Title":"The Engagement Divide: 15 Reasons It's Time to Fix CX","Subhead":"SAP Community News","Footnote":"2026-04-21 12:15:00.000Z","StatusText":"Live","AccessoryType":"disclosureIndicator","OnPress":"/BusinessPartner/Rules/OpenSAPNew.js","Styles":{"Title":"NewsTitleStyle","Subhead":"NewsSubheadStyle","Footnote":"NewsDateStyle"},"AvatarStack":{"Avatars":[{"Image":"/BusinessPartner/Images/SAP_2011_logo.png"}],"ImageIsCircular":false,"ImageHasBorder":false}}}],"HighlightSelectedItem":false},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":false,"Caption":"Monitoring Apps"},"_Type":"Section.Type.ObjectCardCollection","_Name":"SectionObjectCardCollection_BusinessPartner","EmptySection":{"FooterVisible":false},"Cards":[{"_Type":"ObjectCardCollection.Type.Card","_Name":"Purchase Order","Title":"Purchase Order","Footnote":"Purchase Order","DetailImage":"sap-icon://credit-card","Description":"View Purchase Order","OnPress":"/BusinessPartner/Actions/Purchase_Order/NavToCreate_Purchase_Order.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_BusinessPartner","Visible":true,"Title":"Business Partner","Footnote":"Master Data","DetailImage":"sap-icon://customer","DetailImageIsCircular":true,"Description":"View all business partners","OnPress":"/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_List.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Customer","Title":"Customer","Footnote":"Sales Data","DetailImage":"sap-icon://customer-order-entry","Description":"View customer list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_List.action","Styles":{"Description":"ObjectCardDescription"}}],"Layout":{"LayoutType":"HorizontalScroll"}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"_Type":"Section.Type.ObjectCardCollection","_Name":"SectionObjectCardCollection_MaterialStock","EmptySection":{"FooterVisible":false},"Cards":[{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Supplier","Title":"Supplier","Footnote":"Procurement","DetailImage":"sap-icon://supplier","Description":"View supplier list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_List.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_MaterialStock","Title":"Material Stock","Footnote":"Inventory","DetailImage":"sap-icon://inventory","Description":"Material stock overview","OnPress":"/BusinessPartner/Actions/NavToMaterialStock_List.action","Styles":{"Description":"ObjectCardDescription"}}],"Layout":{"LayoutType":"HorizontalScroll"}}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"_Name":"BarcodeScanner","Icon":"sap-icon://bar-code","Position":"Right","IsIconCircular":true,"OnPress":"/BusinessPartner/Actions/BarcodeScanner/CheckScanner.action","Text":"Scan"},{"_Type":"Control.Type.ActionBarItem","_Name":"UserMenu","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Application/UserMenuPopover.action"}],"_Name":"Main","_Type":"Control.Type.ActionBar","Caption":"SAP","PrefersLargeCaption":true}}
+module.exports = {"Styles":{"backgroundColor":"#1961cdff"},"Controls":[{"Styles":{"backgroundColor":"#FFFFFF"},"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader1","AccessoryType":"None","UseTopPadding":false,"Caption":"New To-Dos"},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","_Name":"SAPNewsSection","Visible":true,"EmptySection":{"FooterVisible":false},"ObjectCells":[{"ObjectCell":{"DisplayDescriptionInTab":true,"ContextMenu":{"PerformFirstActionWithFullSwipe":true},"_Type":"ObjectTable.Type.ObjectCell","_Name":"ObjectCollectionTypeObjectCell0","Title":"The Engagement Divide: 15 Reasons It's Time to Fix CX","Subhead":"SAP Community News","StatusText":"Live","AccessoryType":"disclosureIndicator","OnPress":"/BusinessPartner/Rules/OpenSAPNew.js","Styles":{"Title":"NewsTitleStyle","Subhead":"NewsSubheadStyle","Footnote":"NewsDateStyle"},"AvatarStack":{"Avatars":[{"Image":"/BusinessPartner/Images/SAP_2011_logo.png"}],"ImageIsCircular":false,"ImageHasBorder":false}}}],"HighlightSelectedItem":false},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":false,"Caption":"Favorite Apps"},"_Type":"Section.Type.ObjectCardCollection","_Name":"SectionObjectCardCollection_BusinessPartner","EmptySection":{"FooterVisible":false},"Cards":[{"_Type":"ObjectCardCollection.Type.Card","_Name":"Purchase Order","Title":"Transfer","Footnote":"Transfer Within Plant","DetailImage":"sap-icon://credit-card","Description":"View Transfer","OnPress":"/BusinessPartner/Actions/Purchase_Order/NavToCreate_Purchase_Order.action","Styles":{"Description":"ObjectCardDescription"}}]},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"_Type":"Section.Type.ObjectCardCollection","_Name":"SectionObjectCardCollection_MaterialStock","EmptySection":{"FooterVisible":false},"Cards":[{"_Type":"ObjectCardCollection.Type.Card","_Name":"Goods Received","Title":"Goods Issue","Footnote":"Goods Issue or Goods Received","DetailImage":"sap-icon://receipt","Description":"View Goods Issue","OnPress":"/BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action","Styles":{"Description":"ObjectCardDescription"}}]}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"Text":"Scan","_Type":"Control.Type.ActionBarItem","_Name":"BarcodeScanner","Caption":"","Icon":"sap-icon://bar-code","Position":"Right","IsIconCircular":true,"OnPress":"/BusinessPartner/Actions/BarcodeScanner/CheckScanner.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"UserMenu","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Application/UserMenuPopover.action"}],"_Name":"Main","_Type":"Control.Type.ActionBar","Caption":"SAP","PrefersLargeCaption":true}}
 
 /***/ }),
 
@@ -4462,7 +4586,7 @@ module.exports = {"Styles":{"backgroundColor":"#1961cdff"},"Controls":[{"Styles"
   \*****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable","Sections":[{"_Type":"Section.Type.ObjectTable","DataSubscriptions":["/BusinessPartner/Services/Business_Partner.service"],"Target":{"Service":"/BusinessPartner/Services/Material_Stock.service","EntitySet":"A_MatlStkInAcctMod"},"_Name":"MaterialStockSection","Visible":true,"EmptySection":{"Caption":"No Material Stock Found","FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"AttributeLabels":true,"Attributes":[{"Value":"Base UOM: {MaterialBaseUnit}"},{"Value":"Special Stock: {InventorySpecialStockType}"}],"Title":"{Material}","Subhead":"{Plant}","Footnote":"Batch: {Batch}","Description":"Storage Location: {StorageLocation}","StatusText":"{MatlWrhsStkQtyInMatlBaseUnit}","AccessoryType":"None","Tags":[],"AvatarStack":{"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"}},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"HighlightSelectedItem":false}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Material_Stock_List","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"","SystemItem":"Refresh","Position":"Right","IsIconCircular":false}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Grouping":{"GroupingProperties":[],"Header":{"Items":[]}},"_Type":"Section.Type.ObjectTable","DataSubscriptions":["/BusinessPartner/Services/Business_Partner.service"],"Target":{"Service":"/BusinessPartner/Services/Material_Stock.service","EntitySet":"A_MatlStkInAcctMod"},"_Name":"MaterialStockSection","Visible":true,"EmptySection":{"Caption":"No Material Stock Found","FooterVisible":false},"ObjectCell":{"AttributeLabels":true,"Attributes":[{"Value":"Base UOM: {MaterialBaseUnit}"},{"Value":"Special Stock: {InventorySpecialStockType}"}],"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[],"_Type":"ObjectCell.Type.ContextMenu"},"Title":"{Material}","Subhead":"{Plant}","Footnote":"Batch: {Batch}","Description":"Storage Location: {StorageLocation}","StatusText":"{MatlWrhsStkQtyInMatlBaseUnit}","AccessoryType":"None","Tags":[],"AvatarStack":{"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"ImageIsCircular":true},"_Type":"ObjectTable.Type.ObjectCell","Selected":false},"HighlightSelectedItem":false}]}],"_Type":"Page","_Name":"Material_Stock_List","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"","SystemItem":"Refresh","Position":"Right","IsIconCircular":false}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar"}}
 
 /***/ }),
 
@@ -4472,7 +4596,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \****************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.BottomNavigation","_Name":"BottomNavigation0","Items":[{"_Type":"Control.Type.TabItem","Caption":"Start","Image":"sap-icon://home","PageToOpen":"/BusinessPartner/Pages/Main.page","_Name":"HomeTab"},{"_Type":"Control.Type.TabItem","Caption":"Apps","Image":"sap-icon://grid","_Name":"AppsTab"},{"_Type":"Control.Type.TabItem","Caption":"To-Dos","Image":"sap-icon://task","_Name":"To-Dos"}]}],"_Type":"Page","_Name":"MainTab","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"_Type":"Control.Type.BottomNavigation","_Name":"BottomNavigation0","Items":[{"_Type":"Control.Type.TabItem","Caption":"Start","Image":"sap-icon://home","PageToOpen":"/BusinessPartner/Pages/Main.page","_Name":"HomeTab"},{"_Type":"Control.Type.TabItem","Caption":"Apps","Image":"sap-icon://grid","PageToOpen":"/BusinessPartner/Pages/Applications_Page.page","_Name":"AppsTab"}]}],"_Type":"Page","_Name":"MainTab","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
 
 /***/ }),
 
@@ -4492,7 +4616,7 @@ module.exports = {"_Type":"Page","_Name":"ProfileDrawer","Caption":"Profile","Co
   \*******************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Page","_Name":"Create_PurchaseOrder_Page","ActionBar":{"_Type":"Control.Type.ActionBar","Caption":"Create Purchase Order","Items":[{"_Type":"Control.Type.ActionBarItem","Position":"Left","SystemItem":"Cancel","OnPress":"/BusinessPartner/Actions/CloseModalPage_Cancel.action"},{"_Type":"Control.Type.ActionBarItem","Position":"Right","SystemItem":"Save","OnPress":"/BusinessPartner/Actions/Purchase_Order/CreatePurchaseOrder.action"}]},"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.FormCell","_Name":"PurchaseOrderForm","Visible":true,"Controls":[{"_Type":"Control.Type.FormCell.DatePicker","_Name":"PostingDate","Caption":"Posting Date","Mode":"Date"},{"_Type":"Control.Type.FormCell.DatePicker","_Name":"DocumentDate","Caption":"Document Date","Mode":"Date"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementCode","Caption":"Goods Movement Code","Value":"01"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Material","Caption":"Material"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Plant","Caption":"Plant","Value":"5502"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"StorageLocation","Caption":"Storage Location","Value":"5522"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementType","Caption":"Goods Movement Type","Value":"501"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Quantity","Caption":"Quantity","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Unit","Caption":"Unit"}]}]}]}
+module.exports = {"_Type":"Page","_Name":"Transfer_Within_Plant","ActionBar":{"_Type":"Control.Type.ActionBar","Caption":"Transfer Within Plant","Items":[{"_Type":"Control.Type.ActionBarItem","Position":"Left","SystemItem":"Cancel","OnPress":"/BusinessPartner/Actions/CloseModalPage_Cancel.action"},{"_Type":"Control.Type.ActionBarItem","Position":"Right","SystemItem":"Save","OnPress":"/BusinessPartner/Actions/Purchase_Order/CreatePurchaseOrder.action"}]},"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.FormCell","_Name":"PurchaseOrderForm","Visible":true,"Controls":[{"_Type":"Control.Type.FormCell.DatePicker","_Name":"PostingDate","Caption":"Posting Date","Mode":"Date"},{"_Type":"Control.Type.FormCell.DatePicker","_Name":"DocumentDate","Caption":"Document Date","Mode":"Date"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementCode","Caption":"Goods Movement Code","Value":"04"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Material","Caption":"Material"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Plant","Caption":"Plant","Value":"7001"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"StorageLocation","Caption":"Storage Location","Value":"7010"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"IssuingOrReceivingPlant","Caption":"IssuingOrReceivingPlant"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"IssuingOrReceivingStorageLoc","Caption":"IssuingOrReceivingStorageLoc "},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementType","Caption":"Goods Movement Type","Value":"311"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Quantity","Caption":"Quantity","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Unit","Caption":"Unit"}]}]}]}
 
 /***/ }),
 
@@ -7352,7 +7476,7 @@ module.exports = {"_Type":"Action.Type.ClosePage"}
   \*************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Message":"Create entity failure - {#ActionResults:create/error}","Duration":7,"Animated":true,"_Type":"Action.Type.BannerMessage"}
+module.exports = {"_Type":"Action.Type.BannerMessage","Message":"#ActionResults:create/error","Duration":7,"Animated":true}
 
 /***/ }),
 
@@ -7362,7 +7486,7 @@ module.exports = {"Message":"Create entity failure - {#ActionResults:create/erro
   \*************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Animated":true,"Duration":2,"Message":"Entity created","IsIconHidden":true,"OnSuccess":"/BusinessPartner/Actions/CloseModalPage_Complete.action","_Type":"Action.Type.ToastMessage"}
+module.exports = {"_Type":"Action.Type.BannerMessage","Message":"Create entity Success","Duration":3,"Animated":true}
 
 /***/ }),
 
@@ -7372,7 +7496,7 @@ module.exports = {"Animated":true,"Duration":2,"Message":"Entity created","IsIco
   \*****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.Message","Message":"Create PO failure - {HTTPStatusCode}{Message}{RequestBody}{RequestMethod}{RequestURL}","Duration":7,"Animated":true}
+module.exports = {"_Type":"Action.Type.Message","Message":"#ActionResults:create/error","Title":"Message","Duration":3,"IsIconHidden":false,"Animated":true,"MaxNumberOfLines":2}
 
 /***/ }),
 
@@ -7456,6 +7580,16 @@ module.exports = {"_Type":"Action.Type.BannerMessage","ActionResult":{"_Name":"G
 
 /***/ }),
 
+/***/ "./build.definitions/BusinessPartner/Actions/GenericError.action":
+/*!***********************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Actions/GenericError.action ***!
+  \***********************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","Message":"{Message}","Title":"{Title}","OKCaption":"OK","OnOK":"/BusinessPartner/Actions/CloseModalPage_Complete.action","Duration":0,"Animated":true}
+
+/***/ }),
+
 /***/ "./build.definitions/BusinessPartner/Actions/GenericMessageBox.action":
 /*!****************************************************************************!*\
   !*** ./build.definitions/BusinessPartner/Actions/GenericMessageBox.action ***!
@@ -7483,6 +7617,26 @@ module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"Gene
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ToastMessage","ActionResult":{"_Name":"GenericToastMessage"},"Message":"Message"}
+
+/***/ }),
+
+/***/ "./build.definitions/BusinessPartner/Actions/Goods_Received/CreateGoodsReceived.action":
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Actions/Goods_Received/CreateGoodsReceived.action ***!
+  \*********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"CreateMaterialDoc"},"OnFailure":"/BusinessPartner/Rules/Error/GetDetailedError.js","OnSuccess":"/BusinessPartner/Actions/Messages/CreateGoodReceivedSuccess.action","Target":{"Service":"/BusinessPartner/Services/Material_Document_Overview.service","EntitySet":"A_MaterialDocumentHeader"},"Properties":{"DocumentDate":"#Page:Goods_Issue/#Control:DocumentDate/#Value","PostingDate":"#Page:Goods_Issue/#Control:PostingDate/#Value","GoodsMovementCode":"#Page:Goods_Issue/#Control:GoodsMovementCode/#Value","to_MaterialDocumentItem":[{"Material":"#Page:Goods_Issue/#Control:Material/#Value","Plant":"#Page:Goods_Issue/#Control:Plant/#Value","StorageLocation":"#Page:Goods_Issue/#Control:StorageLocation/#Value","GoodsMovementType":"#Page:Goods_Issue/#Control:GoodsMovementType/#Value","CostCenter":"#Page:Goods_Issue/#Control:CostCenter/#Value","EntryUnit":"#Page:Goods_Issue/#Control:Unit/#Value","QuantityInEntryUnit":"#Page:Goods_Issue/#Control:Quantity/#Value"}]}}
+
+/***/ }),
+
+/***/ "./build.definitions/BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action":
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action ***!
+  \*********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"ModalPageFullscreen":false,"ModalPage":true,"PageToOpen":"/BusinessPartner/Pages/GoodsReceived/Create_GoodsReceived.page","_Type":"Action.Type.Navigation"}
 
 /***/ }),
 
@@ -7546,6 +7700,36 @@ module.exports = {"Service":"/BusinessPartner/Services/Material_Stock.service","
 
 /***/ }),
 
+/***/ "./build.definitions/BusinessPartner/Actions/Messages/CreateGoodReceivedFail.action":
+/*!******************************************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Actions/Messages/CreateGoodReceivedFail.action ***!
+  \******************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","Message":"Goods Didn't Receive","Title":"Message","OKCaption":"OK","Duration":3,"IsIconHidden":false,"Animated":true,"MaxNumberOfLines":2}
+
+/***/ }),
+
+/***/ "./build.definitions/BusinessPartner/Actions/Messages/CreateGoodReceivedSuccess.action":
+/*!*********************************************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Actions/Messages/CreateGoodReceivedSuccess.action ***!
+  \*********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","Message":"Goods Successfully Received","Title":"Message","OKCaption":"OK","Duration":3,"IsIconHidden":false,"Animated":true,"MaxNumberOfLines":2}
+
+/***/ }),
+
+/***/ "./build.definitions/BusinessPartner/Actions/Messages/CreatePurchaseOrderSuccess.action":
+/*!**********************************************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Actions/Messages/CreatePurchaseOrderSuccess.action ***!
+  \**********************************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","Message":"Purchase Order Created Successfully","Title":"Message","OKCaption":"OK","Duration":3,"IsIconHidden":false,"Animated":true,"MaxNumberOfLines":2}
+
+/***/ }),
+
 /***/ "./build.definitions/BusinessPartner/Actions/Messages/ErrorMessage.action":
 /*!********************************************************************************!*\
   !*** ./build.definitions/BusinessPartner/Actions/Messages/ErrorMessage.action ***!
@@ -7582,7 +7766,7 @@ module.exports = {"ModalPageFullscreen":false,"ModalPage":true,"PageToOpen":"/Bu
   \*********************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"create"},"OnFailure":"/BusinessPartner/Actions/CreatePurchaseOrderFailMessage.action","OnSuccess":"/BusinessPartner/Actions/CreateEntitySuccessMessage.action","Target":{"Service":"/BusinessPartner/Services/Material_Document_Overview.service","EntitySet":"A_MaterialDocumentHeader"},"Properties":{"DocumentDate":"#ActionResults:create/data/DocumentDate","PostingDate":"#ActionResults:create/data/PostingDate","GoodsMovementCode":"#ActionResults:create/data/GoodsMovementCode"},"CreateLinks":[{"Property":"to_MaterialDocumentItem","Target":{"EntitySet":"A_MaterialDocumentItem"},"_Enabled":true,"Properties":{"Material":"#Control:Material/#Value","Plant":"#Control:Plant/#Value","StorageLocation":"#Control:StorageLocation/#Value","GoodsMovementType":"#Control:GoodsMovementType/#Value","QuantityInEntryUnit":"#Control:Quantity/#Value","EntryUnit":"#Control:Unit/#Value"}}]}
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"CreateMaterialDoc"},"OnFailure":"/BusinessPartner/Rules/Error/GetDetailedError.js","OnSuccess":"/BusinessPartner/Actions/Messages/CreatePurchaseOrderSuccess.action","Target":{"Service":"/BusinessPartner/Services/Material_Document_Overview.service","EntitySet":"A_MaterialDocumentHeader"},"Properties":{"DocumentDate":"#Page:Transfer_Within_Plant/#Control:DocumentDate/#Value","PostingDate":"#Page:Transfer_Within_Plant/#Control:PostingDate/#Value","GoodsMovementCode":"#Page:Transfer_Within_Plant/#Control:GoodsMovementCode/#Value","to_MaterialDocumentItem":[{"Material":"#Page:Transfer_Within_Plant/#Control:Material/#Value","Plant":"#Page:Transfer_Within_Plant/#Control:Plant/#Value","StorageLocation":"#Page:Transfer_Within_Plant/#Control:StorageLocation/#Value","GoodsMovementType":"#Page:Transfer_Within_Plant/#Control:GoodsMovementType/#Value","EntryUnit":"#Page:Transfer_Within_Plant/#Control:Unit/#Value","QuantityInEntryUnit":"#Page:Transfer_Within_Plant/#Control:Quantity/#Value","IssuingOrReceivingPlant":"#Page:Transfer_Within_Plant/#Control:IssuingOrReceivingPlant/#Value","IssuingOrReceivingStorageLoc":"#Page:Transfer_Within_Plant/#Control:IssuingOrReceivingStorageLoc/#Value"}]}}
 
 /***/ }),
 
@@ -7672,7 +7856,7 @@ module.exports = {"DestinationName":"Business_Partner","OfflineEnabled":true,"So
   \***************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"DestinationName":"Material_Document_Overview","OfflineEnabled":true,"SourceType":"Mobile"}
+module.exports = {"DestinationName":"Material_Document_Overview","OfflineEnabled":false,"OnlineOptions":{"ServiceOptions":{"dataVersion":200}},"SourceType":"Mobile"}
 
 /***/ }),
 

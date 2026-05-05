@@ -16,7 +16,7 @@
    */
   actionResults: any;
   /**
-   * Get the topmost page in the navigation stack
+   * Get the tosetpmost page in the navigation stack
    */
    currentPage: any;
     /*
@@ -450,6 +450,20 @@
    * @param region region
    */
   setRegion(region: string): void;
+  /**
+   * This method is to enable or disable usage of in-app camera for Android Attachment form cell control.
+   * The new value will be effective immediately.
+   * Specifically for already rendered attachment formcell controls on the current page will only take effect after being resetted through control reset() API.
+   * Do note that by calling control reset() API, the existing attachments would be discarded.
+   *
+   * @param value value to enable or disable usage of in-app camera for Android Attachment form cell control
+   */
+  setUseInAppCamera(value: boolean): void;
+  /**
+   * This method is to get the current state of usage of in-app camera for Android Attachment form cell control.
+   *
+   */
+  getUseInAppCamera(): boolean;
   /**
    * This method is to get available themes in app settings.
    * 

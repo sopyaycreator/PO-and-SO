@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Purchase Order Created Successfully",
+	"Title": "Message",
+	"OKCaption": "OK",
+	"Duration": 3,
+	"IsIconHidden": false,
+	"Animated": true,
+	"MaxNumberOfLines": 2
+}

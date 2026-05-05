@@ -1,0 +1,9 @@
+{
+    "_Type": "Action.Type.Message",
+    "Message": "{Message}",
+    "Title": "{Title}",
+    "OKCaption": "OK",
+    "OnOK": "/BusinessPartner/Actions/CloseModalPage_Complete.action",
+    "Duration": 0,
+    "Animated": true
+}

@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/BusinessPartner/Pages/GoodsReceived/Create_GoodsReceived.page",
+    "_Type": "Action.Type.Navigation"
+}

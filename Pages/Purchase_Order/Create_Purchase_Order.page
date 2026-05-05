@@ -1,9 +1,9 @@
 {
   "_Type": "Page",
-  "_Name": "Create_PurchaseOrder_Page",
+  "_Name": "Transfer_Within_Plant",
   "ActionBar": {
     "_Type": "Control.Type.ActionBar",
-    "Caption": "Create Purchase Order",
+    "Caption": "Transfer Within Plant",
     "Items": [
       {
         "_Type": "Control.Type.ActionBarItem",
@@ -45,7 +45,7 @@
               "_Type": "Control.Type.FormCell.SimpleProperty",
               "_Name": "GoodsMovementCode",
               "Caption": "Goods Movement Code",
-              "Value": "01"
+              "Value": "04"
             },
             {
               "_Type": "Control.Type.FormCell.SimpleProperty",
@@ -55,22 +55,30 @@
             {
               "_Type": "Control.Type.FormCell.SimpleProperty",
               "_Name": "Plant",
-              "Caption": "Plant",
-              
-              "Value": "5502"
+              "Caption": "Plant",            
+              "Value": "7001"
             },
             {
               "_Type": "Control.Type.FormCell.SimpleProperty",
               "_Name": "StorageLocation",
               "Caption": "Storage Location",
-              "Value": "5522"
+              "Value": "7010"
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "IssuingOrReceivingPlant",
+              "Caption": "IssuingOrReceivingPlant"
+            },
+            {
+              "_Type": "Control.Type.FormCell.SimpleProperty",
+              "_Name": "IssuingOrReceivingStorageLoc",
+              "Caption": "IssuingOrReceivingStorageLoc "
             },
             {
               "_Type": "Control.Type.FormCell.SimpleProperty",
               "_Name": "GoodsMovementType",
               "Caption": "Goods Movement Type",
-              
-              "Value": "501"
+              "Value": "311"
             },
             {
               "_Type": "Control.Type.FormCell.SimpleProperty",

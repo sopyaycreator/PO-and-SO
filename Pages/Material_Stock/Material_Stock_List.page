@@ -1,10 +1,27 @@
 {
 	"Controls": [
 		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
 			"_Type": "Control.Type.SectionedTable",
 			"_Name": "SectionedTable",
 			"Sections": [
 				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Grouping": {
+						"GroupingProperties": [],
+						"Header": {
+							"Items": []
+						}
+					},
 					"_Type": "Section.Type.ObjectTable",
 					"DataSubscriptions": [
 						"/BusinessPartner/Services/Business_Partner.service"
@@ -19,13 +36,6 @@
 						"Caption": "No Material Stock Found",
 						"FooterVisible": false
 					},
-					"Separators": {
-						"TopSectionSeparator": false,
-						"BottomSectionSeparator": true,
-						"HeaderSeparator": true,
-						"FooterSeparator": true,
-						"ControlSeparator": true
-					},
 					"ObjectCell": {
 						"AttributeLabels": true,
 						"Attributes": [
@@ -36,6 +46,13 @@
 								"Value": "Special Stock: {InventorySpecialStockType}"
 							}
 						],
+						"ContextMenu": {
+							"Items": [],
+							"PerformFirstActionWithFullSwipe": true,
+							"LeadingItems": [],
+							"TrailingItems": [],
+							"_Type": "ObjectCell.Type.ContextMenu"
+						},
 						"Title": "{Material}",
 						"Subhead": "{Plant}",
 						"Footnote": "Batch: {Batch}",
@@ -50,30 +67,12 @@
 						"AvatarGrid": {
 							"ImageIsCircular": true
 						},
-						
 						"_Type": "ObjectTable.Type.ObjectCell",
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [],
-							"PerformFirstActionWithFullSwipe": true,
-							"LeadingItems": [],
-							"TrailingItems": [],
-							"_Type": "ObjectCell.Type.ContextMenu"
-						}
-					},
-					"Grouping": {
-						"GroupingProperties": [],
-						"Header": {
-							"Items": []
-						}
+						"Selected": false
 					},
 					"HighlightSelectedItem": false
 				}
-			],
-			"FilterFeedbackBar": {
-				"ShowAllFilters": false,
-				"_Type": "Control.Type.FilterFeedbackBar"
-			}
+			]
 		}
 	],
 	"_Type": "Page",

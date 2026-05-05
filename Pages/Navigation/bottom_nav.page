@@ -15,14 +15,10 @@
 					"_Type": "Control.Type.TabItem",
 					"Caption": "Apps",
 					"Image": "sap-icon://grid",
+					"PageToOpen": "/BusinessPartner/Pages/Applications_Page.page",
 					"_Name": "AppsTab"
-				},
-				{
-					"_Type": "Control.Type.TabItem",
-					"Caption": "To-Dos",
-					"Image": "sap-icon://task",
-					"_Name": "To-Dos"
 				}
+				
 			]
 		}
 	],
