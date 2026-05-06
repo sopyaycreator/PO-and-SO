@@ -13,7 +13,7 @@
 	"Properties": {
 		"DocumentDate": "#Page:Transfer_Within_Plant/#Control:DocumentDate/#Value",
 		"PostingDate": "#Page:Transfer_Within_Plant/#Control:PostingDate/#Value",
-		"GoodsMovementCode": "#Page:Transfer_Within_Plant/#Control:GoodsMovementCode/#Value",
+		"GoodsMovementCode": "04",
 		"to_MaterialDocumentItem": [
 			{
 				"Material": "#Page:Transfer_Within_Plant/#Control:Material/#Value",

@@ -1,0 +1,109 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader0",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "⭐ Favorites"
+					},
+					"_Type": "Section.Type.ObjectCardCollection",
+					"_Name": "FavoritesSection",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Cards": [
+						{
+							"AppId": "purchase_order",
+							"_Type": "ObjectCardCollection.Type.Card",
+							"_Name": "PO_Fav",
+							"Visible": "/BusinessPartner/Rules/IsFavorite.js",
+							"Title": "Transfer",
+							"DetailImage": "sap-icon://credit-card",
+							"OnPress": "/BusinessPartner/Actions/Purchase_Order/NavToCreate_Purchase_Order.action"
+						},
+						{
+							"AppId": "goods_received",
+							"_Type": "ObjectCardCollection.Type.Card",
+							"_Name": "GR_Fav",
+							"Visible": "/BusinessPartner/Rules/IsFavorite.js",
+							"Title": "Goods Issue",
+							"DetailImage": "sap-icon://receipt",
+							"OnPress": "/BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action"
+						},
+						{
+							"AppId": "supplier",
+							"_Type": "ObjectCardCollection.Type.Card",
+							"_Name": "SUP_Fav",
+							"Visible": "/BusinessPartner/Rules/IsFavorite.js",
+							"Title": "Supplier",
+							"DetailImage": "sap-icon://supplier",
+							"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_List.action"
+						}
+					],
+					"Layout": {
+						"LayoutType": "HorizontalScroll"
+					}
+				},
+				{
+					"Header": {
+						"_Type": "SectionCommon.Type.Header",
+						"_Name": "SectionCommonTypeHeader1",
+						"AccessoryType": "None",
+						"UseTopPadding": true,
+						"Caption": "📦 All Apps"
+					},
+					"_Type": "Section.Type.ObjectCardCollection",
+					"_Name": "AllAppsSection",
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Cards": [
+						{
+							"AppId": "purchase_order",
+							"_Type": "ObjectCardCollection.Type.Card",
+							"_Name": "PO_All",
+							"Title": "Transfer",
+							"DetailImage": "sap-icon://credit-card",
+							"OnPress": "/BusinessPartner/Actions/Purchase_Order/NavToCreate_Purchase_Order.action"
+						},
+						{
+							"AppId": "goods_received",
+							"_Type": "ObjectCardCollection.Type.Card",
+							"_Name": "GR_All",
+							"Title": "Goods Issue",
+							"DetailImage": "sap-icon://receipt",
+							"OnPress": "/BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action"
+						},
+						{
+							"AppId": "supplier",
+							"_Type": "ObjectCardCollection.Type.Card",
+							"_Name": "SUP_All",
+							"Title": "Supplier",
+							"DetailImage": "sap-icon://supplier",
+							"OnPress": "/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_List.action"
+						}
+					],
+					"Layout": {}
+				}
+			],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			}
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Favorite",
+	"ActionBar": {
+		"Items": [],
+		"_Name": "ActionBar1",
+		"_Type": "Control.Type.ActionBar"
+	}
+}

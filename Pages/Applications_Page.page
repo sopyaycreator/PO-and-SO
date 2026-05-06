@@ -50,6 +50,7 @@
 						{
 							"_Type": "ObjectCardCollection.Type.Card",
 							"_Name": "Goods Received",
+							"Visible": true,
 							"Title": "Goods Issue",
 							"Footnote": "Goods Issue or Goods Received",
 							"DetailImage": "sap-icon://receipt",
@@ -110,7 +111,6 @@
 							}
 						}
 					],
-					
 					"Layout": {
 						"LayoutType": "HorizontalScroll"
 					}
@@ -129,7 +129,6 @@
 					"ChartContent": {
 						"Title": "Sales for Store",
 						"Subtitle": "Displaying of Sales for Store",
-						"StatusText": "8h ago",
 						"IsReadOnly": false,
 						"ChartView": {
 							"ChartType": "Column",

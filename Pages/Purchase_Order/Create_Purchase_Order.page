@@ -43,12 +43,6 @@
             },
             {
               "_Type": "Control.Type.FormCell.SimpleProperty",
-              "_Name": "GoodsMovementCode",
-              "Caption": "Goods Movement Code",
-              "Value": "04"
-            },
-            {
-              "_Type": "Control.Type.FormCell.SimpleProperty",
               "_Name": "Material",
               "Caption": "Material"
             },

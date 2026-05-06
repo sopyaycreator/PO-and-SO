@@ -9,9 +9,8 @@ export default function GetDetailedError(context) {
         
         // 2. Build a structured technical string
         errorMessage = `Technical Details:\n`;
-        errorMessage += `• Code: ${error.code || 'N/A'}\n`;
-        errorMessage += `• Status: ${error.statusCode || 'N/A'}\n`;
-        errorMessage += `• Message: ${error.message || 'No message'}\n`;
+        
+        errorMessage += `• Message: ${error.message.message.value || 'No message'}\n`;
 
         // 3. Try to parse backend OData error messages (if available)
         if (error.responseBody) {

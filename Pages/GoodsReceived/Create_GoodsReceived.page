@@ -31,17 +31,6 @@
 							"Mode": "Date"
 						},
 						{
-							"Value": "03",
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "GoodsMovementCode",
-							"RequiredIndicator": false,
-							"IsVisible": true,
-							"Separator": true,
-							"Caption": "Goods Movement Code",
-							"Enabled": true,
-							"IsEditable": true
-						},
-						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "Material",
 							"RequiredIndicator": false,

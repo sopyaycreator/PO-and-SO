@@ -12,7 +12,7 @@
 	"Properties": {
 		"DocumentDate": "#Page:Goods_Issue/#Control:DocumentDate/#Value",
 		"PostingDate": "#Page:Goods_Issue/#Control:PostingDate/#Value",
-		"GoodsMovementCode": "#Page:Goods_Issue/#Control:GoodsMovementCode/#Value",
+		"GoodsMovementCode": "03",
 		"to_MaterialDocumentItem": [
 			{
 				"Material": "#Page:Goods_Issue/#Control:Material/#Value",

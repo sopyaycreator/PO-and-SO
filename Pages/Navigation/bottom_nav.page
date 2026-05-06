@@ -17,7 +17,15 @@
 					"Image": "sap-icon://grid",
 					"PageToOpen": "/BusinessPartner/Pages/Applications_Page.page",
 					"_Name": "AppsTab"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Favorite",
+					"Image": "sap-icon://favorite-list",
+					"PageToOpen": "/BusinessPartner/Pages/Love.page",
+					"_Name": "Favorite"
 				}
+
 				
 			]
 		}
