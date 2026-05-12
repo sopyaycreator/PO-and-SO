@@ -12,16 +12,31 @@
 		"Deploy": {
 			"Description": "",
 			"WebClient": {
-				"Runtime": "",
-				"URL": ""
+				"Runtime": "preview",
+				"URL": "https://mdk-webclient-runtime-preview.cfapps.sap.hana.ondemand.com/preview/"
 			},
 			"Destination": [
 				{
-					"CF": "",
+					"CF": "Business_Partner",
 					"MDK": "Business_Partner",
 					"URL": ""
+				},
+				{
+					"CF": "Material_Document_Overview",
+					"MDK": "Material_Document_Overview",
+					"URL": ""
+				},
+				{
+					"CF": "PO",
+					"MDK": "PO",
+					"URL": ""
 				}
-			]
+			],
+			"Name": "ns.BusinessPartner",
+			"Version": "1.0.0",
+			"AppRouter": "standalone",
+			"Auth": true,
+			"URL": "https://nirvasoft-pte-ltd-hma-btp-task-cnxky6vh-dev-nsbusinessp4a54480e.cfapps.ap11.hana.ondemand.com/nsBusinessPartner"
 		}
 	},
 	"MobileService": {

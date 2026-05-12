@@ -16,7 +16,7 @@
 		"to_MaterialDocumentItem": [
 			{
 				"Material": "#Page:Goods_Issue/#Control:Material/#Value",
-				"Plant": "#Page:Goods_Issue/#Control:Plant/#Value",
+				"Plant": "#Page:Goods_Issue/#Control:FormCellListPicker0/#SelectedValue",
 				"StorageLocation": "#Page:Goods_Issue/#Control:StorageLocation/#Value",
 				"GoodsMovementType": "#Page:Goods_Issue/#Control:GoodsMovementType/#Value",
 				"CostCenter": "#Page:Goods_Issue/#Control:CostCenter/#Value",

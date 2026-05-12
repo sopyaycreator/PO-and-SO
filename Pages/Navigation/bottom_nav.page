@@ -22,11 +22,9 @@
 					"_Type": "Control.Type.TabItem",
 					"Caption": "Favorite",
 					"Image": "sap-icon://favorite-list",
-					"PageToOpen": "/BusinessPartner/Pages/Love.page",
+					"PageToOpen": "/BusinessPartner/Pages/Test.page",
 					"_Name": "Favorite"
 				}
-
-				
 			]
 		}
 	],
@@ -34,7 +32,7 @@
 	"_Name": "MainTab",
 	"ActionBar": {
 		"Items": [],
-		"_Name": "ActionBar1",
+		"_Name": "ActionBar2",
 		"_Type": "Control.Type.ActionBar"
 	}
 }

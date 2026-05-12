@@ -1,16 +1,15 @@
 export default function GetDetailedError(context) {
-    // 1. Get the result of the action that just failed
-    // Replace 'YourFailedAction' with the actual name of your OData action
     let actionResult = context.getActionResult('CreateMaterialDoc');
-    let errorMessage = "An unexpected error occurred.";
+    let errorMessage = "Transaction Failed";
 
     if (actionResult && actionResult.error) {
         let error = actionResult.error;
+        let a = error.
         
-        // 2. Build a structured technical string
+       
         errorMessage = `Technical Details:\n`;
         
-        errorMessage += `• Message: ${error.message.message.value || 'No message'}\n`;
+          errorMessage += `• Message: ${error.message || 'No message'}\n`;
 
         // 3. Try to parse backend OData error messages (if available)
         if (error.responseBody) {
@@ -24,8 +23,8 @@ export default function GetDetailedError(context) {
             }
         }
     }
-
-    // 4. Trigger a standard Message Action to show this string
+    console.log(error.responseBody);
+   
     return context.executeAction({
         "Name": "/BusinessPartner/Actions/GenericError.action",
         "Properties": {

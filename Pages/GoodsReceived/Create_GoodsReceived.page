@@ -31,32 +31,51 @@
 							"Mode": "Date"
 						},
 						{
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "Material",
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FormCellListPicker0",
 							"RequiredIndicator": false,
 							"IsVisible": true,
 							"Separator": true,
-							"Caption": "Material",
-							"Enabled": true,
-							"IsEditable": true
-						},
-						{
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "Plant",
-							"RequiredIndicator": false,
-							"IsVisible": true,
-							"Separator": true,
-							"Caption": "Plant",
-							"Enabled": true,
-							"IsEditable": true
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Choose Plant",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 20
+							},
+							"PickerPrompt": "Please select one",
+							"IsSelectedSectionEnabled": false,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"PickerItems": {
+								"Target": {
+									"Service": "/BusinessPartner/Services/Material_Stock.service",
+									"EntitySet": "A_MatlStkInAcctMod",
+									"QueryOptions": "$apply=groupby((Plant))"
+								},
+								"DisplayValue": "{Plant}",
+								"ReturnValue": "{Plant}"
+							}
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "StorageLocation",
-							"RequiredIndicator": false,
+							"RequiredIndicator": true,
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Storage Location",
+							"HelperText": "Please enter Storage Location",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "Material",
+							"RequiredIndicator": true,
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Material",
+							"HelperText": "Please enter Material",
 							"Enabled": true,
 							"IsEditable": true
 						},
@@ -74,21 +93,23 @@
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "Quantity",
-							"RequiredIndicator": false,
+							"RequiredIndicator": true,
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Quantity",
 							"KeyboardType": "Number",
+							"HelperText": "Please enter Quantity",
 							"Enabled": true,
 							"IsEditable": true
 						},
 						{
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "Unit",
-							"RequiredIndicator": false,
+							"RequiredIndicator": true,
 							"IsVisible": true,
 							"Separator": true,
 							"Caption": "Unit",
+							"HelperText": "Please enter Unit",
 							"Enabled": true,
 							"IsEditable": true
 						},

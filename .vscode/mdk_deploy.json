@@ -1,10 +1,10 @@
 {
 	"Application": "/home/user/projects/BusinessPartner/Application.app",
-	"Target": "Mobile Services",
+	"Target": "Cloud Foundry",
 	"OtherApps": [
 		{
 			"Application": "/home/user/projects/BusinessPartner/Application.app",
-			"Target": "Mobile Services"
+			"Target": "Cloud Foundry"
 		}
 	]
 }

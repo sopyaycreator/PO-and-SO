@@ -1,4 +1,14 @@
-/******/ (() => { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(this, () => {
+return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./build.definitions/BusinessPartner/i18n/i18n.properties":
@@ -480,6 +490,7 @@ let businesspartner_pages_material_stock_material_stock_list_page = __webpack_re
 let businesspartner_pages_navigation_bottom_nav_page = __webpack_require__(/*! ./BusinessPartner/Pages/Navigation/bottom_nav.page */ "./build.definitions/BusinessPartner/Pages/Navigation/bottom_nav.page")
 let businesspartner_pages_profiledrawer_page = __webpack_require__(/*! ./BusinessPartner/Pages/ProfileDrawer.page */ "./build.definitions/BusinessPartner/Pages/ProfileDrawer.page")
 let businesspartner_pages_purchase_order_create_purchase_order_page = __webpack_require__(/*! ./BusinessPartner/Pages/Purchase_Order/Create_Purchase_Order.page */ "./build.definitions/BusinessPartner/Pages/Purchase_Order/Create_Purchase_Order.page")
+let businesspartner_pages_test_page = __webpack_require__(/*! ./BusinessPartner/Pages/Test.page */ "./build.definitions/BusinessPartner/Pages/Test.page")
 let businesspartner_rules_application_appupdatefailure_js = __webpack_require__(/*! ./BusinessPartner/Rules/Application/AppUpdateFailure.js */ "./build.definitions/BusinessPartner/Rules/Application/AppUpdateFailure.js")
 let businesspartner_rules_application_appupdatesuccess_js = __webpack_require__(/*! ./BusinessPartner/Rules/Application/AppUpdateSuccess.js */ "./build.definitions/BusinessPartner/Rules/Application/AppUpdateSuccess.js")
 let businesspartner_rules_application_clientismultiusermode_js = __webpack_require__(/*! ./BusinessPartner/Rules/Application/ClientIsMultiUserMode.js */ "./build.definitions/BusinessPartner/Rules/Application/ClientIsMultiUserMode.js")
@@ -533,14 +544,14 @@ let businesspartner_rules_logging_tracecategories_js = __webpack_require__(/*! .
 let businesspartner_rules_logging_userlogsetting_js = __webpack_require__(/*! ./BusinessPartner/Rules/Logging/UserLogSetting.js */ "./build.definitions/BusinessPartner/Rules/Logging/UserLogSetting.js")
 let businesspartner_rules_opensapnew_js = __webpack_require__(/*! ./BusinessPartner/Rules/OpenSAPNew.js */ "./build.definitions/BusinessPartner/Rules/OpenSAPNew.js")
 let businesspartner_rules_service_initialize_js = __webpack_require__(/*! ./BusinessPartner/Rules/Service/Initialize.js */ "./build.definitions/BusinessPartner/Rules/Service/Initialize.js")
+let businesspartner_rules_validateplant_js = __webpack_require__(/*! ./BusinessPartner/Rules/ValidatePlant.js */ "./build.definitions/BusinessPartner/Rules/ValidatePlant.js")
 let businesspartner_services_business_partner_service = __webpack_require__(/*! ./BusinessPartner/Services/Business_Partner.service */ "./build.definitions/BusinessPartner/Services/Business_Partner.service")
 let businesspartner_services_material_document_overview_service = __webpack_require__(/*! ./BusinessPartner/Services/Material_Document_Overview.service */ "./build.definitions/BusinessPartner/Services/Material_Document_Overview.service")
 let businesspartner_services_material_stock_service = __webpack_require__(/*! ./BusinessPartner/Services/Material_Stock.service */ "./build.definitions/BusinessPartner/Services/Material_Stock.service")
 let businesspartner_styles_styles_css = __webpack_require__(/*! ./BusinessPartner/Styles/Styles.css */ "./build.definitions/BusinessPartner/Styles/Styles.css")
+let businesspartner_styles_styles_json = __webpack_require__(/*! ./BusinessPartner/Styles/Styles.json */ "./build.definitions/BusinessPartner/Styles/Styles.json")
 let businesspartner_styles_styles_less = __webpack_require__(/*! ./BusinessPartner/Styles/Styles.less */ "./build.definitions/BusinessPartner/Styles/Styles.less")
-let businesspartner_styles_styles_light_css = __webpack_require__(/*! ./BusinessPartner/Styles/Styles.light.css */ "./build.definitions/BusinessPartner/Styles/Styles.light.css")
-let businesspartner_styles_styles_light_json = __webpack_require__(/*! ./BusinessPartner/Styles/Styles.light.json */ "./build.definitions/BusinessPartner/Styles/Styles.light.json")
-let businesspartner_styles_styles_light_nss = __webpack_require__(/*! ./BusinessPartner/Styles/Styles.light.nss */ "./build.definitions/BusinessPartner/Styles/Styles.light.nss")
+let businesspartner_styles_styles_nss = __webpack_require__(/*! ./BusinessPartner/Styles/Styles.nss */ "./build.definitions/BusinessPartner/Styles/Styles.nss")
 let tsconfig_json = __webpack_require__(/*! ./tsconfig.json */ "./build.definitions/tsconfig.json")
 let version_mdkbundlerversion = __webpack_require__(/*! ./version.mdkbundlerversion */ "./build.definitions/version.mdkbundlerversion")
 
@@ -1008,6 +1019,7 @@ module.exports = {
 	businesspartner_pages_navigation_bottom_nav_page : businesspartner_pages_navigation_bottom_nav_page,
 	businesspartner_pages_profiledrawer_page : businesspartner_pages_profiledrawer_page,
 	businesspartner_pages_purchase_order_create_purchase_order_page : businesspartner_pages_purchase_order_create_purchase_order_page,
+	businesspartner_pages_test_page : businesspartner_pages_test_page,
 	businesspartner_rules_application_appupdatefailure_js : businesspartner_rules_application_appupdatefailure_js,
 	businesspartner_rules_application_appupdatesuccess_js : businesspartner_rules_application_appupdatesuccess_js,
 	businesspartner_rules_application_clientismultiusermode_js : businesspartner_rules_application_clientismultiusermode_js,
@@ -1061,14 +1073,14 @@ module.exports = {
 	businesspartner_rules_logging_userlogsetting_js : businesspartner_rules_logging_userlogsetting_js,
 	businesspartner_rules_opensapnew_js : businesspartner_rules_opensapnew_js,
 	businesspartner_rules_service_initialize_js : businesspartner_rules_service_initialize_js,
+	businesspartner_rules_validateplant_js : businesspartner_rules_validateplant_js,
 	businesspartner_services_business_partner_service : businesspartner_services_business_partner_service,
 	businesspartner_services_material_document_overview_service : businesspartner_services_material_document_overview_service,
 	businesspartner_services_material_stock_service : businesspartner_services_material_stock_service,
 	businesspartner_styles_styles_css : businesspartner_styles_styles_css,
+	businesspartner_styles_styles_json : businesspartner_styles_styles_json,
 	businesspartner_styles_styles_less : businesspartner_styles_styles_less,
-	businesspartner_styles_styles_light_css : businesspartner_styles_styles_light_css,
-	businesspartner_styles_styles_light_json : businesspartner_styles_styles_light_json,
-	businesspartner_styles_styles_light_nss : businesspartner_styles_styles_light_nss,
+	businesspartner_styles_styles_nss : businesspartner_styles_styles_nss,
 	tsconfig_json : tsconfig_json,
 	version_mdkbundlerversion : version_mdkbundlerversion
 }
@@ -2337,17 +2349,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ GetDetailedError)
 /* harmony export */ });
 function GetDetailedError(context) {
-  // 1. Get the result of the action that just failed
-  // Replace 'YourFailedAction' with the actual name of your OData action
   let actionResult = context.getActionResult('CreateMaterialDoc');
-  let errorMessage = "An unexpected error occurred.";
+  let errorMessage = "Transaction Failed";
   if (actionResult && actionResult.error) {
     let error = actionResult.error;
-
-    // 2. Build a structured technical string
-    errorMessage = `Technical Details:\n`;
-    errorMessage += `• Code: ${error.code || 'N/A'}\n`;
-    errorMessage += `• Status: ${error.statusCode || 'N/A'}\n`;
+    let a = error.errorMessage = `Technical Details:\n`;
     errorMessage += `• Message: ${error.message || 'No message'}\n`;
 
     // 3. Try to parse backend OData error messages (if available)
@@ -2362,8 +2368,7 @@ function GetDetailedError(context) {
       }
     }
   }
-
-  // 4. Trigger a standard Message Action to show this string
+  console.log(error.responseBody);
   return context.executeAction({
     "Name": "/BusinessPartner/Actions/GenericError.action",
     "Properties": {
@@ -2741,6 +2746,30 @@ function Initialize(context) {
 
 /***/ }),
 
+/***/ "./build.definitions/BusinessPartner/Rules/ValidatePlant.js":
+/*!******************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Rules/ValidatePlant.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ValidatePlant)
+/* harmony export */ });
+function ValidatePlant(controlProxy) {
+  let value = controlProxy.getValue();
+  if (!value || value.trim() === '') {
+    controlProxy.setValidationProperty('ValidationMessage', 'Plant is required');
+    controlProxy.applyValidation();
+    return false;
+  }
+  controlProxy.clearValidation();
+  return true;
+}
+
+/***/ }),
+
 /***/ "./build.definitions/BusinessPartner/Styles/Styles.css":
 /*!*************************************************************!*\
   !*** ./build.definitions/BusinessPartner/Styles/Styles.css ***!
@@ -2753,7 +2782,7 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../c
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `/* Color Variables */
-/* Global Page Style */
+/* Global div.MDKPage Style */
 .MainPageBackground {
   background-color: #F2F2F7;
 }
@@ -2830,7 +2859,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Color Variables */
   margin: 0 !important;
   padding: 4px !important;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.css"],"names":[],"mappings":"AAAA,oBAAoB;AACpB,sBAAsB;AACtB;EACE,yBAAyB;AAC3B;AACA,8BAA8B;AAC9B;EACE,cAAc;EACd,sCAAsC;EACtC,eAAe;EACf,gBAAgB;AAClB;AACA,uBAAuB;AACvB;EACE,6DAA6D;EAC7D,cAAc;EACd,mBAAmB;EACnB,+CAA+C;AACjD;AACA,+BAA+B;AAC/B;EACE,yBAAyB;EACzB,mBAAmB;EACnB,kDAAkD;AACpD;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;EACnB,kDAAkD;AACpD;AACA;EACE,iBAAiB;EACjB,sBAAsB;AACxB;AACA;EACE,iBAAiB;EACjB,wBAAwB;AAC1B;AACA;EACE,cAAc;AAChB;AACA,0GAA0G;AAC1G;EACE,yBAAyB;AAC3B;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,4BAA4B;EAC5B,6BAA6B;EAC7B,4BAA4B;EAC5B,6BAA6B;AAC/B;AACA;EACE,oBAAoB;EACpB,uBAAuB;AACzB","sourcesContent":["/* Color Variables */\n/* Global Page Style */\n.MainPageBackground {\n  background-color: #F2F2F7;\n}\n/* Featured News Label Style */\n.NewsLabel {\n  color: #0070F2;\n  /* Matches 'SAP Community News' text */\n  font-size: 14px;\n  font-weight: 500;\n}\n/* Weather Tile Style */\n.WeatherCardPurple {\n  background: linear-gradient(135deg, #4A148C 0%, #7B1FA2 100%);\n  color: #FFFFFF;\n  border-radius: 18px;\n  /* Smooth rounded corners like the screenshot */\n}\n/* Monitoring Apps Grid Cards */\n.BusinessCard {\n  background-color: #FFFFFF;\n  border-radius: 24px;\n  /* Very round corners as seen in Monitoring Apps */\n}\n.ObjectCardBackground {\n  background-color: #f0afa0;\n}\n.ObjectCardTitle {\n  font-color: #339966;\n}\n.ObjectCardSubHead {\n  font-color: #ff00ff;\n}\n.ObjectCardFootnote {\n  font-color: #339966;\n}\n.ObjectCardDescription {\n  font-color: #ffbb33;\n}\n.ObjectCardStatusText {\n  font-color: #ff0000;\n  /*Android support Red, Green & default color only*/\n}\n.ObjectCardPrimaryAction {\n  font-color: green;\n  background-color: cyan;\n}\n.ObjectCardSecondaryAction {\n  font-color: green;\n  background-color: orange;\n}\n.font-icon-class {\n  color: #339966;\n}\n/* Additional CSS Shadow Parts for the BackgroundColor, Title, SubHead & StatusText styles of Web Client */\n.ObjectCardBackground::part(root) {\n  background-color: #ff0000;\n}\n.ObjectCardTitle::part(title) {\n  font-color: #339966;\n}\n.ObjectCardSubHead::part(subtitle) {\n  font-color: #ff00ff;\n}\n.ObjectCardStatusText::part(status) {\n  font-color: #339966;\n}\n.CompactCardLayout {\n  margin-left: -8px !important;\n  margin-right: -8px !important;\n  padding-left: 8px !important;\n  padding-right: 8px !important;\n}\n.TightCardSpacing {\n  margin: 0 !important;\n  padding: 4px !important;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.css"],"names":[],"mappings":"AAAA,oBAAoB;AACpB,6BAA6B;AAC7B;EACE,yBAAyB;AAC3B;AACA,8BAA8B;AAC9B;EACE,cAAc;EACd,sCAAsC;EACtC,eAAe;EACf,gBAAgB;AAClB;AACA,uBAAuB;AACvB;EACE,6DAA6D;EAC7D,cAAc;EACd,mBAAmB;EACnB,+CAA+C;AACjD;AACA,+BAA+B;AAC/B;EACE,yBAAyB;EACzB,mBAAmB;EACnB,kDAAkD;AACpD;AACA;EACE,yBAAyB;AAC3B;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;EACnB,kDAAkD;AACpD;AACA;EACE,iBAAiB;EACjB,sBAAsB;AACxB;AACA;EACE,iBAAiB;EACjB,wBAAwB;AAC1B;AACA;EACE,cAAc;AAChB;AACA,0GAA0G;AAC1G;EACE,yBAAyB;AAC3B;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,4BAA4B;EAC5B,6BAA6B;EAC7B,4BAA4B;EAC5B,6BAA6B;AAC/B;AACA;EACE,oBAAoB;EACpB,uBAAuB;AACzB","sourcesContent":["/* Color Variables */\n/* Global div.MDKPage Style */\n.MainPageBackground {\n  background-color: #F2F2F7;\n}\n/* Featured News Label Style */\n.NewsLabel {\n  color: #0070F2;\n  /* Matches 'SAP Community News' text */\n  font-size: 14px;\n  font-weight: 500;\n}\n/* Weather Tile Style */\n.WeatherCardPurple {\n  background: linear-gradient(135deg, #4A148C 0%, #7B1FA2 100%);\n  color: #FFFFFF;\n  border-radius: 18px;\n  /* Smooth rounded corners like the screenshot */\n}\n/* Monitoring Apps Grid Cards */\n.BusinessCard {\n  background-color: #FFFFFF;\n  border-radius: 24px;\n  /* Very round corners as seen in Monitoring Apps */\n}\n.ObjectCardBackground {\n  background-color: #f0afa0;\n}\n.ObjectCardTitle {\n  font-color: #339966;\n}\n.ObjectCardSubHead {\n  font-color: #ff00ff;\n}\n.ObjectCardFootnote {\n  font-color: #339966;\n}\n.ObjectCardDescription {\n  font-color: #ffbb33;\n}\n.ObjectCardStatusText {\n  font-color: #ff0000;\n  /*Android support Red, Green & default color only*/\n}\n.ObjectCardPrimaryAction {\n  font-color: green;\n  background-color: cyan;\n}\n.ObjectCardSecondaryAction {\n  font-color: green;\n  background-color: orange;\n}\n.font-icon-class {\n  color: #339966;\n}\n/* Additional CSS Shadow Parts for the BackgroundColor, Title, SubHead & StatusText styles of Web Client */\n.ObjectCardBackground::part(root) {\n  background-color: #ff0000;\n}\n.ObjectCardTitle::part(title) {\n  font-color: #339966;\n}\n.ObjectCardSubHead::part(subtitle) {\n  font-color: #ff00ff;\n}\n.ObjectCardStatusText::part(status) {\n  font-color: #339966;\n}\n.CompactCardLayout {\n  margin-left: -8px !important;\n  margin-right: -8px !important;\n  padding-left: 8px !important;\n  padding-right: 8px !important;\n}\n.TightCardSpacing {\n  margin: 0 !important;\n  padding: 4px !important;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -2953,97 +2982,10 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ "./build.definitions/BusinessPartner/Styles/Styles.light.css":
-/*!*******************************************************************!*\
-  !*** ./build.definitions/BusinessPartner/Styles/Styles.light.css ***!
-  \*******************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-// Imports
-var ___CSS_LOADER_API_SOURCEMAP_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/sourceMaps.js */ "../../../../css-loader/dist/runtime/sourceMaps.js");
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../css-loader/dist/runtime/api.js */ "../../../../css-loader/dist/runtime/api.js");
-var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(___CSS_LOADER_API_SOURCEMAP_IMPORT___);
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, `.ns-light .MainPageBackground {
-	background-color: #F2F2F7;
-}
-.ns-light .NewsLabel {
-	color: #0070F2;
-	/* Matches 'SAP Community News' text */
-  font-size: 14px;
-	font-weight: 500;
-}
-.ns-light .WeatherCardPurple {
-	background: linear-gradient(135deg, #4A148C 0%, #7B1FA2 100%);
-	color: #FFFFFF;
-	border-radius: 18px;
-}
-.ns-light .BusinessCard {
-	background-color: #FFFFFF;
-	border-radius: 24px;
-}
-.ns-light .ObjectCardBackground {
-	background-color: #f0afa0;
-}
-.ns-light .ObjectCardTitle {
-	font-color: #339966;
-}
-.ns-light .ObjectCardSubHead {
-	font-color: #ff00ff;
-}
-.ns-light .ObjectCardFootnote {
-	font-color: #339966;
-}
-.ns-light .ObjectCardDescription {
-	font-color: #ffbb33;
-}
-.ns-light .ObjectCardStatusText {
-	font-color: #ff0000;
-}
-.ns-light .ObjectCardPrimaryAction {
-	font-color: green;
-	background-color: cyan;
-}
-.ns-light .ObjectCardSecondaryAction {
-	font-color: green;
-	background-color: orange;
-}
-.ns-light .font-icon-class {
-	color: #339966;
-}
-.ns-light .ObjectCardBackground::part(root) {
-	background-color: #ff0000;
-}
-.ns-light .ObjectCardTitle::part(title) {
-	font-color: #339966;
-}
-.ns-light .ObjectCardSubHead::part(subtitle) {
-	font-color: #ff00ff;
-}
-.ns-light .ObjectCardStatusText::part(status) {
-	font-color: #339966;
-}
-.ns-light .CompactCardLayout {
-	margin-left: -8px !important;
-	margin-right: -8px !important;
-	padding-left: 8px !important;
-	padding-right: 8px !important;
-}
-.ns-light .TightCardSpacing {
-	margin: 0 !important;
-	padding: 4px !important;
-}
-`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.light.css"],"names":[],"mappings":"AAAA;CACC,yBAAyB;AAC1B;AACA;CACC,cAAc;CACd,sCAAsC;EACrC,eAAe;CAChB,gBAAgB;AACjB;AACA;CACC,6DAA6D;CAC7D,cAAc;CACd,mBAAmB;AACpB;AACA;CACC,yBAAyB;CACzB,mBAAmB;AACpB;AACA;CACC,yBAAyB;AAC1B;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,iBAAiB;CACjB,sBAAsB;AACvB;AACA;CACC,iBAAiB;CACjB,wBAAwB;AACzB;AACA;CACC,cAAc;AACf;AACA;CACC,yBAAyB;AAC1B;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,4BAA4B;CAC5B,6BAA6B;CAC7B,4BAA4B;CAC5B,6BAA6B;AAC9B;AACA;CACC,oBAAoB;CACpB,uBAAuB;AACxB","sourcesContent":[".ns-light .MainPageBackground {\n\tbackground-color: #F2F2F7;\n}\n.ns-light .NewsLabel {\n\tcolor: #0070F2;\n\t/* Matches 'SAP Community News' text */\n  font-size: 14px;\n\tfont-weight: 500;\n}\n.ns-light .WeatherCardPurple {\n\tbackground: linear-gradient(135deg, #4A148C 0%, #7B1FA2 100%);\n\tcolor: #FFFFFF;\n\tborder-radius: 18px;\n}\n.ns-light .BusinessCard {\n\tbackground-color: #FFFFFF;\n\tborder-radius: 24px;\n}\n.ns-light .ObjectCardBackground {\n\tbackground-color: #f0afa0;\n}\n.ns-light .ObjectCardTitle {\n\tfont-color: #339966;\n}\n.ns-light .ObjectCardSubHead {\n\tfont-color: #ff00ff;\n}\n.ns-light .ObjectCardFootnote {\n\tfont-color: #339966;\n}\n.ns-light .ObjectCardDescription {\n\tfont-color: #ffbb33;\n}\n.ns-light .ObjectCardStatusText {\n\tfont-color: #ff0000;\n}\n.ns-light .ObjectCardPrimaryAction {\n\tfont-color: green;\n\tbackground-color: cyan;\n}\n.ns-light .ObjectCardSecondaryAction {\n\tfont-color: green;\n\tbackground-color: orange;\n}\n.ns-light .font-icon-class {\n\tcolor: #339966;\n}\n.ns-light .ObjectCardBackground::part(root) {\n\tbackground-color: #ff0000;\n}\n.ns-light .ObjectCardTitle::part(title) {\n\tfont-color: #339966;\n}\n.ns-light .ObjectCardSubHead::part(subtitle) {\n\tfont-color: #ff00ff;\n}\n.ns-light .ObjectCardStatusText::part(status) {\n\tfont-color: #339966;\n}\n.ns-light .CompactCardLayout {\n\tmargin-left: -8px !important;\n\tmargin-right: -8px !important;\n\tpadding-left: 8px !important;\n\tpadding-right: 8px !important;\n}\n.ns-light .TightCardSpacing {\n\tmargin: 0 !important;\n\tpadding: 4px !important;\n}\n"],"sourceRoot":""}]);
-// Exports
-module.exports = ___CSS_LOADER_EXPORT___;
-
-
-/***/ }),
-
-/***/ "./build.definitions/BusinessPartner/Styles/Styles.light.nss":
-/*!*******************************************************************!*\
-  !*** ./build.definitions/BusinessPartner/Styles/Styles.light.nss ***!
-  \*******************************************************************/
+/***/ "./build.definitions/BusinessPartner/Styles/Styles.nss":
+/*!*************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Styles/Styles.nss ***!
+  \*************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 // Imports
@@ -3112,7 +3054,7 @@ TightCardSpacing {
 	margin: 0 !important;
 	padding: 4px !important;
 }
-`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.light.nss"],"names":[],"mappings":"AAAA,wBAAwB;AACxB,yBAAyB;AACzB,6BAA6B;AAC7B,8BAA8B;AAC9B,wBAAwB;AACxB;CACC,yBAAyB;AAC1B;AACA;CACC,mBAAmB;CACnB,eAAe;CACf,gBAAgB;AACjB;AACA;CACC,6DAA6D;CAC7D,mBAAmB;CACnB,mBAAmB;AACpB;AACA;CACC,yBAAyB;CACzB,mBAAmB;AACpB;AACA;CACC,yBAAyB;AAC1B;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,iBAAiB;CACjB,sBAAsB;AACvB;AACA;CACC,iBAAiB;CACjB,wBAAwB;AACzB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,4BAA4B;CAC5B,6BAA6B;CAC7B,4BAA4B;CAC5B,6BAA6B;AAC9B;AACA;CACC,oBAAoB;CACpB,uBAAuB;AACxB","sourcesContent":["@sap-brand-navy: #001E4D;\n@sap-action-blue: #0070F2;\n@weather-purple-dark: #4A148C;\n@weather-purple-light: #7B1FA2;\n@app-background: #F2F2F7;\nMainPageBackground {\n\tbackground-color: #F2F2F7;\n}\nNewsLabel {\n\tfont-color: #0070F2;\n\tfont-size: 14px;\n\tfont-weight: 500;\n}\nWeatherCardPurple {\n\tbackground: linear-gradient(135deg, #4A148C 0%, #7B1FA2 100%);\n\tfont-color: #FFFFFF;\n\tborder-radius: 18px;\n}\nBusinessCard {\n\tbackground-color: #FFFFFF;\n\tborder-radius: 24px;\n}\nObjectCardBackground {\n\tbackground-color: #ff0000;\n}\nObjectCardTitle {\n\tfont-color: #339966;\n}\nObjectCardSubHead {\n\tfont-color: #ff00ff;\n}\nObjectCardFootnote {\n\tfont-color: #339966;\n}\nObjectCardDescription {\n\tfont-color: #ffbb33;\n}\nObjectCardStatusText {\n\tfont-color: #339966;\n}\nObjectCardPrimaryAction {\n\tfont-color: green;\n\tbackground-color: cyan;\n}\nObjectCardSecondaryAction {\n\tfont-color: green;\n\tbackground-color: orange;\n}\nfont-icon-class {\n\tfont-color: #339966;\n}\nCompactCardLayout {\n\tmargin-left: -8px !important;\n\tmargin-right: -8px !important;\n\tpadding-left: 8px !important;\n\tpadding-right: 8px !important;\n}\nTightCardSpacing {\n\tmargin: 0 !important;\n\tpadding: 4px !important;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./build.definitions/BusinessPartner/Styles/Styles.nss"],"names":[],"mappings":"AAAA,wBAAwB;AACxB,yBAAyB;AACzB,6BAA6B;AAC7B,8BAA8B;AAC9B,wBAAwB;AACxB;CACC,yBAAyB;AAC1B;AACA;CACC,mBAAmB;CACnB,eAAe;CACf,gBAAgB;AACjB;AACA;CACC,6DAA6D;CAC7D,mBAAmB;CACnB,mBAAmB;AACpB;AACA;CACC,yBAAyB;CACzB,mBAAmB;AACpB;AACA;CACC,yBAAyB;AAC1B;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,iBAAiB;CACjB,sBAAsB;AACvB;AACA;CACC,iBAAiB;CACjB,wBAAwB;AACzB;AACA;CACC,mBAAmB;AACpB;AACA;CACC,4BAA4B;CAC5B,6BAA6B;CAC7B,4BAA4B;CAC5B,6BAA6B;AAC9B;AACA;CACC,oBAAoB;CACpB,uBAAuB;AACxB","sourcesContent":["@sap-brand-navy: #001E4D;\n@sap-action-blue: #0070F2;\n@weather-purple-dark: #4A148C;\n@weather-purple-light: #7B1FA2;\n@app-background: #F2F2F7;\nMainPageBackground {\n\tbackground-color: #F2F2F7;\n}\nNewsLabel {\n\tfont-color: #0070F2;\n\tfont-size: 14px;\n\tfont-weight: 500;\n}\nWeatherCardPurple {\n\tbackground: linear-gradient(135deg, #4A148C 0%, #7B1FA2 100%);\n\tfont-color: #FFFFFF;\n\tborder-radius: 18px;\n}\nBusinessCard {\n\tbackground-color: #FFFFFF;\n\tborder-radius: 24px;\n}\nObjectCardBackground {\n\tbackground-color: #ff0000;\n}\nObjectCardTitle {\n\tfont-color: #339966;\n}\nObjectCardSubHead {\n\tfont-color: #ff00ff;\n}\nObjectCardFootnote {\n\tfont-color: #339966;\n}\nObjectCardDescription {\n\tfont-color: #ffbb33;\n}\nObjectCardStatusText {\n\tfont-color: #339966;\n}\nObjectCardPrimaryAction {\n\tfont-color: green;\n\tbackground-color: cyan;\n}\nObjectCardSecondaryAction {\n\tfont-color: green;\n\tbackground-color: orange;\n}\nfont-icon-class {\n\tfont-color: #339966;\n}\nCompactCardLayout {\n\tmargin-left: -8px !important;\n\tmargin-right: -8px !important;\n\tpadding-left: 8px !important;\n\tpadding-right: 8px !important;\n}\nTightCardSpacing {\n\tmargin: 0 !important;\n\tpadding: 4px !important;\n}\n"],"sourceRoot":""}]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -3276,7 +3218,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
   \************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Styles":{"backgroundColor":"#1961cdff"},"Controls":[{"Styles":{"backgroundColor":"#FFFFFF"},"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":false,"Caption":"Monitoring Apps"},"_Type":"Section.Type.ObjectCardCollection","_Name":"SectionObjectCardCollection_BusinessPartner","EmptySection":{"FooterVisible":false},"Cards":[{"_Type":"ObjectCardCollection.Type.Card","_Name":"Purchase Order","Title":"Transfer","Footnote":"Transfer Within Plant","DetailImage":"sap-icon://credit-card","Description":"View Transfer","OnPress":"/BusinessPartner/Actions/Purchase_Order/NavToCreate_Purchase_Order.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Goods Received","Title":"Goods Issue","Footnote":"Goods Issue or Goods Received","DetailImage":"sap-icon://receipt","Description":"View Goods Issue","OnPress":"/BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Supplier","Title":"Supplier","Footnote":"Procurement","DetailImage":"sap-icon://supplier","Description":"View supplier list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_List.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_MaterialStock","Title":"Material Stock","Footnote":"Inventory","DetailImage":"sap-icon://inventory","Description":"Material stock overview","OnPress":"/BusinessPartner/Actions/NavToMaterialStock_List.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_BusinessPartner","Visible":true,"Title":"Business Partner","Footnote":"Master Data","DetailImage":"sap-icon://customer","DetailImageIsCircular":true,"Description":"View all business partners","OnPress":"/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_List.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Customer","Title":"Customer","Footnote":"Sales Data","DetailImage":"sap-icon://customer-order-entry","Description":"View customer list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_List.action","Styles":{"Description":"ObjectCardDescription"}}],"Layout":{"LayoutType":"HorizontalScroll"}},{"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ChartContent":{"Title":"Sales for Store","Subtitle":"Displaying of Sales for Store","StatusText":"8h ago","IsReadOnly":false,"ChartView":{"ChartType":"Column","SeriesTitles":["S1"],"SeriesColor":["#5899DA"],"Data":[[431000,494000,491000,536000,675000,680000]],"CategoryTitles":["C1","C2","C3","C4","C5","C6"],"CategoryAxisTitle":"Category Axis Title","ValueAxisTitle":"Value Axis Title","TrendItems":[{"TrendTitle":"100%","TrendImage":"res://arrow_up.png"}]},"SummaryView":{"SeriesTitles":["Sales for S1"],"AggregateItem":{"Title":"Total Sales","TrendTitle":"100%","TrendImage":"res://arrow_up.png","Value":{"LeadingUnit":"$","TrailingUnit":"k","Function":"Sum","Metrics":["3307"]}}},"Target":{"Service":"/BusinessPartner/Services/Material_Document_Overview.service","EntitySet":"A_MaterialDocumentItem"}},"_Type":"Section.Type.ChartContent","_Name":"SectionChartContent0","Visible":true}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"Text":"Scan","_Type":"Control.Type.ActionBarItem","_Name":"BarcodeScanner","Caption":"","Icon":"sap-icon://bar-code","Position":"Right","IsIconCircular":true,"OnPress":"/BusinessPartner/Actions/BarcodeScanner/CheckScanner.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"UserMenu","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Application/UserMenuPopover.action"}],"_Name":"Main","_Type":"Control.Type.ActionBar","Caption":"APP","PrefersLargeCaption":true}}
+module.exports = {"Styles":{"backgroundColor":"#1961cdff"},"Controls":[{"Styles":{"backgroundColor":"#FFFFFF"},"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":false,"HeaderSeparator":false,"FooterSeparator":false,"ControlSeparator":false},"Header":{"_Type":"SectionCommon.Type.Header","_Name":"SectionCommonTypeHeader0","AccessoryType":"None","UseTopPadding":false,"Caption":"Monitoring Apps"},"_Type":"Section.Type.ObjectCardCollection","_Name":"SectionObjectCardCollection_BusinessPartner","EmptySection":{"FooterVisible":false},"Cards":[{"_Type":"ObjectCardCollection.Type.Card","_Name":"Purchase Order","Title":"Transfer","Footnote":"Transfer Within Plant","DetailImage":"sap-icon://credit-card","Description":"View Transfer","OnPress":"/BusinessPartner/Actions/Purchase_Order/NavToCreate_Purchase_Order.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Goods Received","Visible":true,"Title":"Goods Issue","Footnote":"Goods Issue or Goods Received","DetailImage":"sap-icon://receipt","Description":"View Goods Issue","OnPress":"/BusinessPartner/Actions/Goods_Received/NavToGoods_Received.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Supplier","Title":"Supplier","Footnote":"Procurement","DetailImage":"sap-icon://supplier","Description":"View supplier list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Supplier/NavToA_Supplier_List.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_MaterialStock","Title":"Material Stock","Footnote":"Inventory","DetailImage":"sap-icon://inventory","Description":"Material stock overview","OnPress":"/BusinessPartner/Actions/NavToMaterialStock_List.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_BusinessPartner","Visible":true,"Title":"Business Partner","Footnote":"Master Data","DetailImage":"sap-icon://customer","DetailImageIsCircular":true,"Description":"View all business partners","OnPress":"/BusinessPartner/Actions/Business_Partner/A_BusinessPartner/NavToA_BusinessPartner_List.action","Styles":{"Description":"ObjectCardDescription"}},{"_Type":"ObjectCardCollection.Type.Card","_Name":"Card_Customer","Title":"Customer","Footnote":"Sales Data","DetailImage":"sap-icon://customer-order-entry","Description":"View customer list","OnPress":"/BusinessPartner/Actions/Business_Partner/A_Customer/NavToA_Customer_List.action","Styles":{"Description":"ObjectCardDescription"}}],"Layout":{"LayoutType":"HorizontalScroll"}},{"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ChartContent":{"Title":"Sales for Store","Subtitle":"Displaying of Sales for Store","IsReadOnly":false,"ChartView":{"ChartType":"Column","SeriesTitles":["S1"],"SeriesColor":["#5899DA"],"Data":[[431000,494000,491000,536000,675000,680000]],"CategoryTitles":["C1","C2","C3","C4","C5","C6"],"CategoryAxisTitle":"Category Axis Title","ValueAxisTitle":"Value Axis Title","TrendItems":[{"TrendTitle":"100%","TrendImage":"res://arrow_up.png"}]},"SummaryView":{"SeriesTitles":["Sales for S1"],"AggregateItem":{"Title":"Total Sales","TrendTitle":"100%","TrendImage":"res://arrow_up.png","Value":{"LeadingUnit":"$","TrailingUnit":"k","Function":"Sum","Metrics":["3307"]}}},"Target":{"Service":"/BusinessPartner/Services/Material_Document_Overview.service","EntitySet":"A_MaterialDocumentItem"}},"_Type":"Section.Type.ChartContent","_Name":"SectionChartContent0","Visible":true}]}],"_Type":"Page","_Name":"Main","ActionBar":{"Items":[{"Text":"Scan","_Type":"Control.Type.ActionBarItem","_Name":"BarcodeScanner","Caption":"","Icon":"sap-icon://bar-code","Position":"Right","IsIconCircular":true,"OnPress":"/BusinessPartner/Actions/BarcodeScanner/CheckScanner.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"UserMenu","Caption":"User Menu","Icon":"sap-icon://customer","Position":"Right","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Application/UserMenuPopover.action"}],"_Name":"Main","_Type":"Control.Type.ActionBar","Caption":"APP","PrefersLargeCaption":true}}
 
 /***/ }),
 
@@ -4566,7 +4508,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \*****************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Controls":[{"_Type":"Control.Type.FormCell.DatePicker","_Name":"PostingDate","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Posting Date","IsEditable":true,"Mode":"Date"},{"_Type":"Control.Type.FormCell.DatePicker","_Name":"DocumentDate","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Document Date","IsEditable":true,"Mode":"Date"},{"Value":"03","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementCode","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Goods Movement Code","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Material","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Material","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Plant","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Plant","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"StorageLocation","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Storage Location","Enabled":true,"IsEditable":true},{"Value":"201","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementType","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Goods Movement Type","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Quantity","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Quantity","KeyboardType":"Number","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Unit","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Unit","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"CostCenter","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Cost Center","Enabled":true,"IsEditable":true}],"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"PurchaseOrderForm"}]}],"_Type":"Page","_Name":"Goods_Issue","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/CloseModalPage_Cancel.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"","SystemItem":"Save","Position":"Right","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Goods_Received/CreateGoodsReceived.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Goods Issue"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Controls":[{"_Type":"Control.Type.FormCell.DatePicker","_Name":"PostingDate","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Posting Date","IsEditable":true,"Mode":"Date"},{"_Type":"Control.Type.FormCell.DatePicker","_Name":"DocumentDate","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Document Date","IsEditable":true,"Mode":"Date"},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FormCellListPicker0","RequiredIndicator":false,"IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":false,"Caption":"Choose Plant","DataPaging":{"ShowLoadingIndicator":false,"PageSize":20},"PickerPrompt":"Please select one","IsSelectedSectionEnabled":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/BusinessPartner/Services/Material_Stock.service","EntitySet":"A_MatlStkInAcctMod","QueryOptions":"$apply=groupby((Plant))"},"DisplayValue":"{Plant}","ReturnValue":"{Plant}"}},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"StorageLocation","RequiredIndicator":true,"IsVisible":true,"Separator":true,"Caption":"Storage Location","HelperText":"Please enter Storage Location","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Material","RequiredIndicator":true,"IsVisible":true,"Separator":true,"Caption":"Material","HelperText":"Please enter Material","Enabled":true,"IsEditable":true},{"Value":"201","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementType","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Goods Movement Type","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Quantity","RequiredIndicator":true,"IsVisible":true,"Separator":true,"Caption":"Quantity","KeyboardType":"Number","HelperText":"Please enter Quantity","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Unit","RequiredIndicator":true,"IsVisible":true,"Separator":true,"Caption":"Unit","HelperText":"Please enter Unit","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"CostCenter","RequiredIndicator":false,"IsVisible":true,"Separator":true,"Caption":"Cost Center","Enabled":true,"IsEditable":true}],"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"PurchaseOrderForm"}]}],"_Type":"Page","_Name":"Goods_Issue","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/CloseModalPage_Cancel.action"},{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem1","Caption":"","SystemItem":"Save","Position":"Right","IsIconCircular":false,"OnPress":"/BusinessPartner/Actions/Goods_Received/CreateGoodsReceived.action"}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar","Caption":"Goods Issue"}}
 
 /***/ }),
 
@@ -4596,7 +4538,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \****************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"_Type":"Control.Type.BottomNavigation","_Name":"BottomNavigation0","Items":[{"_Type":"Control.Type.TabItem","Caption":"Start","Image":"sap-icon://home","PageToOpen":"/BusinessPartner/Pages/Main.page","_Name":"HomeTab"},{"_Type":"Control.Type.TabItem","Caption":"Apps","Image":"sap-icon://grid","PageToOpen":"/BusinessPartner/Pages/Applications_Page.page","_Name":"AppsTab"}]}],"_Type":"Page","_Name":"MainTab","ActionBar":{"Items":[],"_Name":"ActionBar1","_Type":"Control.Type.ActionBar"}}
+module.exports = {"Controls":[{"_Type":"Control.Type.BottomNavigation","_Name":"BottomNavigation0","Items":[{"_Type":"Control.Type.TabItem","Caption":"Start","Image":"sap-icon://home","PageToOpen":"/BusinessPartner/Pages/Main.page","_Name":"HomeTab"},{"_Type":"Control.Type.TabItem","Caption":"Apps","Image":"sap-icon://grid","PageToOpen":"/BusinessPartner/Pages/Applications_Page.page","_Name":"AppsTab"},{"_Type":"Control.Type.TabItem","Caption":"Favorite","Image":"sap-icon://favorite-list","PageToOpen":"/BusinessPartner/Pages/Test.page","_Name":"Favorite"}]}],"_Type":"Page","_Name":"MainTab","ActionBar":{"Items":[],"_Name":"ActionBar2","_Type":"Control.Type.ActionBar"}}
 
 /***/ }),
 
@@ -4616,7 +4558,17 @@ module.exports = {"_Type":"Page","_Name":"ProfileDrawer","Caption":"Profile","Co
   \*******************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Page","_Name":"Transfer_Within_Plant","ActionBar":{"_Type":"Control.Type.ActionBar","Caption":"Transfer Within Plant","Items":[{"_Type":"Control.Type.ActionBarItem","Position":"Left","SystemItem":"Cancel","OnPress":"/BusinessPartner/Actions/CloseModalPage_Cancel.action"},{"_Type":"Control.Type.ActionBarItem","Position":"Right","SystemItem":"Save","OnPress":"/BusinessPartner/Actions/Purchase_Order/CreatePurchaseOrder.action"}]},"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.FormCell","_Name":"PurchaseOrderForm","Visible":true,"Controls":[{"_Type":"Control.Type.FormCell.DatePicker","_Name":"PostingDate","Caption":"Posting Date","Mode":"Date"},{"_Type":"Control.Type.FormCell.DatePicker","_Name":"DocumentDate","Caption":"Document Date","Mode":"Date"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementCode","Caption":"Goods Movement Code","Value":"04"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Material","Caption":"Material"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Plant","Caption":"Plant","Value":"7001"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"StorageLocation","Caption":"Storage Location","Value":"7010"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"IssuingOrReceivingPlant","Caption":"IssuingOrReceivingPlant"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"IssuingOrReceivingStorageLoc","Caption":"IssuingOrReceivingStorageLoc "},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementType","Caption":"Goods Movement Type","Value":"311"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Quantity","Caption":"Quantity","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Unit","Caption":"Unit"}]}]}]}
+module.exports = {"_Type":"Page","_Name":"Transfer_Within_Plant","ActionBar":{"_Type":"Control.Type.ActionBar","Caption":"Transfer Within Plant","Items":[{"_Type":"Control.Type.ActionBarItem","Position":"Left","SystemItem":"Cancel","OnPress":"/BusinessPartner/Actions/CloseModalPage_Cancel.action"},{"_Type":"Control.Type.ActionBarItem","Position":"Right","SystemItem":"Save","OnPress":"/BusinessPartner/Actions/Purchase_Order/CreatePurchaseOrder.action"}]},"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.FormCell","_Name":"PurchaseOrderForm","Visible":true,"Controls":[{"_Type":"Control.Type.FormCell.DatePicker","_Name":"PostingDate","Caption":"Posting Date","Mode":"Date"},{"_Type":"Control.Type.FormCell.DatePicker","_Name":"DocumentDate","Caption":"Document Date","Mode":"Date"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Material","Caption":"Material"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Plant","Caption":"Plant","Value":"7001"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"StorageLocation","Caption":"Storage Location","Value":"7010"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"IssuingOrReceivingPlant","Caption":"IssuingOrReceivingPlant"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"IssuingOrReceivingStorageLoc","Caption":"IssuingOrReceivingStorageLoc "},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"GoodsMovementType","Caption":"Goods Movement Type","Value":"311"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Quantity","Caption":"Quantity","KeyboardType":"Number"},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Unit","Caption":"Unit"}]}]}]}
+
+/***/ }),
+
+/***/ "./build.definitions/BusinessPartner/Pages/Test.page":
+/*!***********************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Pages/Test.page ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.AnalyticCardCollection","Target":{"Service":"/BusinessPartner/Services/Material_Stock.service","EntitySet":"A_MatlStkInAcctMod"},"_Name":"SectionAnalyticCardCollection0","Visible":true,"EmptySection":{"FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true},"AnalyticCard":{"ChartType":"Column","Title":"Sales for Store","Subtitle":"Displaying of Sales for Store","TrendImage":"res://arrow_up.png","IsTrendUpward":true,"TrendTitle":"57.8%","StatusText":"8h ago","LeadingUnit":"$","Metric":"{MaterialBaseUnit}","TrailingUnit":"USD","SeriesTitle":["S1"],"SeriesColor":["#5899DA"],"DataSeries":{"Data":[[431000,494000,491000,536000,675000,680000]],"CategoryTitles":["C1","C2","C3","C4","C5","C6"],"CategoryLabelVisible":true,"NumericLabelVisible":false},"_Type":"Card.Type.Chart"}}],"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"}}],"_Type":"Page","_Name":"Test","ActionBar":{"Items":[{"_Type":"Control.Type.ActionBarItem","_Name":"ActionBarItem0","Caption":"Item","Position":"Left","IsIconCircular":false,"Visible":true}],"_Name":"ActionBar0","_Type":"Control.Type.ActionBar"}}
 
 /***/ }),
 
@@ -4626,7 +4578,7 @@ module.exports = {"_Type":"Page","_Name":"Transfer_Within_Plant","ActionBar":{"_
   \*******************************************/
 /***/ ((module) => {
 
-module.exports = {"_Name":"BusinessPartner","Version":"/BusinessPartner/Globals/Application/AppDefinition_Version.global","MainPage":"/BusinessPartner/Pages/Navigation/bottom_nav.page","OnLaunch":"/BusinessPartner/Rules/Service/Initialize.js","OnWillUpdate":"/BusinessPartner/Rules/Application/OnWillUpdate.js","OnDidUpdate":"/BusinessPartner/Rules/Service/Initialize.js","Styles":"/BusinessPartner/Styles/Styles.css","Localization":"/BusinessPartner/i18n/i18n.properties","_SchemaVersion":"25.9","StyleSheets":{"Styles":{"css":"/BusinessPartner/Styles/Styles.light.css","ios":"/BusinessPartner/Styles/Styles.light.nss","android":"/BusinessPartner/Styles/Styles.light.json"}},"SDKStyles":{"ios":"/BusinessPartner/Styles/Styles.light.nss","android":"/BusinessPartner/Styles/Styles.light.json"}}
+module.exports = {"_Name":"BusinessPartner","Version":"/BusinessPartner/Globals/Application/AppDefinition_Version.global","MainPage":"/BusinessPartner/Pages/Navigation/bottom_nav.page","OnLaunch":"/BusinessPartner/Rules/Service/Initialize.js","OnWillUpdate":"/BusinessPartner/Rules/Application/OnWillUpdate.js","OnDidUpdate":"/BusinessPartner/Rules/Service/Initialize.js","Styles":"/BusinessPartner/Styles/Styles.less","Localization":"/BusinessPartner/i18n/i18n.properties","_SchemaVersion":"25.9","StyleSheets":{"Styles":{"css":"/BusinessPartner/Styles/Styles.css","ios":"/BusinessPartner/Styles/Styles.nss","android":"/BusinessPartner/Styles/Styles.json"}}}
 
 /***/ }),
 
@@ -7586,7 +7538,7 @@ module.exports = {"_Type":"Action.Type.BannerMessage","ActionResult":{"_Name":"G
   \***********************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.Message","Message":"{Message}","Title":"{Title}","OKCaption":"OK","OnOK":"/BusinessPartner/Actions/CloseModalPage_Complete.action","Duration":0,"Animated":true}
+module.exports = {"_Type":"Action.Type.Message","Message":"{Message}","Title":"{Title}","OKCaption":"OK","Duration":0,"Animated":true}
 
 /***/ }),
 
@@ -7626,7 +7578,7 @@ module.exports = {"_Type":"Action.Type.ToastMessage","ActionResult":{"_Name":"Ge
   \*********************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"CreateMaterialDoc"},"OnFailure":"/BusinessPartner/Rules/Error/GetDetailedError.js","OnSuccess":"/BusinessPartner/Actions/Messages/CreateGoodReceivedSuccess.action","Target":{"Service":"/BusinessPartner/Services/Material_Document_Overview.service","EntitySet":"A_MaterialDocumentHeader"},"Properties":{"DocumentDate":"#Page:Goods_Issue/#Control:DocumentDate/#Value","PostingDate":"#Page:Goods_Issue/#Control:PostingDate/#Value","GoodsMovementCode":"#Page:Goods_Issue/#Control:GoodsMovementCode/#Value","to_MaterialDocumentItem":[{"Material":"#Page:Goods_Issue/#Control:Material/#Value","Plant":"#Page:Goods_Issue/#Control:Plant/#Value","StorageLocation":"#Page:Goods_Issue/#Control:StorageLocation/#Value","GoodsMovementType":"#Page:Goods_Issue/#Control:GoodsMovementType/#Value","CostCenter":"#Page:Goods_Issue/#Control:CostCenter/#Value","EntryUnit":"#Page:Goods_Issue/#Control:Unit/#Value","QuantityInEntryUnit":"#Page:Goods_Issue/#Control:Quantity/#Value"}]}}
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"CreateMaterialDoc"},"OnFailure":"/BusinessPartner/Rules/Error/GetDetailedError.js","OnSuccess":"/BusinessPartner/Actions/Messages/CreateGoodReceivedSuccess.action","Target":{"Service":"/BusinessPartner/Services/Material_Document_Overview.service","EntitySet":"A_MaterialDocumentHeader"},"Properties":{"DocumentDate":"#Page:Goods_Issue/#Control:DocumentDate/#Value","PostingDate":"#Page:Goods_Issue/#Control:PostingDate/#Value","GoodsMovementCode":"03","to_MaterialDocumentItem":[{"Material":"#Page:Goods_Issue/#Control:Material/#Value","Plant":"#Page:Goods_Issue/#Control:FormCellListPicker0/#SelectedValue","StorageLocation":"#Page:Goods_Issue/#Control:StorageLocation/#Value","GoodsMovementType":"#Page:Goods_Issue/#Control:GoodsMovementType/#Value","CostCenter":"#Page:Goods_Issue/#Control:CostCenter/#Value","EntryUnit":"#Page:Goods_Issue/#Control:Unit/#Value","QuantityInEntryUnit":"#Page:Goods_Issue/#Control:Quantity/#Value"}]}}
 
 /***/ }),
 
@@ -7766,7 +7718,7 @@ module.exports = {"ModalPageFullscreen":false,"ModalPage":true,"PageToOpen":"/Bu
   \*********************************************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"CreateMaterialDoc"},"OnFailure":"/BusinessPartner/Rules/Error/GetDetailedError.js","OnSuccess":"/BusinessPartner/Actions/Messages/CreatePurchaseOrderSuccess.action","Target":{"Service":"/BusinessPartner/Services/Material_Document_Overview.service","EntitySet":"A_MaterialDocumentHeader"},"Properties":{"DocumentDate":"#Page:Transfer_Within_Plant/#Control:DocumentDate/#Value","PostingDate":"#Page:Transfer_Within_Plant/#Control:PostingDate/#Value","GoodsMovementCode":"#Page:Transfer_Within_Plant/#Control:GoodsMovementCode/#Value","to_MaterialDocumentItem":[{"Material":"#Page:Transfer_Within_Plant/#Control:Material/#Value","Plant":"#Page:Transfer_Within_Plant/#Control:Plant/#Value","StorageLocation":"#Page:Transfer_Within_Plant/#Control:StorageLocation/#Value","GoodsMovementType":"#Page:Transfer_Within_Plant/#Control:GoodsMovementType/#Value","EntryUnit":"#Page:Transfer_Within_Plant/#Control:Unit/#Value","QuantityInEntryUnit":"#Page:Transfer_Within_Plant/#Control:Quantity/#Value","IssuingOrReceivingPlant":"#Page:Transfer_Within_Plant/#Control:IssuingOrReceivingPlant/#Value","IssuingOrReceivingStorageLoc":"#Page:Transfer_Within_Plant/#Control:IssuingOrReceivingStorageLoc/#Value"}]}}
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"CreateMaterialDoc"},"OnFailure":"/BusinessPartner/Rules/Error/GetDetailedError.js","OnSuccess":"/BusinessPartner/Actions/Messages/CreatePurchaseOrderSuccess.action","Target":{"Service":"/BusinessPartner/Services/Material_Document_Overview.service","EntitySet":"A_MaterialDocumentHeader"},"Properties":{"DocumentDate":"#Page:Transfer_Within_Plant/#Control:DocumentDate/#Value","PostingDate":"#Page:Transfer_Within_Plant/#Control:PostingDate/#Value","GoodsMovementCode":"04","to_MaterialDocumentItem":[{"Material":"#Page:Transfer_Within_Plant/#Control:Material/#Value","Plant":"#Page:Transfer_Within_Plant/#Control:Plant/#Value","StorageLocation":"#Page:Transfer_Within_Plant/#Control:StorageLocation/#Value","GoodsMovementType":"#Page:Transfer_Within_Plant/#Control:GoodsMovementType/#Value","EntryUnit":"#Page:Transfer_Within_Plant/#Control:Unit/#Value","QuantityInEntryUnit":"#Page:Transfer_Within_Plant/#Control:Quantity/#Value","IssuingOrReceivingPlant":"#Page:Transfer_Within_Plant/#Control:IssuingOrReceivingPlant/#Value","IssuingOrReceivingStorageLoc":"#Page:Transfer_Within_Plant/#Control:IssuingOrReceivingStorageLoc/#Value"}]}}
 
 /***/ }),
 
@@ -7892,51 +7844,10 @@ module.exports = "1.1\n";
 
 /***/ }),
 
-/***/ "webpack/container/entry/bundle.js":
-/*!***********************!*\
-  !*** container entry ***!
-  \***********************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-var moduleMap = {
-	".": () => {
-		return Promise.resolve().then(() => (() => ((__webpack_require__(/*! ./build.definitions/application-index.js */ "./build.definitions/application-index.js")))));
-	}
-};
-var get = (module, getScope) => {
-	__webpack_require__.R = getScope;
-	getScope = (
-		__webpack_require__.o(moduleMap, module)
-			? moduleMap[module]()
-			: Promise.resolve().then(() => {
-				throw new Error('Module "' + module + '" does not exist in container.');
-			})
-	);
-	__webpack_require__.R = undefined;
-	return getScope;
-};
-var init = (shareScope, initScope) => {
-	if (!__webpack_require__.S) return;
-	var name = "default"
-	var oldScope = __webpack_require__.S[name];
-	if(oldScope && oldScope !== shareScope) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
-	__webpack_require__.S[name] = shareScope;
-	return __webpack_require__.I(name, initScope);
-};
-
-// This exports getters to disallow modifications
-__webpack_require__.d(exports, {
-	get: () => (get),
-	init: () => (init)
-});
-
-/***/ }),
-
-/***/ "./build.definitions/BusinessPartner/Styles/Styles.light.json":
-/*!********************************************************************!*\
-  !*** ./build.definitions/BusinessPartner/Styles/Styles.light.json ***!
-  \********************************************************************/
+/***/ "./build.definitions/BusinessPartner/Styles/Styles.json":
+/*!**************************************************************!*\
+  !*** ./build.definitions/BusinessPartner/Styles/Styles.json ***!
+  \**************************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -7992,12 +7903,6 @@ module.exports = /*#__PURE__*/JSON.parse('{"compilerOptions":{"module":"esnext",
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = __webpack_module_cache__;
-/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -8027,62 +7932,15 @@ module.exports = /*#__PURE__*/JSON.parse('{"compilerOptions":{"module":"esnext",
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/sharing */
-/******/ 	(() => {
-/******/ 		__webpack_require__.S = {};
-/******/ 		var initPromises = {};
-/******/ 		var initTokens = {};
-/******/ 		__webpack_require__.I = (name, initScope) => {
-/******/ 			if(!initScope) initScope = [];
-/******/ 			// handling circular init calls
-/******/ 			var initToken = initTokens[name];
-/******/ 			if(!initToken) initToken = initTokens[name] = {};
-/******/ 			if(initScope.indexOf(initToken) >= 0) return;
-/******/ 			initScope.push(initToken);
-/******/ 			// only runs once
-/******/ 			if(initPromises[name]) return initPromises[name];
-/******/ 			// creates a new share scope if needed
-/******/ 			if(!__webpack_require__.o(__webpack_require__.S, name)) __webpack_require__.S[name] = {};
-/******/ 			// runs all init snippets from all modules reachable
-/******/ 			var scope = __webpack_require__.S[name];
-/******/ 			var warn = (msg) => {
-/******/ 				if (typeof console !== "undefined" && console.warn) console.warn(msg);
-/******/ 			};
-/******/ 			var uniqueName = undefined;
-/******/ 			var register = (name, version, factory, eager) => {
-/******/ 				var versions = scope[name] = scope[name] || {};
-/******/ 				var activeVersion = versions[version];
-/******/ 				if(!activeVersion || (!activeVersion.loaded && (!eager != !activeVersion.eager ? eager : uniqueName > activeVersion.from))) versions[version] = { get: factory, from: uniqueName, eager: !!eager };
-/******/ 			};
-/******/ 			var initExternal = (id) => {
-/******/ 				var handleError = (err) => (warn("Initialization of sharing external failed: " + err));
-/******/ 				try {
-/******/ 					var module = __webpack_require__(id);
-/******/ 					if(!module) return;
-/******/ 					var initFn = (module) => (module && module.init && module.init(__webpack_require__.S[name], initScope))
-/******/ 					if(module.then) return promises.push(module.then(initFn, handleError));
-/******/ 					var initResult = initFn(module);
-/******/ 					if(initResult && initResult.then) return promises.push(initResult['catch'](handleError));
-/******/ 				} catch(err) { handleError(err); }
-/******/ 			}
-/******/ 			var promises = [];
-/******/ 			switch(name) {
-/******/ 			}
-/******/ 			if(!promises.length) return initPromises[name] = 1;
-/******/ 			return initPromises[name] = Promise.all(promises).then(() => (initPromises[name] = 1));
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /************************************************************************/
 /******/ 	
-/******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__("webpack/container/entry/bundle.js");
-/******/ 	var __webpack_export_target__ = exports;
-/******/ 	for(var i in __webpack_exports__) __webpack_export_target__[i] = __webpack_exports__[i];
-/******/ 	if(__webpack_exports__.__esModule) Object.defineProperty(__webpack_export_target__, "__esModule", { value: true });
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = __webpack_require__("./build.definitions/application-index.js");
 /******/ 	
+/******/ 	return __webpack_exports__;
 /******/ })()
 ;
+});
 //# sourceMappingURL=bundle.js.map
